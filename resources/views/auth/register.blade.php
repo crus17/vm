@@ -9,11 +9,9 @@
         <div class="container-form user-auth" >
 				<div class="section-form-box">
                             <!-- Logo Starts -->
-                            <!--<a href="{{url('/')}}" class="text-center"><img src="{{ $settings->site_address}}/cloud/app/images/{{$settings->logo}}" alt="{{$settings->site_name}}" class="text-center"> </a>-->
                             <div>
                                 <a href="{{url('/')}}">
-                                  <!--<span style="color:#04b9f4;font-size:30px;" class="w3-hide-large"><img src="{{ asset ('temp_new/images/log.png')}}">{{$settings->site_name}}</span>-->
-                                  <span style="color:#04b9f4;font-size:30px;" class="w3-hide-large"><img src="{{ asset ('zenith/images/logo-white.png')}}" width="320"></span>
+                                  <span style="color:#04b9f4;font-size:30px;" class="w3-hide-large"><img src="{{ asset ('home/images/logo-light.png')}}" width="320"></span>
                                 </a>
                             </div>
                             <!-- Logo Ends -->
@@ -108,10 +106,12 @@
 							<!-- Submit Form Button Starts -->
 							<div class="form__group text-center">
 								<button class="btn btn__login" type="submit">Create account</button>
-								<p class="text-center">Already a member?  <a href="{{route('login')}}">Login now</a></p>
                             </div>
                             
 							<!-- Submit Form Button Ends -->
+                            <div class="signup text-center">
+                                <a href="{{route('login')}}"><p class=""> Already a member? Login </p></a>
+                            </div>
                         </form>
                         <!-- Form Ends -->
                         <!-- Copyright Text Starts -->

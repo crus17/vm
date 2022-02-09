@@ -30,8 +30,7 @@
             <div class="section-form-box ">
                 <div>
                     <a href="<?php echo e(url('/')); ?>">
-                      <!--<span style="color:#04b9f4;font-size:30px;" class="w3-hide-large"><img src="<?php echo e(asset ('temp/img/logo.png')); ?>"><?php echo e($settings->site_name); ?></span>-->
-                      <span style="color:#04b9f4;font-size:30px;" class="w3-hide-large"><img src="<?php echo e(asset ('zenith/images/logo-white.png')); ?>" width="320"></span>
+                      <span style="color:#04b9f4;font-size:30px;" class="w3-hide-large"><img src="<?php echo e(asset ('home/images/logo-light.png')); ?>" width="320"></span>
                     </a>
                 </div>
                 <h3 class="mb-3">Admin Login</h3>

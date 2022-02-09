@@ -9,23 +9,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Favicons -->
-    <link rel="icon" href="{{ asset('temp/img/favicon.png')}}" type="image/png"/>
+    <link rel="icon" href="{{ asset('home/images/favicon.png')}}" type="image/png"/>
 
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS File -->
-    <link href="{{ asset ('temp/lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{ asset ('home/lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
 
     <!-- Libraries CSS Files -->
-        <link href="{{ asset ('temp/lib/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
-        <link href="{{ asset ('temp/lib/animate/animate.min.css')}}" rel="stylesheet">
-        <link href="{{ asset ('temp/lib/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
-        <link href="{{ asset ('temp/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
-        <link href="{{asset ('temp/lib/lightbox/css/lightbox.min.css')}}" rel="stylesheet">
-        <link href="{{ asset ('temp/lib/jquery/magnific-popup.css')}}" rel="stylesheet">
-        <link href="{{asset('temp/css/frontend_style_blue.css')}}" rel="stylesheet">
-        <!--<link rel="stylesheet" href="{{ asset('temp/css/'.$settings->site_colour.'.css')}}">-->
+        <link href="{{ asset ('home/lib/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet">
+        <link href="{{ asset ('home/lib/animate/animate.min.css')}}" rel="stylesheet">
+        <link href="{{ asset ('home/lib/ionicons/css/ionicons.min.css')}}" rel="stylesheet">
+        <link href="{{ asset ('home/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
+        <link href="{{asset ('home/lib/lightbox/css/lightbox.min.css')}}" rel="stylesheet">
+        <link href="{{ asset ('home/lib/jquery/magnific-popup.css')}}" rel="stylesheet">
+        <link href="{{asset('home/css/frontend_style_blue.css')}}" rel="stylesheet">
+        <!--<link rel="stylesheet" href="{{ asset('home/css/'.$settings->site_colour.'.css')}}">-->
 
 </head>
 

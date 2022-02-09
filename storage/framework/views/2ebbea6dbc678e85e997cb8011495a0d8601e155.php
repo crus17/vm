@@ -62,8 +62,8 @@
 				<div class="row"> 
                     <div class="col-sm-6 col-md-4 logo">
                         <a href="index.html" title="<?php echo e($settings->site_name); ?>">
-                            <img class="light" src="<?php echo e(asset('/home/logo-3.png')); ?>"  width="120" alt="<?php echo e($settings->site_name); ?>">
-                            <img class="dark" src="<?php echo e(asset('/home/logo-1.png')); ?>"  width="120" alt="<?php echo e($settings->site_name); ?>">
+                            <img class="light" src="<?php echo e(asset('/home/images/logo-light.png')); ?>"  width="120" alt="<?php echo e($settings->site_name); ?>">
+                            <img class="dark" src="<?php echo e(asset('/home/images/logo-dark.png')); ?>"  width="120" alt="<?php echo e($settings->site_name); ?>">
                         </a>
                     </div>
                     <div class="col-sm-6 col-md-8 main-menu">
@@ -78,7 +78,7 @@
                                 <li><a href="#about">About Us</a></li>
                                <li><a href="#token">Equities</a></li>
                                 <li><a href="#team">Testimonials</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="#contact">Contact Us</a></li>
                                 <li class="nav-btn"><a href="login">Sign In</a></li>
                             </ul>
                         </nav>
@@ -1558,7 +1558,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
 					<div id="capitol-callback">
 					  <div class="cpt-circle"></div>
 					  <div class="cpt-circle-fill"></div>
-					  <a href="https://api.whatsapp.com/send?phone=+12064269848&text= Hello First Crypto Trading" id="WhatsAppBtnDesktop" target="_blank" class="main-button" lang="en">
+					  <a href="https://api.whatsapp.com/send?phone=<?php echo e($settings->whatsapp); ?>&text= Hello <?php echo e($settings->site_name); ?>" id="WhatsAppBtnDesktop" target="_blank" class="main-button" lang="en">
 						<img src="https://nhtagent.com/nht-upload/assets/javascripts/WhatsApp/WhatsApp.png" width="100%">
 					  </a>
 					</div>
