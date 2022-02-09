@@ -61,7 +61,7 @@
 		   <div class="container">
 				<div class="row"> 
                     <div class="col-sm-6 col-md-4 logo">
-                        <a href="index.html" title="{{$settings->site_name}}">
+                        <a href="index" title="{{$settings->site_name}}">
                             <img class="light" src="{{ asset('/home/images/logo-light.png')}}"  width="120" alt="{{$settings->site_name}}">
                             <img class="dark" src="{{ asset('/home/images/logo-dark.png')}}"  width="120" alt="{{$settings->site_name}}">
                         </a>
@@ -128,8 +128,8 @@
                             <h1>{{$settings->site_name}} makes it safe and easy to invest </h1>
                             <p class="lead">A place for everyone who wants to simply Invest and get high returns on every investment.</p>
                             <div class="hero-btns">
-                                <a href="login.html" class="btn">LOGIN</a>
-                                <a href="register.php" class="btn btn3">REGISTER TODAY</a>
+                                <a href="login" class="btn">LOGIN</a>
+                                <a href="register" class="btn btn3">REGISTER TODAY</a>
                             </div>
                         </div>
                     </div>
@@ -1355,11 +1355,11 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
                     </div>
                     <div class="col-md-3 footer-box-2">
                         <ul class="footer-menu onepage">
-							 <li><a href="index.html#top">Home</a></li>
-                             <li><a href="index.html#about">About Us</a></li>
-                             <li><a href="index.html#token">Equities</a></li>
-                             <li><a href="index.html#team">Testimonials</a></li>
-                             <li><a href="contact.html">Contact Us</a></li>
+							 <li><a href="#top">Home</a></li>
+                             <li><a href="#about">About Us</a></li>
+                             <li><a href="#token">Equities</a></li>
+                             <li><a href="#team">Testimonials</a></li>
+                             <li><a href="#contact">Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="col-md-5 footer-box-3">
@@ -1673,5 +1673,4 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
     <!--miner-->
 </body>
 
-<!-- Mirrored from sacredthemes.net/cp-mercury.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 06 Mar 2021 08:19:11 GMT -->
 </html>
