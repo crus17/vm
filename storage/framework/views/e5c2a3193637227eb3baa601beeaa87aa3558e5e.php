@@ -92,9 +92,9 @@ if (Auth('admin')->User()->dashboard_style == "light") {
 													</a>
 												<div class="dropdown-menu bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?>" aria-labelledby="dropdownMenuLink">
 													<?php if($list->status==NULL || $list->status=='blocked'): ?>
-													<a class="btn btn-primary btn-sm m-1" href="<?php echo e(url('admin/dashboard/uunblock')); ?>/<?php echo e($list->id); ?>">Unsuspend</a> 
+													<a class="btn btn-primary btn-sm m-1" href="<?php echo e(url('admin/dashboard/uunblock')); ?>/<?php echo e($list->id); ?>">Unblock</a> 
 													<?php else: ?>
-													<a class="btn btn-danger btn-sm m-1" href="<?php echo e(url('admin/dashboard/uublock')); ?>/<?php echo e($list->id); ?>">Suspend</a>
+													<a class="btn btn-danger btn-sm m-1" href="<?php echo e(url('admin/dashboard/uublock')); ?>/<?php echo e($list->id); ?>">Block</a>
 													<?php endif; ?>
 													<?php if($list->trade_mode=='on'): ?>
 													<a class="btn btn-danger btn-sm m-1" href="<?php echo e(url('admin/dashboard/usertrademode')); ?>/<?php echo e($list->id); ?>/off">Turn off trade</a> 
