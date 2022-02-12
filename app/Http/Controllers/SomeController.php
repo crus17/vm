@@ -16,6 +16,7 @@ use App\tp_transactions;
 use App\notifications;
 use App\wdmethods;
 use DB;
+// use Cloudder;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -125,6 +126,20 @@ public function updatepix(Request $request){
     $upload_dir="./$settings->files_key/cloud/uploads";
     $image=$img->getClientOriginalName();
     $move=$img->move($upload_dir, $image);
+
+    // // Cloudinary
+    // $name = $request->file('ppix')->getClientOriginalName();
+    // $image_name = $request->file('ppix')->getRealPath();;
+    // Cloudder::upload($image_name, null);
+    // list($width, $height) = getimagesize($image_name);
+    // $image_url= Cloudder::show(Cloudder::getPublicId(), ["width" => $width, "height"=>$height]);
+    // //save to uploads directory
+    // $image->move(public_path("uploads"), $name);
+    // //Save images
+    // // $this->saveImages($request, $image_url);
+    // users::where('id', $request->user_id)->update(['photo'=>$name,]);
+    // // Coudinary Ends Here
+
 
     users::where('id', $request->user_id)
     ->update([
