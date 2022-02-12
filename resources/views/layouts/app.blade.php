@@ -19,7 +19,7 @@ if (Auth::check() && Auth::user()->dashboard_style == "light") {
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{$settings->site_name}} | {{$title}}</title>
-    <link rel="icon" href="{{ asset ('temp/img/favicon.png')}}" type="image/png" sizes="32x32">
+    <link rel="icon" href="{{ asset ('home/images/favicon.png')}}" type="image/png" sizes="32x32">
 
 	<!-- Fonts and icons -->
 	<script src="{{asset('dash/js/plugin/webfont/webfont.min.js')}}"></script>

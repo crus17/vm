@@ -19,7 +19,7 @@ if (Auth::check() && Auth::user()->dashboard_style == "light") {
     <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
 
     <title><?php echo e($settings->site_name); ?> | <?php echo e($title); ?></title>
-    <link rel="icon" href="<?php echo e(asset ('temp/img/favicon.png')); ?>" type="image/png" sizes="32x32">
+    <link rel="icon" href="<?php echo e(asset ('home/images/favicon.png')); ?>" type="image/png" sizes="32x32">
 
 	<!-- Fonts and icons -->
 	<script src="<?php echo e(asset('dash/js/plugin/webfont/webfont.min.js')); ?>"></script>
