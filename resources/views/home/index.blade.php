@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="{{ asset ('home/css/bootstrap.css')}}" type="text/css"/>
     <link rel="stylesheet" href="{{ asset ('home/css/animate.css')}}" type="text/css"/>
     <link rel="stylesheet" href="{{ asset ('home/css/owl.carousel.min.css')}}" type="text/css"/>
-    <link rel="stylesheet" href="{{ asset ('home/style.css')}}" type="text/css"/>
+    <link rel="stylesheet" href="{{ asset ('home/css/style.css')}}" type="text/css"/>
     <link rel="stylesheet" href="{{ asset ('home/css/responsive.css')}}" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -1438,6 +1438,7 @@ aa14458f8082d9c4265ef491ca0b5d4801c16bbf7a4aece7b70a0b4824ffdfea
     <script src="{{asset('home/js/wow.min.js')}}"></script>
     <script src="{{asset('home/js/jquery.countdown.js')}}"></script>
     <script src="{{asset('home/js/owl.carousel.js')}}"></script>
+    <script src="{{ asset ('home/js/script.js')}} "></script>
      <script type="text/javascript">
         function isScrolledIntoView(elem) {
             var docViewTop = jQuery(window).scrollTop();

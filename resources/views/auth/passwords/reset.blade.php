@@ -69,7 +69,7 @@
                             </span>
                             @endif
                             <label for="password-confirm" class="form__label">Password Confirmation</label>
-                            <input style="background-color:#fff; color:#222;"  class="form__input" id="password-confirm" name="password" id="password_confirmation" placeholder="Enter Password" type="password" required>
+                            <input style="background-color:#fff; color:#222;"  class="form__input" name="password_confirmation" id="password_confirmation" placeholder="Enter Password" type="password" required>
                             
                         </div>
                         
