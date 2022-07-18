@@ -84,7 +84,7 @@ flexibility(document.documentElement);
 				
 		<div class="site-branding">
 			<div class="ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope">
-				<span class="site-logo-img"><a href="\" class="custom-logo-link" rel="home"><img src="{{asset('fxipro_v2/cropped-1587368802185-187x62.png')}}" class="custom-logo" alt="logo" srcset="" sizes="(max-width: 187px) 100vw, 187px" width="187" height="62"></a></span>			</div>
+				<span class="site-logo-img"><a href="\" class="custom-logo-link" rel="home"><img src="{{asset('fxipro_v2/logo-white.png')}}" class="custom-logo" alt="logo" srcset="" sizes="(max-width: 187px) 100vw, 187px" width="187" height="62"></a></span>			</div>
 		</div>
 
 		<!-- .site-branding -->
@@ -370,7 +370,7 @@ capital. To ensure that they don’t lose all of their investments.</li></ul></d
 		<div class="elementor-element elementor-element-91842e4 elementor-widget elementor-widget-image" data-id="91842e4" data-element_type="widget" data-widget_type="image.default">
 <div class="elementor-widget-container">
 	<div class="elementor-image">
-						<img src="{{asset('fxipro_v2/1587368802185.png')}}" title="1587368802185" alt="1587368802185" width="220px;">											</div>
+						<img src="{{asset('fxipro_v2/logo-white.png')}}" title="logo" alt="logo" width="220px;">											</div>
 </div>
 </div>
 <div class="elementor-element elementor-element-06ae5d2 elementor-widget elementor-widget-text-editor" data-id="06ae5d2" data-element_type="widget" data-widget_type="text-editor.default">

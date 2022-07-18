@@ -88,7 +88,7 @@ flexibility(document.documentElement);
 				
 		<div class="site-branding">
 			<div class="ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope">
-				<span class="site-logo-img"><a href="\" class="custom-logo-link" rel="home"><img src="{{asset('fxipro_v2/cropped-1587368802185-187x62.png')}}" class="custom-logo" alt="{{$settings->site_name}}" srcset="" sizes="(max-width: 187px) 100vw, 187px" width="187" height="62"></a></span>			</div>
+				<span class="site-logo-img"><a href="\" class="custom-logo-link" rel="home"><img src="{{asset('fxipro_v2/logo-white.png')}}" class="custom-logo" alt="{{$settings->site_name}}" srcset="" sizes="(max-width: 187px) 100vw, 187px" width="187" height="62"></a></span>			</div>
 		</div>
 
 		<!-- .site-branding -->
@@ -322,7 +322,7 @@ and to help them optimize their investment portfolio.</p></div>
 													<div class="elementor-element elementor-element-91842e4 elementor-widget elementor-widget-image" data-id="91842e4" data-element_type="widget" data-widget_type="image.default">
 														<div class="elementor-widget-container">
 															<div class="elementor-image">
-																<img src="{{asset('fxipro_v2/1587368802185.png')}}" title="1587368802185" alt="1587368802185" width="220px;">
+																<img src="{{asset('fxipro_v2/logo-white.png')}}" title="logo" alt="logo" width="220px;">
 															</div>
 														</div>
 													</div>
