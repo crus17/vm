@@ -42,9 +42,10 @@ Route::get('pricing', 'UsersController@pricing')->name('pricing');
 Route::get('terms', 'UsersController@terms')->name('terms');
 Route::get('privacy', 'UsersController@privacy')->name('privacy');
 Route::get('about', 'UsersController@about')->name('about');
-Route::get('insight', 'UsersController@insight')->name('insight');
-Route::get('timeline', 'UsersController@timeline')->name('timeline');
+Route::get('forex', 'UsersController@forex')->name('forex');
+Route::get('crypto', 'UsersController@crypto')->name('crypto');
 Route::get('contact', 'UsersController@contact')->name('contact');
+Route::get('stock', 'UsersController@stock')->name('stock');
 Route::get('faq', 'UsersController@faq')->name('faq');
 
 //cron url

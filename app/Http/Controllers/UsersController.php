@@ -109,9 +109,9 @@ class UsersController extends Controller
     }
     
    //Insights route
-   public function insight(){
+   public function forex(){
         $settings=settings::where('id', '=', '1')->first();
-        return view('home.insight')
+        return view('home.forex')
         ->with(array(
             'plans' => plans::all(),
             'mplans' => plans::where('type','Main')->get(),
@@ -120,11 +120,24 @@ class UsersController extends Controller
           'settings' => settings::where('id', '=', '1')->first(),
         ));
    }
+
+   //Insights route
+   public function stock(){
+    $settings=settings::where('id', '=', '1')->first();
+    return view('home.stock')
+    ->with(array(
+        'plans' => plans::all(),
+        'mplans' => plans::where('type','Main')->get(),
+        'title' => 'Insights',
+      //'title' => $settings->site_title,
+      'settings' => settings::where('id', '=', '1')->first(),
+    ));
+}
   
    //Timeline route
-   public function timeline(){
+   public function crypto(){
         $settings=settings::where('id', '=', '1')->first();
-        return view('home.timeline')
+        return view('home.crypto')
         ->with(array(
             'plans' => plans::all(),
             'mplans' => plans::where('type','Main')->get(),
