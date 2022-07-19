@@ -26,12 +26,12 @@
 					<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
 						
 						<div class="tab-pane fade show active bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?> card p-3" id="payment" role="tabpanel" aria-labelledby="nav-profile-tab">
-							<?php echo $__env->make('user.includes.deposit', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+							<?php echo $__env->make('user.includes.walletpay', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 						</div>
 
 						
 						<div class="tab-pane fade p-3 bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?>" id="proof" role="tabpanel" aria-labelledby="nav-profile-tab">
-							<?php echo $__env->make('user.includes.withdrawal', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+							<?php echo $__env->make('user.includes.proof', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 						</div>
 					</div>
 					<?php if(Session::has('message')): ?>

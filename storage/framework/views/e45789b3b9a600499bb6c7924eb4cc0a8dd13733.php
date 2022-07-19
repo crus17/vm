@@ -5,7 +5,7 @@
 <div class="row">
     <div class="col card bg-<?php echo e($bg); ?> shadow-lg p-4">
         <div class="mb-3 text-<?php echo e($text); ?>">
-            <h4>How would you like to withdraw your funds</h4>
+            <h4>How would you like to fund your wallet</h4>
             <?php 
                 $pmodes = str_split($settings->payment_mode);
             ?>

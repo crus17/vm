@@ -26,12 +26,12 @@
 					<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
 						{{-- This is the first Tab content --}}
 						<div class="tab-pane fade show active bg-{{Auth('admin')->User()->dashboard_style}} card p-3" id="payment" role="tabpanel" aria-labelledby="nav-profile-tab">
-							@include('user.includes.deposit')
+							@include('user.includes.walletpay')
 						</div>
 
 						{{-- This is the second Tab Content --}}
 						<div class="tab-pane fade p-3 bg-{{Auth('admin')->User()->dashboard_style}}" id="proof" role="tabpanel" aria-labelledby="nav-profile-tab">
-							@include('user.includes.withdrawal')
+							@include('user.includes.proof')
 						</div>
 					</div>
 					@if(Session::has('message'))
