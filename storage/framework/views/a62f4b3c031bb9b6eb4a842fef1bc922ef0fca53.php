@@ -1,5 +1,5 @@
      
-    <form method="post" action="{{action('Admin\SettingsController@updatebasicsettings')}}" enctype="multipart/form-data">
+    <form method="post" action="<?php echo e(action('Admin\SettingsController@updatebasicsettings')); ?>" enctype="multipart/form-data">
         
 
     <div class="panel panel-default" style="border:0px solid #fff;">
@@ -8,7 +8,7 @@
         <div class="panel panel-default" style="border:0px solid #fff;">
                         <!-- Panel Heading Starts -->
                 <div class="panel-heading">
-                    <h4 class="panel-title text-{{$text}}">
+                    <h4 class="panel-title text-<?php echo e($text); ?>">
                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#whatsapp">
                         WhatsApp <i class="fa fa-arrow-down"></i>  </a>
                     </h4>
@@ -17,10 +17,10 @@
                 <div id="whatsapp" class="panel-collapse collapse">
                     <div class="sign-u">
                     <div class="sign-up1">
-                        <h4 class="text-{{$text}}">WhatsApp Number :</h4>
+                        <h4 class="text-<?php echo e($text); ?>">WhatsApp Number :</h4>
                     </div>
                     <div class="sign-up2">
-                        <input type="text" name="whatsapp" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" value="{{$settings->whatsapp}}">
+                        <input type="text" name="whatsapp" class="form-control bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?> text-<?php echo e($text); ?>" value="<?php echo e($settings->whatsapp); ?>">
                     </div>
                 </div>
             </div>
@@ -29,7 +29,7 @@
             <div class="panel panel-default">
                     <!-- Panel Heading Starts -->
                 <div class="panel-heading">
-                    <h4 class="panel-title text-{{$text}}">
+                    <h4 class="panel-title text-<?php echo e($text); ?>">
                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#bank">
                         Bank deposit or transfer <i class="fa fa-arrow-down"></i> </a>
                     </h4>
@@ -38,29 +38,29 @@
                 <div id="bank" class="panel-collapse collapse">
                     <div class="sign-u">
                 <div class="sign-up1">
-                    <h4 class="text-{{$text}}">Bank name :</h4>
+                    <h4 class="text-<?php echo e($text); ?>">Bank name :</h4>
                 </div>
                 <div class="sign-up2">
-                    <input type="text" name="bank_name" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" value="{{$settings->bank_name}}">
+                    <input type="text" name="bank_name" class="form-control bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?> text-<?php echo e($text); ?>" value="<?php echo e($settings->bank_name); ?>">
                 </div>
             </div>
 
             <div class="sign-u">
                 <div class="sign-up1">
-                    <h4 class="text-{{$text}}">Account name :</h4>
+                    <h4 class="text-<?php echo e($text); ?>">Account name :</h4>
                 </div>
                 <div class="sign-up2">
-                    <input type="text" name="account_name" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" value="{{$settings->account_name}}">
+                    <input type="text" name="account_name" class="form-control bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?> text-<?php echo e($text); ?>" value="<?php echo e($settings->account_name); ?>">
                 </div>
                 <div class="clearfix"> </div>
             </div>
 
             <div class="sign-u">
                 <div class="sign-up1">
-                    <h4 class="text-{{$text}}">Account number :</h4>
+                    <h4 class="text-<?php echo e($text); ?>">Account number :</h4>
                 </div>
                 <div class="sign-up2">
-                    <input type="text" name="account_number" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" value="{{$settings->account_number}}">
+                    <input type="text" name="account_number" class="form-control bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?> text-<?php echo e($text); ?>" value="<?php echo e($settings->account_number); ?>">
                 </div>
             </div>
                 </div>
@@ -69,7 +69,7 @@
             <div class="panel panel-default" style="border:0px solid #fff;">
                         <!-- Panel Heading Starts -->
                 <div class="panel-heading">
-                    <h4 class="panel-title text-{{$text}}">
+                    <h4 class="panel-title text-<?php echo e($text); ?>">
                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#btc">
                         Bitcoin <i class="fa fa-arrow-down"></i>  </a>
                     </h4>
@@ -78,10 +78,10 @@
                 <div id="btc" class="panel-collapse collapse">
                     <div class="sign-u">
                     <div class="sign-up1">
-                        <h4 class="text-{{$text}}">BTC address :</h4>
+                        <h4 class="text-<?php echo e($text); ?>">BTC address :</h4>
                     </div>
                     <div class="sign-up2">
-                        <input type="text" name="btc_address" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" value="{{$settings->btc_address}}">
+                        <input type="text" name="btc_address" class="form-control bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?> text-<?php echo e($text); ?>" value="<?php echo e($settings->btc_address); ?>">
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@
             <div class="panel panel-default" style="border:0px solid #fff;">
                         <!-- Panel Heading Starts -->
                 <div class="panel-heading">
-                    <h4 class="panel-title text-{{$text}}">
+                    <h4 class="panel-title text-<?php echo e($text); ?>">
                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#eth">
                         Ethereum <i class="fa fa-arrow-down"></i>  </a>
                     </h4>
@@ -98,10 +98,10 @@
                 <div id="eth" class="panel-collapse collapse">
                     <div class="sign-u">
                     <div class="sign-up1">
-                        <h4 class="text-{{$text}}">ETH address :</h4>
+                        <h4 class="text-<?php echo e($text); ?>">ETH address :</h4>
                     </div>
                     <div class="sign-up2">
-                        <input type="text" name="eth_address" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" value="{{$settings->eth_address}}">
+                        <input type="text" name="eth_address" class="form-control bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?> text-<?php echo e($text); ?>" value="<?php echo e($settings->eth_address); ?>">
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@
             <div class="panel panel-default" style="border:0px solid #fff;">
                         <!-- Panel Heading Starts -->
                 <div class="panel-heading">
-                    <h4 class="panel-title text-{{$text}}">
+                    <h4 class="panel-title text-<?php echo e($text); ?>">
                         <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#ltc">
                         Litecoin <i class="fa fa-arrow-down"></i>  </a>
                     </h4>
@@ -118,10 +118,10 @@
                 <div id="ltc" class="panel-collapse collapse">
                     <div class="sign-u">
                     <div class="sign-up1">
-                        <h4 class="text-{{$text}}">LTC address :</h4>
+                        <h4 class="text-<?php echo e($text); ?>">LTC address :</h4>
                     </div>
                     <div class="sign-up2">
-                        <input type="text" name="ltc_address" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" value="{{$settings->ltc_address}}">
+                        <input type="text" name="ltc_address" class="form-control bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?> text-<?php echo e($text); ?>" value="<?php echo e($settings->ltc_address); ?>">
                     </div>
                 </div>
             </div>
@@ -168,7 +168,7 @@
 
         <input type="submit" class="btn btn-primary px-5 btn-lg" value="Save">
         <input type="hidden" name="id" value="1">
-        <input type="hidden" name="_token" value="{{ csrf_token() }}"><br/>
+        <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>"><br/>
     </form>
 
     </div>
@@ -177,28 +177,28 @@
         <div class="modal-dialog">
                 <!-- Modal content-->
             <div class="modal-content">
-                <div class="modal-header bg-{{Auth('admin')->User()->dashboard_style}}">
-                    <h4 class="modal-title text-{{$text}}">Coinpayments set up</h4>
-                    <button type="button" class="close text-{{$text}}" data-dismiss="modal">&times;</button>
+                <div class="modal-header bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?>">
+                    <h4 class="modal-title text-<?php echo e($text); ?>">Coinpayments set up</h4>
+                    <button type="button" class="close text-<?php echo e($text); ?>" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="modal-body bg-{{Auth('admin')->User()->dashboard_style}}">
-                    <form role="form" method="post" action="{{action('Admin\SettingsController@updatecpd')}}">
+                <div class="modal-body bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?>">
+                    <form role="form" method="post" action="<?php echo e(action('Admin\SettingsController@updatecpd')); ?>">
 
-                        <h5 class="text-{{$text}}">Merchant ID</h5>
-                        <input  class="form-control text-{{$text}} bg-{{Auth('admin')->User()->dashboard_style}}" placeholder="Merchant ID" type="text" name="cp_m_id" value="{{$cpd->cp_m_id}}" required><br/>
+                        <h5 class="text-<?php echo e($text); ?>">Merchant ID</h5>
+                        <input  class="form-control text-<?php echo e($text); ?> bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?>" placeholder="Merchant ID" type="text" name="cp_m_id" value="<?php echo e($cpd->cp_m_id); ?>" required><br/>
                         
-                        <h5 class="text-{{$text}}">CoinPayment IPN Secret></h5>
-                        <input class="form-control text-{{$text}} bg-{{Auth('admin')->User()->dashboard_style}}" placeholder="CoinPayment IPN Secret" type="text" name="cp_ipn_secret" value="{{$cpd->cp_ipn_secret}}" required><br/>
+                        <h5 class="text-<?php echo e($text); ?>">CoinPayment IPN Secret></h5>
+                        <input class="form-control text-<?php echo e($text); ?> bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?>" placeholder="CoinPayment IPN Secret" type="text" name="cp_ipn_secret" value="<?php echo e($cpd->cp_ipn_secret); ?>" required><br/>
                         
-                        <h5 class="text-{{$text}}">CoinPayments debug email</h5>
-                        <input class="form-control text-{{$text}} bg-{{Auth('admin')->User()->dashboard_style}}" placeholder="CoinPayments debug email" type="text" name="cp_debug_email" value="{{$cpd->cp_debug_email}}" required><br/>
+                        <h5 class="text-<?php echo e($text); ?>">CoinPayments debug email</h5>
+                        <input class="form-control text-<?php echo e($text); ?> bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?>" placeholder="CoinPayments debug email" type="text" name="cp_debug_email" value="<?php echo e($cpd->cp_debug_email); ?>" required><br/>
 
-                        <h5 class="text-{{$text}}">Public key</h5>
-                        <input class="form-control text-{{$text}} bg-{{Auth('admin')->User()->dashboard_style}}" placeholder="Public key" type="text" name="cp_p_key" value="{{$cpd->cp_p_key}}" required><br/>
+                        <h5 class="text-<?php echo e($text); ?>">Public key</h5>
+                        <input class="form-control text-<?php echo e($text); ?> bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?>" placeholder="Public key" type="text" name="cp_p_key" value="<?php echo e($cpd->cp_p_key); ?>" required><br/>
                         
-                        <h5 class="text-{{$text}}">Private key</h5>
-                        <input class="form-control text-{{$text}} bg-{{Auth('admin')->User()->dashboard_style}}" placeholder="Private key" type="text" name="cp_pv_key" value="{{$cpd->cp_pv_key}}" required><br/>
-                        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                        <h5 class="text-<?php echo e($text); ?>">Private key</h5>
+                        <input class="form-control text-<?php echo e($text); ?> bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?>" placeholder="Private key" type="text" name="cp_pv_key" value="<?php echo e($cpd->cp_pv_key); ?>" required><br/>
+                        <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
                         <input type="submit" class="btn btn-primary px-5 btn-lg" value="Submit">
                     </form>
                 </div>

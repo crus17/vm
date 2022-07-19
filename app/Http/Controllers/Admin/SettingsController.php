@@ -354,12 +354,14 @@ public function updatemark(Request $request){
 
     settings::where('id', $request['id'])
     ->update([
-    'payment_mode'=>$request['payment_mode1'].$request['payment_mode2'],
+    'payment_mode'=>$request['payment_mode1'].$request['payment_mode2'].$request['payment_mode3'].$request['payment_mode4'],
     'bank_name'=>$request['bank_name'],
     'whatsapp'=>$request['whatsapp'],
     'account_name'=>$request['account_name'],
     'account_number'=>$request['account_number'],
     'btc_address'=>$request['btc_address'],
+    'eth_address'=>$request['eth_address'],
+    'ltc_address'=>$request['ltc_address'],
     ]);
     return redirect()->back()
     ->with('message', 'Action Sucessful');

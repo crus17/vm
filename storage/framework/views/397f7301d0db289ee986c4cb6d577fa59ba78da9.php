@@ -64,7 +64,7 @@ if (Auth('admin')->User()->dashboard_style == "light") {
 							</nav>
 		
 		
-								<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+							<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
 								
 								<div class="tab-pane fade show active bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?> card p-3" id="1" role="tabpanel" aria-labelledby="nav-home-tab">
 									<?php echo $__env->make('admin.includes.webinfo', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
