@@ -1,73 +1,31 @@
 
 <div class="mt-2 mb-4">
-    <h1 class="title1 text-{{$text}}">Withdrawal Request</h1>
+    <h1 class="title1 text-{{$text}}">Proof of Payment</h1>
 </div>
 <div class="row">
     <div class="col card bg-{{$bg}} shadow-lg p-4">
-        <div class="mb-3 text-{{$text}}">
-            <h4>How would you like to withdraw your funds</h4>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="card bg-{{$bg}} shadow text-{{$text}}">
-                    <div class="card-body">
-                        <div id="btc">
-                            <div class="">
-                                <button data-toggle="modal" data-target="#withdrawalModal{{$method->id}}" class="payment-btn btn btn-{{$text}}" style="margin-top:2px">
-                                    <div>
-                                        <img src="{{ asset('home/images/btc.png')}}" width="20px;" height="20px;">    
-                                        <span>Bitcoin</span>
-                                    </div>
-                                    <i class="fa fa-plus"></i>
-                                    </button>
-
-                                    <button data-toggle="modal" data-target="#withdrawalModal{{$method->id}}" class="payment-btn btn btn-{{$text}}" style="margin-top:2px">
-                                    <div>
-                                        <img src="{{ asset('home/images/eth.png')}}" width="20px;" height="20px;">    
-                                        <span>Ethereum</span>
-                                    </div>
-                                    <i class="fa fa-plus"></i>
-                                    </button>
-                                <!-- <button onclick="myFunction('https://buy.bitcoin.com/')" class="payment-btn btn btn-{{$text}}" style="margin-top:2px">
-                                    <div>
-                                        <img src="{{ asset('home/images/eth.png')}}" width="20px;" height="20px;">    
-                                        <span>Ethereum</span>
-                                    </div>
-                                    <i class="fa fa-plus"></i>
-                                </button>
-                                <script>
-                                    function myFunction(query_url) {
-                                        navigator.clipboard.writeText("{{$settings->btc_address}}").then(function () {
-                                            new Notify ({
-                                                status: 'success',
-                                                title: 'BTC Address Copied',
-                                                text: '{{$settings->btc_address}}',
-                                                autoclose: true,
-                                                effect: 'slide',
-                                            });
-                                            location.href = query_url;
-                                        }, function () {
-                                            location.href = query_url;
-                                        });
-                                    }
-
-                                    var addressCopied = function () {
-                                        navigator.clipboard.writeText("{{$settings->btc_address}}");
-                                        new Notify ({
-                                            status: 'success',
-                                            title: 'Copied',
-                                            autoclose: true
-                                        })
-                                    };
-    
-                                </script> -->
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> <br> <br>
+        
+        <form method="post" action="{{action('SomeController@savedeposit')}}" enctype="multipart/form-data">
+                    <h5 class="text-{{$text}}">Upload Payment proof after payment. (Ignore if paid with card).</h5>
+                    <input type="file" name="proof" class="form-control col-lg-4 bg-{{$bg}} text-{{$text}}" required>
+                <br>
+                
+                <h5 class="text-{{$text}}">Payment Mode Used:</h5>
+                <select name="payment_mode" class="form-control col-lg-4 bg-{{$bg}} text-{{$text}}" required>
+                    <option>Bank transfer</option>
+                    <option>Ethereum</option>
+                    <option>Bitcoin</option>
+                    <option>Credit card</option>
+                </select>
+                <br> <br>
+                <div >
+                    <input type="submit" class="btn btn-{{$text}}" value="Submit payment">
+                </div> 
+                <input type="hidden" name="amount" value="{{$amount}}">
+                <input type="hidden" name="pay_type" value="{{$pay_type}}">
+                <input type="hidden" name="plan_id" value="{{$plan_id}}">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            </form> <br> <br>
         <div class=" shadow bg-{{$bg}} text-{{$text}} p-3">
             <h4>Contact management at<br> 
             <strong>{{$settings->contact_email}}</strong>

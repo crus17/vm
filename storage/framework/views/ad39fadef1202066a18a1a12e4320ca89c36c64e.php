@@ -17,20 +17,20 @@
 					<nav>
 						<div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
 
-							<a class="nav-item nav-link active pt-3 " id="nav-home-tab" data-toggle="tab" href="#deposit" role="tab" aria-controls="nav-home" aria-selected="true">Deposit</a>
+							<a class="nav-item nav-link active pt-3 " id="nav-home-tab" data-toggle="tab" href="#payment" role="tab" aria-controls="nav-home" aria-selected="true">Wallet</a>
 
-							<a class="nav-item nav-link pt-3" id="nav-profile-tab" data-toggle="tab" href="#withdrawal" role="tab" aria-controls="nav-profile" aria-selected="false">Withdraw</a>
+							<a class="nav-item nav-link pt-3" id="nav-profile-tab" data-toggle="tab" href="#proof" role="tab" aria-controls="nav-profile" aria-selected="false">Proof Upload</a>
 							
 						</div>
 					</nav>
 					<div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
 						
-						<div class="tab-pane fade show active bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?> card p-3" id="deposit" role="tabpanel" aria-labelledby="nav-profile-tab">
+						<div class="tab-pane fade show active bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?> card p-3" id="payment" role="tabpanel" aria-labelledby="nav-profile-tab">
 							<?php echo $__env->make('user.includes.deposit', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 						</div>
 
 						
-						<div class="tab-pane fade p-3 bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?>" id="withdrawal" role="tabpanel" aria-labelledby="nav-profile-tab">
+						<div class="tab-pane fade p-3 bg-<?php echo e(Auth('admin')->User()->dashboard_style); ?>" id="proof" role="tabpanel" aria-labelledby="nav-profile-tab">
 							<?php echo $__env->make('user.includes.withdrawal', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 						</div>
 					</div>

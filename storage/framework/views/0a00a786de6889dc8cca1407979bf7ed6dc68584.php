@@ -1,73 +1,31 @@
 
 <div class="mt-2 mb-4">
-    <h1 class="title1 text-<?php echo e($text); ?>">Withdrawal Request</h1>
+    <h1 class="title1 text-<?php echo e($text); ?>">Proof of Payment</h1>
 </div>
 <div class="row">
     <div class="col card bg-<?php echo e($bg); ?> shadow-lg p-4">
-        <div class="mb-3 text-<?php echo e($text); ?>">
-            <h4>How would you like to withdraw your funds</h4>
-        </div>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="card bg-<?php echo e($bg); ?> shadow text-<?php echo e($text); ?>">
-                    <div class="card-body">
-                        <div id="btc">
-                            <div class="">
-                                <button data-toggle="modal" data-target="#withdrawalModal<?php echo e($method->id); ?>" class="payment-btn btn btn-<?php echo e($text); ?>" style="margin-top:2px">
-                                    <div>
-                                        <img src="<?php echo e(asset('home/images/btc.png')); ?>" width="20px;" height="20px;">    
-                                        <span>Bitcoin</span>
-                                    </div>
-                                    <i class="fa fa-plus"></i>
-                                    </button>
-
-                                    <button data-toggle="modal" data-target="#withdrawalModal<?php echo e($method->id); ?>" class="payment-btn btn btn-<?php echo e($text); ?>" style="margin-top:2px">
-                                    <div>
-                                        <img src="<?php echo e(asset('home/images/eth.png')); ?>" width="20px;" height="20px;">    
-                                        <span>Ethereum</span>
-                                    </div>
-                                    <i class="fa fa-plus"></i>
-                                    </button>
-                                <!-- <button onclick="myFunction('https://buy.bitcoin.com/')" class="payment-btn btn btn-<?php echo e($text); ?>" style="margin-top:2px">
-                                    <div>
-                                        <img src="<?php echo e(asset('home/images/eth.png')); ?>" width="20px;" height="20px;">    
-                                        <span>Ethereum</span>
-                                    </div>
-                                    <i class="fa fa-plus"></i>
-                                </button>
-                                <script>
-                                    function myFunction(query_url) {
-                                        navigator.clipboard.writeText("<?php echo e($settings->btc_address); ?>").then(function () {
-                                            new Notify ({
-                                                status: 'success',
-                                                title: 'BTC Address Copied',
-                                                text: '<?php echo e($settings->btc_address); ?>',
-                                                autoclose: true,
-                                                effect: 'slide',
-                                            });
-                                            location.href = query_url;
-                                        }, function () {
-                                            location.href = query_url;
-                                        });
-                                    }
-
-                                    var addressCopied = function () {
-                                        navigator.clipboard.writeText("<?php echo e($settings->btc_address); ?>");
-                                        new Notify ({
-                                            status: 'success',
-                                            title: 'Copied',
-                                            autoclose: true
-                                        })
-                                    };
-    
-                                </script> -->
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> <br> <br>
+        
+        <form method="post" action="<?php echo e(action('SomeController@savedeposit')); ?>" enctype="multipart/form-data">
+                    <h5 class="text-<?php echo e($text); ?>">Upload Payment proof after payment. (Ignore if paid with card).</h5>
+                    <input type="file" name="proof" class="form-control col-lg-4 bg-<?php echo e($bg); ?> text-<?php echo e($text); ?>" required>
+                <br>
+                
+                <h5 class="text-<?php echo e($text); ?>">Payment Mode Used:</h5>
+                <select name="payment_mode" class="form-control col-lg-4 bg-<?php echo e($bg); ?> text-<?php echo e($text); ?>" required>
+                    <option>Bank transfer</option>
+                    <option>Ethereum</option>
+                    <option>Bitcoin</option>
+                    <option>Credit card</option>
+                </select>
+                <br> <br>
+                <div >
+                    <input type="submit" class="btn btn-<?php echo e($text); ?>" value="Submit payment">
+                </div> 
+                <input type="hidden" name="amount" value="<?php echo e($amount); ?>">
+                <input type="hidden" name="pay_type" value="<?php echo e($pay_type); ?>">
+                <input type="hidden" name="plan_id" value="<?php echo e($plan_id); ?>">
+                <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
+            </form> <br> <br>
         <div class=" shadow bg-<?php echo e($bg); ?> text-<?php echo e($text); ?> p-3">
             <h4>Contact management at<br> 
             <strong><?php echo e($settings->contact_email); ?></strong>

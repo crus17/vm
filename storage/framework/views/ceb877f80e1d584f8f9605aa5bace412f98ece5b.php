@@ -68,9 +68,17 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?php echo e(url('dashboard/deposits')); ?>">
+                    <a href="<?php echo e(url('dashboard/payment')); ?>">
+                        <i class="fas fa-credit-card" aria-hidden="true"></i>
+                        <span class="sub-item">Deposits</span>
+                    </a>
+                    <!-- <a href="<?php echo e(url('dashboard/deposits')); ?>">
+                        <i class="fas fa-credit-card" aria-hidden="true"></i>
+                        <span class="sub-item">Deposits</span>
+                    </a> -->
+                    <a href="<?php echo e(url('dashboard/withdrawals')); ?>">
                         <i class="fa fa-money-bill " aria-hidden="true"></i>
-                        <span class="sub-item">Payments</span>
+                        <span class="sub-item">Withdrawal</span>
                     </a>
                 </li>
                 <li class="nav-item">

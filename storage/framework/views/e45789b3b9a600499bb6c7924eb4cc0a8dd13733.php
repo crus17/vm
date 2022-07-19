@@ -4,27 +4,8 @@
 </div>
 <div class="row">
     <div class="col card bg-<?php echo e($bg); ?> shadow-lg p-4">
-        <?php if($title=="Complete Payment"): ?>
-            <div class="alert-success text-center p-5">
-                <h4 class="text-<?php echo e($text); ?>">You are to send <strong><?php echo e($amount); ?> <?php echo e($coin); ?></strong> to the address below or scan the QR code to complete payment.</h4>
-                <h4 class="text-<?php echo e($text); ?>"><strong><?php echo e($p_address); ?></strong></h4><br>
-                <img width="220" height="220" alt="Payment QR code" src="<?php echo e($p_qrcode); ?>">
-            </div>
-        <?php elseif($title == "Pay with card"): ?>
-            <form action="charge" method="post">
-                <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
-                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                    data-key="<?php echo e($settings->s_p_k); ?>"
-                    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-                    data-name="<?php echo e($settings->site_name); ?>"
-                    data-description="Account fund"
-                    data-amount="<?php echo e($t_p); ?>"
-                    data-locale="auto">
-                </script>
-            </form>
-        <?php else: ?>
         <div class="mb-3 text-<?php echo e($text); ?>">
-            <h4>You are to make payment of <strong><?php echo e($settings->currency); ?><?php echo e($amount); ?></strong> using your preferred mode of payment below.</h4>
+            <h4>How would you like to withdraw your funds</h4>
             <?php 
                 $pmodes = str_split($settings->payment_mode);
             ?>
@@ -53,20 +34,19 @@
                 </div>
                 <?php endif; ?>
                 <?php if($pmode==2): ?>
-                <div class="col-lg-4">
+                <!-- <div class="col-lg-4">
                     <div class="card bg-<?php echo e($bg); ?> shadow text-<?php echo e($text); ?>">
                         <div class="card-body">
                             <h4>
-                                <!--<a style="text-decoration:none;" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#btc">-->
-                                <strong>Bitcoin</strong>
-                                <img src="<?php echo e(asset('home/images/btc.png')); ?>" width="40px;" height="40px;">
+                                <a style="text-decoration:none;" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#btc">
+                                    <strong>Bitcoin</strong>
+                                    <img src="<?php echo e(asset('home/images/btc.png')); ?>" width="40px;" height="40px;">
                                 </a>
                             </h4>
                             <div id="btc" class="panel-collapse show">
                                 <div class="">
                                     <h4 class="text-<?php echo e($text); ?>">
                                     <strong>BTC Address:</strong> <?php echo e($settings->btc_address); ?> 
-                                        <!-- <svg onclick="addressCopied()" xmlns="http://www.w3.org/2000/svg" fill="none" height="16px" width="16px" viewBox="0 0 24 24" class="sc-16r8icm-0 coGWQa"><path d="M5.7 14.7H4.8C4.32261 14.7 3.86477 14.5104 3.52721 14.1728C3.18964 13.8352 3 13.3774 3 12.9V4.8C3 4.32261 3.18964 3.86477 3.52721 3.52721C3.86477 3.18964 4.32261 3 4.8 3H12.9C13.3774 3 13.8352 3.18964 14.1728 3.52721C14.5104 3.86477 14.7 4.32261 14.7 4.8V5.7M11.1 9.3H19.2C20.1941 9.3 21 10.1059 21 11.1V19.2C21 20.1941 20.1941 21 19.2 21H11.1C10.1059 21 9.3 20.1941 9.3 19.2V11.1C9.3 10.1059 10.1059 9.3 11.1 9.3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg> -->
                                     <br/><br/>
                                     <?php if($settings->withdrawal_option != "manual"): ?>
                                     <a href="<?php echo e(url('dashboard/cpay')); ?>/<?php echo e($amount); ?>/BTC/<?php echo e(Auth::user()->id); ?>/new" class="btn btn-<?php echo e($text); ?>">Automatic payment method</a>
@@ -117,6 +97,63 @@
                                     
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="col-lg-4">
+                    <div class="card bg-<?php echo e($bg); ?> shadow text-<?php echo e($text); ?>">
+                        <div class="card-body">
+                            <div>
+                                <button data-toggle="collapse" href="#btc" class="payment-btn btn btn-<?php echo e($text); ?>" style="margin-top:2px">
+                                    <div>
+                                        <img src="<?php echo e(asset('home/images/btc.png')); ?>" width="20px;" height="20px;">    
+                                        <span>Bitcoin</span>
+                                    </div>
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                                <div id="btc" class="panel-collapse collapse">
+                                    <h4 onclick="myFunction('https://paxful.com/')" class="payment-address text-<?php echo e($text); ?>">
+                                        <?php echo e($settings->btc_address); ?>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="16px" width="16px" viewBox="0 0 24 24" class="sc-16r8icm-0 coGWQa"><path d="M5.7 14.7H4.8C4.32261 14.7 3.86477 14.5104 3.52721 14.1728C3.18964 13.8352 3 13.3774 3 12.9V4.8C3 4.32261 3.18964 3.86477 3.52721 3.52721C3.86477 3.18964 4.32261 3 4.8 3H12.9C13.3774 3 13.8352 3.18964 14.1728 3.52721C14.5104 3.86477 14.7 4.32261 14.7 4.8V5.7M11.1 9.3H19.2C20.1941 9.3 21 10.1059 21 11.1V19.2C21 20.1941 20.1941 21 19.2 21H11.1C10.1059 21 9.3 20.1941 9.3 19.2V11.1C9.3 10.1059 10.1059 9.3 11.1 9.3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button data-toggle="collapse" href="#eth" class="payment-btn btn btn-<?php echo e($text); ?>" style="margin-top:2px">
+                                    <div>
+                                        <img src="<?php echo e(asset('home/images/eth.png')); ?>" width="20px;" height="20px;">    
+                                        <span>Ethereum</span>
+                                    </div>
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                                <div id="eth" class="panel-collapse collapse">
+                                    <h4 onclick="myFunction('https://paxful.com/')" class="payment-address text-<?php echo e($text); ?>">
+                                        <?php echo e($settings->eth_address); ?>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="16px" width="16px" viewBox="0 0 24 24" class="sc-16r8icm-0 coGWQa"><path d="M5.7 14.7H4.8C4.32261 14.7 3.86477 14.5104 3.52721 14.1728C3.18964 13.8352 3 13.3774 3 12.9V4.8C3 4.32261 3.18964 3.86477 3.52721 3.52721C3.86477 3.18964 4.32261 3 4.8 3H12.9C13.3774 3 13.8352 3.18964 14.1728 3.52721C14.5104 3.86477 14.7 4.32261 14.7 4.8V5.7M11.1 9.3H19.2C20.1941 9.3 21 10.1059 21 11.1V19.2C21 20.1941 20.1941 21 19.2 21H11.1C10.1059 21 9.3 20.1941 9.3 19.2V11.1C9.3 10.1059 10.1059 9.3 11.1 9.3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </h4>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button data-toggle="collapse" href="#ltc" class="payment-btn btn btn-<?php echo e($text); ?>" style="margin-top:2px">
+                                    <div>
+                                        <img src="<?php echo e(asset('home/images/ltc.png')); ?>" width="20px;" height="20px;">    
+                                        <span>Litecoin</span>
+                                    </div>
+                                    <i class="fa fa-plus"></i>
+                                </button>
+                                <div id="ltc" class="panel-collapse collapse">
+                                    <h4 onclick="myFunction('https://paxful.com/')" class="payment-address text-<?php echo e($text); ?>">
+                                        <?php echo e($settings->btc_address); ?>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="16px" width="16px" viewBox="0 0 24 24" class="sc-16r8icm-0 coGWQa"><path d="M5.7 14.7H4.8C4.32261 14.7 3.86477 14.5104 3.52721 14.1728C3.18964 13.8352 3 13.3774 3 12.9V4.8C3 4.32261 3.18964 3.86477 3.52721 3.52721C3.86477 3.18964 4.32261 3 4.8 3H12.9C13.3774 3 13.8352 3.18964 14.1728 3.52721C14.5104 3.86477 14.7 4.32261 14.7 4.8V5.7M11.1 9.3H19.2C20.1941 9.3 21 10.1059 21 11.1V19.2C21 20.1941 20.1941 21 19.2 21H11.1C10.1059 21 9.3 20.1941 9.3 19.2V11.1C9.3 10.1059 10.1059 9.3 11.1 9.3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                    </h4>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -282,30 +319,35 @@
                 <?php endif; ?>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </div> <br> <br>
-        
-        <div>
-            <form method="post" action="<?php echo e(action('SomeController@savedeposit')); ?>" enctype="multipart/form-data">
-                    <h5 class="text-<?php echo e($text); ?>">Upload Payment proof after payment. (Ignore if paid with card).</h5>
-                    <input type="file" name="proof" class="form-control col-lg-4 bg-<?php echo e($bg); ?> text-<?php echo e($text); ?>" required>
-                <br>
-                
-                <h5 class="text-<?php echo e($text); ?>">Payment Mode Used:</h5>
-                <select name="payment_mode" class="form-control col-lg-4 bg-<?php echo e($bg); ?> text-<?php echo e($text); ?>" required>
-                    <option>Bank transfer</option>
-                    <option>Ethereum</option>
-                    <option>Bitcoin</option>
-                    <option>Credit card</option>
-                </select>
-                <br> <br>
-                <div >
-                    <input type="submit" class="btn btn-<?php echo e($text); ?>" value="Submit payment">
-                </div> 
-                <input type="hidden" name="amount" value="<?php echo e($amount); ?>">
-                <input type="hidden" name="pay_type" value="<?php echo e($pay_type); ?>">
-                <input type="hidden" name="plan_id" value="<?php echo e($plan_id); ?>">
-                <input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
-            </form>
+        <div class=" shadow bg-<?php echo e($bg); ?> text-<?php echo e($text); ?> p-3">
+            <h4>Contact management at <strong><?php echo e($settings->contact_email); ?></strong> for other payment methods.</h4>
         </div>
-        <?php endif; ?>
+        
     </div>
+    <script>
+        function myFunction(query_url) {
+            navigator.clipboard.writeText("<?php echo e($settings->btc_address); ?>").then(function () {
+                new Notify ({
+                    status: 'success',
+                    title: 'BTC Address Copied',
+                    text: '<?php echo e($settings->btc_address); ?>',
+                    autoclose: true,
+                    effect: 'slide',
+                });
+                // location.href = query_url;
+            }, function () {
+                // location.href = query_url;
+            });
+        }
+
+        var addressCopied = function () {
+            navigator.clipboard.writeText("<?php echo e($settings->btc_address); ?>");
+            new Notify ({
+                status: 'success',
+                title: 'Copied',
+                autoclose: true
+            })
+        };
+
+    </script>
 </div>
