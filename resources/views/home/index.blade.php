@@ -1362,9 +1362,9 @@ flexibility(document.documentElement);
 												</li>
 
 												<li class="ast-masthead-custom-menu-items button-custom-menu-item">
-													<a class="ast-custom-button-link" href="signup" target="_self">
+													<a class="ast-custom-button-link" href="register" target="_self">
 														<div class="ast-custom-button">Sign Up</div>
-													</a><a class="menu-link" href="signup" target="_self">Sign
+													</a><a class="menu-link" href="register" target="_self">Sign
 														Up</a>
 												</li>
 											</ul>
