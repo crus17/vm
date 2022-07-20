@@ -100,7 +100,7 @@ if (Auth('admin')->User()->dashboard_style == "light") {
 													Actions
 													</a>
 												<div class="dropdown-menu bg-{{Auth('admin')->User()->dashboard_style}}" aria-labelledby="dropdownMenuLink">
-													@if($list->status==NULL || $list->status=='blocked')
+													<!-- @if($list->status==NULL || $list->status=='blocked')
 													<a class="btn btn-primary btn-sm m-1" href="{{ url('admin/dashboard/uunblock') }}/{{$list->id}}">Unblock</a> 
 													@else
 													<a class="btn btn-danger btn-sm m-1" href="{{ url('admin/dashboard/uublock') }}/{{$list->id}}">Block</a>
@@ -110,12 +110,12 @@ if (Auth('admin')->User()->dashboard_style == "light") {
 													@else
 													<a class="btn btn-primary btn-sm m-1" href="{{ url('admin/dashboard/usertrademode') }}/{{$list->id}}/on">Turn on trade</a>
 													@endif
-														<a href="#"  data-toggle="modal" data-target="#topupModal{{$list->id}}" class="btn btn-dark btn-sm m-1">Credit/Debit</a>
+														<a href="#"  data-toggle="modal" data-target="#topupModal{{$list->id}}" class="btn btn-dark btn-sm m-1">Credit/Debit</a> -->
 														<a href="#"  data-toggle="modal" data-target="#accountStatusModal{{$list->id}}" class="btn btn-dark btn-sm m-1">Status/Level</a>
-														<a href="#" data-toggle="modal" data-target="#resetpswdModal{{$list->id}}"  class="btn btn-warning btn-sm m-1">Reset Password</a>
-														<a href="#" data-toggle="modal" data-target="#clearacctModal{{$list->id}}" class="btn btn-warning btn-sm m-1">Clear Account</a>
+														<!-- <a href="#" data-toggle="modal" data-target="#resetpswdModal{{$list->id}}"  class="btn btn-warning btn-sm m-1">Reset Password</a> -->
+														<!-- <a href="#" data-toggle="modal" data-target="#clearacctModal{{$list->id}}" class="btn btn-warning btn-sm m-1">Clear Account</a> -->
 														<a href="#" data-toggle="modal" data-target="#TradingModal{{$list->id}}" class="btn btn-secondary btn-sm m-1">Add Trading History</a>
-														<a href="#" data-toggle="modal" data-target="#deleteModal{{$list->id}}" class="btn btn-danger btn-sm m-1">Delete</a>
+														<!-- <a href="#" data-toggle="modal" data-target="#deleteModal{{$list->id}}" class="btn btn-danger btn-sm m-1">Delete</a> -->
 														<a href="#" data-toggle="modal" data-target="#edituser{{$list->id}}" class="btn btn-secondary btn-sm m-1">Edit</a>
 														<a href="#" data-toggle="modal" data-target="#sendmailtooneuserModal{{$list->id}}" class="btn btn-info btn-sm m-1">Send Message</a>
 														<a href="#" data-toggle="modal" data-target="#switchuserModal{{$list->id}}"  class="btn btn-success btn-sm m-2">Get access</a>
