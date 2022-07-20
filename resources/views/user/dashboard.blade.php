@@ -211,11 +211,7 @@ if (Auth::user()->dashboard_style == "light") {
                                         <div class="col-7 col-stats">
                                             <div class="numbers">
                                                 <p class="card-category">Status</p>
-                                                @if(count($user_plan)>0)
-                                                <h4 class="card-title text-{{$text}}">{{$user_plan->count()}}</h4>
-                                                @else
-                                                <h4 class="card-title text-{{$text}}">Active</h4>
-                                                @endif
+                                                <h4 class="card-title text-{{$text}}">{{Auth::user()->account_status}}</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -234,12 +230,7 @@ if (Auth::user()->dashboard_style == "light") {
                                         <div class="col-7 col-stats">
                                             <div class="numbers">
                                                 <p class="card-category">Account Level</p>
-                                                
-                                                @if(count($user_plan_active)>0)
-                                                <h4 class="card-title text-{{$text}}">{{$user_plan_active->count()}}</h4>
-                                                @else
-                                                <h4 class="card-title text-{{$text}}">Beginner</h4>
-                                                @endif
+                                                <h4 class="card-title text-{{$text}}">{{Auth::user()->account_level}}</h4>
                                             </div>
                                         </div>
                                     </div>

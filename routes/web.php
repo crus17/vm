@@ -106,6 +106,7 @@ Route::group(['prefix' => 'admin',  'middleware' => 'isadmin'], function()
 	Route::post('dashboard/addplan','Admin\LogicController@addplan')->name('addplan');
 	Route::post('dashboard/updateplan','Admin\LogicController@updateplan')->name('updateplan');
 	Route::post('dashboard/topup', 'Admin\LogicController@topup')->name('topup');
+	Route::post('dashboard/status', 'Admin\LogicController@status')->name('status');
 	Route::post('dashboard/sendmailsingle', 'Admin\LogicController@sendmailtooneuser');
 	Route::post('dashboard/sendmail', 'Admin\UsersController@sendmail');
 	Route::post('dashboard/AddHistory', 'Admin\LogicController@addHistory')->name('addhistory');

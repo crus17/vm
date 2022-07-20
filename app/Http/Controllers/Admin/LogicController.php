@@ -96,7 +96,21 @@ class LogicController extends Controller
         ->with('message', 'Action Sucessful!');
       }
 
-          //top up route
+    //Update Status
+    public function status(Request $request){
+      // $settings=settings::where('id', '=', '1')->first();
+      // $user=users::where('id',$request['user_id'])->first();
+      
+      users::where('id', $request->user_id)
+        ->update([
+          'account_status'=> $request->acc_status, //$request['status']
+          'account_level'=> $request->acc_level, // $request['level']
+        ]);      
+      return redirect()->back()
+      ->with('message', 'Action Sucessful!');
+    }
+
+    //top up route
     public function topup(Request $request){
         
         $settings=settings::where('id', '=', '1')->first();

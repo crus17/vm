@@ -213,12 +213,8 @@ if (Auth::user()->dashboard_style == "light") {
                                         </div>
                                         <div class="col-7 col-stats">
                                             <div class="numbers">
-                                                <p class="card-category">Total Packages</p>
-                                                <?php if(count($user_plan)>0): ?>
-                                                <h4 class="card-title text-<?php echo e($text); ?>"><?php echo e($user_plan->count()); ?></h4>
-                                                <?php else: ?>
-                                                <h4 class="card-title text-<?php echo e($text); ?>">0</h4>
-                                                <?php endif; ?>
+                                                <p class="card-category">Status</p>
+                                                <h4 class="card-title text-<?php echo e($text); ?>"><?php echo e(Auth::user()->account_status); ?></h4>
                                             </div>
                                         </div>
                                     </div>
@@ -236,13 +232,8 @@ if (Auth::user()->dashboard_style == "light") {
                                         </div>
                                         <div class="col-7 col-stats">
                                             <div class="numbers">
-                                                <p class="card-category">Active Packages</p>
-                                                
-                                                <?php if(count($user_plan_active)>0): ?>
-                                                <h4 class="card-title text-<?php echo e($text); ?>"><?php echo e($user_plan_active->count()); ?></h4>
-                                                <?php else: ?>
-                                                <h4 class="card-title text-<?php echo e($text); ?>">0</h4>
-                                                <?php endif; ?>
+                                                <p class="card-category">Account Level</p>
+                                                <h4 class="card-title text-<?php echo e($text); ?>"><?php echo e(Auth::user()->account_level); ?></h4>
                                             </div>
                                         </div>
                                     </div>
