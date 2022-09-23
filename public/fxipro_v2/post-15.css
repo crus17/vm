@@ -78,4 +78,9 @@
 .blog-wrapper-2 .slick-prev::before, .blog-wrapper-2 .slick-next::before{
     color: #801E87;
     display: none;
-}/* End custom CSS */
+}
+
+.site-header{
+  background: #a9a3c3;
+}
+/* End custom CSS */
