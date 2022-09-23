@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+	<head>
     <script>(function(){const e=()=>{};let t=null,o=null,n=[],i=e,r=e,a=e,s=e;try{i=window.fetch,r=window.XMLHttpRequest.prototype.open,a=window.XMLHttpRequest.prototype.send,s=window.XMLHttpRequest.prototype.setRequestHeader}catch(e){0}function c(e){return!(!window.XMLHttpRequest||!window.XMLHttpRequest.prototype||"function"!=typeof window.XMLHttpRequest.prototype[e])}function E(){let e=[];return{subscribe:t=>{e.push(t)},next:t=>{e.length&&e.forEach((e=>e(t)))},clear:()=>{e.length=0}}}const d=new E,l=new WeakMap,u=new WeakMap,p=new WeakMap;c("open")&&c("send")&&c("setRequestHeader")&&(window.XMLHttpRequest.prototype.open=function(...e){if(l.set(this,{method:e[0]&&e[0].toUpperCase()||"GET"}),!0===this.__amicabletbecoxhro||"OFF"===t){r.apply(this,e);const t=u.get(this);t&&t.next()}else{const t=u.get(this)||new E;u.set(this,t),this.__headersReady=function(e,t){let o=null;return()=>{o&&clearTimeout(o),o=setTimeout((()=>{e()}),t)}}((()=>{this.__onPendingHeadersSet&&this.__onPendingHeadersSet()}),50),d.subscribe((()=>{c("open")&&window.XMLHttpRequest.prototype.open.apply(this,e)}))}},window.XMLHttpRequest.prototype.setRequestHeader=function(...e){if(this.readyState===XMLHttpRequest.OPENED||"OFF"===t)s.apply(this,e);else{p.set(this,!0);const t=u.get(this);t&&t.subscribe((()=>{s.apply(this,e),this.__headersReady()}))}},window.XMLHttpRequest.prototype.send=function(e){if(this.addEventListener("readystatechange",(()=>{if("OFF"!==o&&this.readyState===XMLHttpRequest.DONE)try{const t=l.get(this),i=t&&"string"==typeof t.method&&t.method.toUpperCase()||"";let r,a=[];try{const e=this.getAllResponseHeaders();a=(e&&e.trim().split(/[\r\n]+/)).reduce(((e,t)=>{try{const o=t.split(": "),n=o.shift(),i=o.join(": ");e.push({active:!0,header:n,value:i})}catch(e){}return e}),[])}catch(e){a=[]}try{r="string"==typeof this.response?this.response:JSON.stringify(this.response)}catch(e){r=this.response}const s={type:"STASH_REQUESTS",payload:[[{method:i,requestURL:this.responseURL,responsePayload:r,requestPayload:e,status:this.status,timestamp:Date.now(),responseHeaders:a}]]};"ON"===o?window.postMessage(s,"*"):n.push(s.payload[0][0])}catch(e){}})),"OFF"===t)a.call(this,e);else if(p.get(this))this.__onPendingHeadersSet=()=>{p.delete(this),c("send")&&this.readyState===XMLHttpRequest.OPENED&&window.XMLHttpRequest.prototype.send.call(this,e),this.__onPendingHeadersSet=null};else if(this.readyState===XMLHttpRequest.OPENED&&!0===this.__amicabletbebypoxhrs){Object.defineProperty(this,"readyState",{writable:!0,configurable:!0,value:XMLHttpRequest.LOADING});const e=new Event("readystatechange");this.dispatchEvent(e)}else if(this.readyState===XMLHttpRequest.OPENED&&!0===this.__amicabletbecoxhrs)a.call(this,e);else{const t=u.get(this);t&&t.subscribe((()=>{c("send")&&this.readyState===XMLHttpRequest.OPENED&&window.XMLHttpRequest.prototype.send.call(this,e)}))}}),window.fetch=(...e)=>{const r=e[0];let a=e[1];const{url:s,method:c}=function(e,t){let o,n="GET";return"string"==typeof e?(o=e,n=t?.method?.toUpperCase()||"GET"):"string"==typeof e?.search?(o=e.toString(),n=t?.method?.toUpperCase()||"GET"):(o=e.url||"",n=e?.method?.toUpperCase()||"GET"),{method:n,url:o}}(r,a),E=function(e,t){return new Promise((o=>{if("string"==typeof e||"string"==typeof e?.search){const e=t&&t.body||null;o(e)}else try{e.clone().text().then((e=>{o(e)})).catch((e=>{o(null)}))}catch(e){o(null)}}))}(r,a);let l=!1;try{if("string"==typeof a?.headers?.amicabletbecof)switch(l=!0,a?.headers?.amicabletbecof){case"no-init":a=void 0;break;case"no-headers":a.headers=void 0;break;default:delete a.headers.amicabletbecof}}catch(e){0}return l||"OFF"===t?i(r,a).then((async e=>{if("OFF"===o)return e;try{const t=await E;let i;try{i=t.replace(/\s/gi,"")}catch(e){i=t}const r=e.clone(),a=await r.text();let d=[];try{for(const e of r?.headers?.entries()){const t=e[0],o=e[1];d.push({active:!0,header:t,value:o})}}catch(e){d=[]}const l={type:"STASH_REQUESTS",payload:[[{method:c&&c.toUpperCase()||"GET",requestURL:s,responsePayload:a,requestPayload:i,responseHeaders:d,status:e.status,timestamp:Date.now()}]]};"ON"===o?window.postMessage(l,"*"):n.push(l.payload[0][0])}catch(e){}return e})):((...e)=>new Promise((t=>{d.subscribe((()=>{t(window.fetch(...e))}))})))(...e)},d.subscribe((()=>{try{window.postMessage({type:"__TWEAK_BOOTSTRAP_FINISHED__",payload:[]})}catch(e){0}}));const T=["ON","OFF"];setTimeout((()=>{t&&T.includes(t)||(t="OFF",d.next())}),5e3),window.__onttis=e=>{e&&T.includes(e)&&(t&&T.includes(t)?t=e:(t=e,d.next()))},window.__onttss__=(e,t)=>{if(e&&T.includes(e)){if("OFF"===e&&"user"===t&&n.length)n=[];else if("ON"===e&&"system"===t&&n.length)try{window.postMessage({type:"STASH_REQUESTS",payload:[n]})}catch(e){0}n=[],o=e}},window.__textm__="c2"})();</script><script id="__tweak_browser_extension_intercept_script__" async="false" defer="false" src="chrome-extension://feahianecghpnipmhphmfgmpdodhcapi/intercept.bundle.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script async="" src="https://tradefoxe.com/wp-content/plugins/ultimate-elementor/assets/min-js/uael-particles.min.js"></script>
 	
 	
@@ -34,7 +35,7 @@
 
 		a,
 		.page-title {
-			color: #bf8d37;
+			color: #801E87;
 		}
 
 		a:hover,
@@ -182,7 +183,7 @@
 		}
 
 		::selection {
-			background-color: #bf8d37;
+			background-color: #801E87;
 			color: #000000;
 		}
 
@@ -213,8 +214,8 @@
 		.tagcloud a:focus,
 		.tagcloud a.current-item {
 			color: #000000;
-			border-color: #bf8d37;
-			background-color: #bf8d37;
+			border-color: #801E87;
+			background-color: #801E87;
 		}
 
 		.main-header-menu .menu-link,
@@ -231,7 +232,7 @@
 		.main-header-menu .current-menu-ancestor>.menu-link,
 		.main-header-menu .current-menu-item>.ast-menu-toggle,
 		.main-header-menu .current-menu-ancestor>.ast-menu-toggle {
-			color: #bf8d37;
+			color: #801E87;
 		}
 
 		input:focus,
@@ -242,7 +243,7 @@
 		input[type="reset"]:focus,
 		input[type="search"]:focus,
 		textarea:focus {
-			border-color: #bf8d37;
+			border-color: #801E87;
 		}
 
 		input[type="radio"]:checked,
@@ -251,15 +252,15 @@
 		input[type="checkbox"]:hover:checked,
 		input[type="checkbox"]:focus:checked,
 		input[type=range]::-webkit-slider-thumb {
-			border-color: #bf8d37;
-			background-color: #bf8d37;
+			border-color: #801E87;
+			background-color: #801E87;
 			box-shadow: none;
 		}
 
 		.site-footer a:hover+.post-count,
 		.site-footer a:focus+.post-count {
-			background: #bf8d37;
-			border-color: #bf8d37;
+			background: #801E87;
+			border-color: #801E87;
 		}
 
 		.footer-adv .footer-adv-overlay {
@@ -277,13 +278,13 @@
 		.single .nav-links .nav-next,
 		.single .ast-author-details .author-title,
 		.ast-comment-meta {
-			color: #bf8d37;
+			color: #801E87;
 		}
 
 		.entry-meta,
 		.entry-meta * {
 			line-height: 1.45;
-			color: #bf8d37;
+			color: #801E87;
 		}
 
 		.entry-meta a:hover,
@@ -307,18 +308,18 @@
 		#cat option,
 		.secondary .calendar_wrap thead a,
 		.secondary .calendar_wrap thead a:visited {
-			color: #bf8d37;
+			color: #801E87;
 		}
 
 		.secondary .calendar_wrap #today,
 		.ast-progress-val span {
-			background: #bf8d37;
+			background: #801E87;
 		}
 
 		.secondary a:hover+.post-count,
 		.secondary a:focus+.post-count {
-			background: #bf8d37;
-			border-color: #bf8d37;
+			background: #801E87;
+			border-color: #801E87;
 		}
 
 		.calendar_wrap #today>a {
@@ -328,7 +329,7 @@
 		.ast-pagination a,
 		.page-links .page-link,
 		.single .post-navigation a {
-			color: #bf8d37;
+			color: #801E87;
 		}
 
 		.ast-pagination a:hover,
@@ -343,17 +344,17 @@
 
 		.ast-header-break-point .ast-mobile-menu-buttons-minimal.menu-toggle {
 			background: transparent;
-			color: #bf8d37;
+			color: #801E87;
 		}
 
 		.ast-header-break-point .ast-mobile-menu-buttons-outline.menu-toggle {
 			background: transparent;
-			border: 1px solid #bf8d37;
-			color: #bf8d37;
+			border: 1px solid #801E87;
+			color: #801E87;
 		}
 
 		.ast-header-break-point .ast-mobile-menu-buttons-fill.menu-toggle {
-			background: #bf8d37;
+			background: #801E87;
 			color: #000000;
 		}
 
@@ -1152,7 +1153,7 @@
 	<link rel="stylesheet" id="uael-frontend-css" href="{{asset('fxipro_v2/uael-frontend.css')}}" media="all">
 	<link rel="stylesheet" id="wpforms-base-css" href="{{asset('fxipro_v2/wpforms-base.css')}}" media="all">
 	<link rel="stylesheet" id="font-awesome-5-all-css" href="{{asset('fxipro_v2/all.css')}}" media="all">
-	<link rel="stylesheet" id="font-awesome-4-shim-css" href="{{asset('fxipro_v2/v4-shims.css')}}" media="all">
+	<!-- <link rel="stylesheet" id="font-awesome-4-shim-css" href="{{asset('fxipro_v2/v4-shims.css')}}" media="all"> -->
 	<link rel="stylesheet" id="premium-pro-css" href="{{asset('fxipro_v2/premium-addons.css')}}" media="all">
 	<link rel="stylesheet" id="elementor-post-15-css" href="{{asset('fxipro_v2/post-15.css')}}" media="all">
 	<link rel="stylesheet" id="hfe-widgets-style-css" href="{{asset('fxipro_v2/frontend.css')}}" media="all">
@@ -1166,6 +1167,7 @@
 	<link rel="stylesheet" id="elementor-icons-fa-regular-css" href="{{asset('fxipro_v2/regular.css')}}" media="all">
 	<link rel="stylesheet" id="elementor-icons-shared-1-css" href="{{asset('fxipro_v2/style_003.css')}}" media="all">
 	<link rel="stylesheet" id="elementor-icons-happy-icons-css" href="{{asset('fxipro_v2/style_003.css')}}" media="all">
+	<link rel="stylesheet" href="{{asset('home/lib/font-awesome/css/font-awesome.min.css')}}">
 	<!--[if IE]>
 <script src='https://tradefoxe.com/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=2.5.4' id='astra-flexibility-js'></script>
 <script id='astra-flexibility-js-after'>
@@ -1174,7 +1176,7 @@ flexibility(document.documentElement);
 <![endif]-->
 	<script src="{{asset('fxipro_v2/jquery.js')}}" id="jquery-core-js"></script>
 	<script src="{{asset('fxipro_v2/jquery-pop-up.js')}}"></script>
-	<script src="{{asset('fxipro_v2/v4-shims.js')}}" id="font-awesome-4-shim-js"></script>
+	<!-- <script src="{{asset('fxipro_v2/v4-shims.js')}}" id="font-awesome-4-shim-js"></script> -->
 	<style>
 		.recentcomments a {
 			display: inline !important;
@@ -1294,7 +1296,7 @@ flexibility(document.documentElement);
 
 
 <style type="text/css" id="ast-site-identity-img" class="ast-site-identity-img"> #masthead .site-logo-img .astra-logo-svg { width: 187px; } @media (max-width: 921px) { #masthead .site-logo-img .astra-logo-svg { width: px; } } @media (max-width: 544px) { #masthead .site-logo-img .astra-logo-svg{ width: px; } }  #masthead .site-logo-img img { max-height: 62px; width: auto; } </style></head>
-
+	</head>
 
 
 
@@ -1660,7 +1662,7 @@ flexibility(document.documentElement);
 																	<div class="elementor-element elementor-element-0f955a1 elementor-widget elementor-widget-ha-animated-text happy-addon ha-animated-text happy-addon-pro" data-id="0f955a1" data-element_type="widget" data-settings="{&quot;animation_delay&quot;:1500}" data-widget_type="ha-animated-text.default">
 																		<div class="elementor-widget-container">
 																			<h2 class="ha-animated-text-wrap cd-headline letters rotate-2 ha-animated-has-before-text" data-animation-delay="1500"><span class="ha-animated-before-text">WELCOME
-																					TO</span><br><span style="color:#ECBE3F"> {{$settings->site_name}}</span></h2>
+																					TO</span><br><span style="color:#801E87"> {{$settings->site_name}}</span></h2>
 																		</div>
 																	</div>
 																	<div class="elementor-element elementor-element-10d8456b elementor-widget elementor-widget-text-editor" data-id="10d8456b" data-element_type="widget" data-widget_type="text-editor.default">
@@ -2027,7 +2029,7 @@ flexibility(document.documentElement);
 
 																				<div class="elementor-price-table__price">
 																					<span class="elementor-price-table__currency elementor-currency--before">$</span>
-																					<span class="elementor-price-table__integer-part" style="font-size:48px;">500+</span>
+																					<span class="elementor-price-table__integer-part" style="font-size:48px;">1000+</span>
 
 
 
@@ -2294,7 +2296,7 @@ flexibility(document.documentElement);
 																		<div class="elementor-widget-container">
 																			<div class="elementor-icon-wrapper">
 																				<div class="elementor-icon">
-																					<img src="{{asset('fxipro_v2/c.png')}}" aria-hidden="true">
+																					<i class="fa fa-user-o" aria-hidden="true"></i>
 																				</div>
 																			</div>
 																		</div>
@@ -2323,7 +2325,7 @@ flexibility(document.documentElement);
 																		<div class="elementor-widget-container">
 																			<div class="elementor-icon-wrapper">
 																				<div class="elementor-icon">
-																					<img src="{{asset('fxipro_v2/a.png')}}" aria-hidden="true">
+																					<i class="fa fa-trophy" aria-hidden="true"></i>
 																				</div>
 																			</div>
 																		</div>
@@ -2352,7 +2354,7 @@ flexibility(document.documentElement);
 																		<div class="elementor-widget-container">
 																			<div class="elementor-icon-wrapper">
 																				<div class="elementor-icon">
-																					<img src="{{asset('fxipro_v2/h.png')}}" aria-hidden="true">
+																					<i class="fa fa-clock-o" aria-hidden="true"></i>
 																				</div>
 																			</div>
 																		</div>
@@ -2381,7 +2383,7 @@ flexibility(document.documentElement);
 																		<div class="elementor-widget-container">
 																			<div class="elementor-icon-wrapper">
 																				<div class="elementor-icon">
-																					<img src="{{asset('fxipro_v2/s.png')}}" aria-hidden="true">
+																					<i class="fa fa-smile-o" aria-hidden="true"></i>
 																				</div>
 																			</div>
 																		</div>
