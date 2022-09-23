@@ -28,7 +28,7 @@
 
 		a,
 		.page-title {
-			color: #bf8d37;
+			color: #801E87;
 		}
 
 		a:hover,
@@ -176,7 +176,7 @@
 		}
 
 		::selection {
-			background-color: #bf8d37;
+			background-color: #801E87;
 			color: #000000;
 		}
 
@@ -207,8 +207,8 @@
 		.tagcloud a:focus,
 		.tagcloud a.current-item {
 			color: #000000;
-			border-color: #bf8d37;
-			background-color: #bf8d37;
+			border-color: #801E87;
+			background-color: #801E87;
 		}
 
 		.main-header-menu .menu-link,
@@ -225,7 +225,7 @@
 		.main-header-menu .current-menu-ancestor>.menu-link,
 		.main-header-menu .current-menu-item>.ast-menu-toggle,
 		.main-header-menu .current-menu-ancestor>.ast-menu-toggle {
-			color: #bf8d37;
+			color: #801E87;
 		}
 
 		input:focus,
@@ -236,7 +236,7 @@
 		input[type="reset"]:focus,
 		input[type="search"]:focus,
 		textarea:focus {
-			border-color: #bf8d37;
+			border-color: #801E87;
 		}
 
 		input[type="radio"]:checked,
@@ -245,15 +245,15 @@
 		input[type="checkbox"]:hover:checked,
 		input[type="checkbox"]:focus:checked,
 		input[type=range]::-webkit-slider-thumb {
-			border-color: #bf8d37;
-			background-color: #bf8d37;
+			border-color: #801E87;
+			background-color: #801E87;
 			box-shadow: none;
 		}
 
 		.site-footer a:hover+.post-count,
 		.site-footer a:focus+.post-count {
-			background: #bf8d37;
-			border-color: #bf8d37;
+			background: #801E87;
+			border-color: #801E87;
 		}
 
 		.footer-adv .footer-adv-overlay {
@@ -271,13 +271,13 @@
 		.single .nav-links .nav-next,
 		.single .ast-author-details .author-title,
 		.ast-comment-meta {
-			color: #bf8d37;
+			color: #801E87;
 		}
 
 		.entry-meta,
 		.entry-meta * {
 			line-height: 1.45;
-			color: #bf8d37;
+			color: #801E87;
 		}
 
 		.entry-meta a:hover,
@@ -301,18 +301,18 @@
 		#cat option,
 		.secondary .calendar_wrap thead a,
 		.secondary .calendar_wrap thead a:visited {
-			color: #bf8d37;
+			color: #801E87;
 		}
 
 		.secondary .calendar_wrap #today,
 		.ast-progress-val span {
-			background: #bf8d37;
+			background: #801E87;
 		}
 
 		.secondary a:hover+.post-count,
 		.secondary a:focus+.post-count {
-			background: #bf8d37;
-			border-color: #bf8d37;
+			background: #801E87;
+			border-color: #801E87;
 		}
 
 		.calendar_wrap #today>a {
@@ -322,7 +322,7 @@
 		.ast-pagination a,
 		.page-links .page-link,
 		.single .post-navigation a {
-			color: #bf8d37;
+			color: #801E87;
 		}
 
 		.ast-pagination a:hover,
@@ -337,17 +337,17 @@
 
 		.ast-header-break-point .ast-mobile-menu-buttons-minimal.menu-toggle {
 			background: transparent;
-			color: #bf8d37;
+			color: #801E87;
 		}
 
 		.ast-header-break-point .ast-mobile-menu-buttons-outline.menu-toggle {
 			background: transparent;
-			border: 1px solid #bf8d37;
-			color: #bf8d37;
+			border: 1px solid #801E87;
+			color: #801E87;
 		}
 
 		.ast-header-break-point .ast-mobile-menu-buttons-fill.menu-toggle {
-			background: #bf8d37;
+			background: #801E87;
 			color: #000000;
 		}
 
@@ -1540,56 +1540,12 @@ flexibility(document.documentElement);
 		</div><!-- #content -->
 
 
-
 		<footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="colophon" role="contentinfo">
 			<div class="footer-width-fixer">
 				<div data-elementor-type="wp-post" data-elementor-id="1085" class="elementor elementor-1085" data-elementor-settings="[]">
 					<div class="elementor-inner">
 						<div class="elementor-section-wrap">
-							<section class="elementor-section elementor-top-section elementor-element elementor-element-4900071 elementor-section-stretched elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4900071" data-element_type="section" data-settings="{&quot;stretch_section&quot;:&quot;section-stretched&quot;,&quot;background_background&quot;:&quot;classic&quot;}" style="width: 1349px; left: 0px;">
-								<div class="elementor-background-overlay"></div>
-								<div class="elementor-container elementor-column-gap-default">
-									<div class="elementor-row">
-										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-675edfe" data-id="675edfe" data-element_type="column">
-											<div class="elementor-column-wrap elementor-element-populated">
-												<div class="elementor-widget-wrap">
-													<div class="elementor-element elementor-element-530aacf elementor-widget elementor-widget-heading" data-id="530aacf" data-element_type="widget" data-widget_type="heading.default">
-														<div class="elementor-widget-container">
-															<h3 class="elementor-heading-title elementor-size-default">
-																Fast Account Opening in 2 minutes!</h3>
-														</div>
-													</div>
-													<div class="elementor-element elementor-element-f9d7839 elementor-widget elementor-widget-text-editor" data-id="f9d7839" data-element_type="widget" data-widget_type="text-editor.default">
-														<div class="elementor-widget-container">
-															<div class="elementor-text-editor elementor-clearfix">
-																<p>GET STARTED BY CREATING A FREE ACCOUNT NOW</p>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-661d0f9" data-id="661d0f9" data-element_type="column">
-											<div class="elementor-column-wrap elementor-element-populated">
-												<div class="elementor-widget-wrap">
-													<div class="elementor-element elementor-element-df64028 elementor-button-info elementor-align-right elementor-tablet-align-right elementor-mobile-align-left elementor-widget elementor-widget-button" data-id="df64028" data-element_type="widget" data-widget_type="button.default">
-														<div class="elementor-widget-container">
-															<div class="elementor-button-wrapper">
-																<a href="register" class="elementor-button-link elementor-button elementor-size-sm" role="button">
-																	<span class="elementor-button-content-wrapper">
-																		<span class="elementor-button-text">GET
-																			STARTED</span>
-																	</span>
-																</a>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</section>
+							
 							<section class="elementor-section elementor-top-section elementor-element elementor-element-782282b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="782282b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 								<div class="elementor-background-overlay"></div>
 								<div class="elementor-container elementor-column-gap-default">
@@ -1716,9 +1672,6 @@ flexibility(document.documentElement);
 					</div>
 				</div>
 			</div>
-			
-			
-			
 		</footer>
 
 
