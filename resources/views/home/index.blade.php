@@ -1587,11 +1587,11 @@ flexibility(document.documentElement);
 																						</div></div>
 																					<div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 2"></span></div>
 																					<div class="elementor-swiper-button elementor-swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide">
-																						<img src="{{asset('fxipro_v2/prev.png')}}" aria-hidden="true">
+																						<i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
 																						<span class="elementor-screen-only">Previous</span>
 																					</div>
 																					<div class="elementor-swiper-button elementor-swiper-button-next" tabindex="0" role="button" aria-label="Next slide">
-																						<img src="{{asset('fxipro_v2/next.png')}}" aria-hidden="true">
+																						<i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
 																						<span class="elementor-screen-only">Next</span>
 																					</div>
 																					<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
