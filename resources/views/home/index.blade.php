@@ -2022,7 +2022,7 @@ flexibility(document.documentElement);
 																						BRONZE</h3>
 
 																					<span class="elementor-price-table__subheading">Min.
-																						Possible deposit: $500
+																						Possible deposit: $1,000
 																						<br>Max.
 																						Possible deposit: $4,999</span>
 																				</div>
@@ -2051,7 +2051,7 @@ flexibility(document.documentElement);
 																						<div class="elementor-price-table__feature-inner">
 																							<img src="{{asset('fxipro_v2/star.png')}}" aria-hidden="true">
 																							<span>
-																								60% Daily return </span>
+																								#35% Daily return </span>
 																						</div>
 																					</li>
 																					<li class="elementor-repeater-item-4e4d4c1">
@@ -2116,7 +2116,7 @@ flexibility(document.documentElement);
 																						<div class="elementor-price-table__feature-inner">
 																							<img src="{{asset('fxipro_v2/star.png')}}" aria-hidden="true">
 																							<span>
-																								60% Daily return </span>
+																								#35% Daily return </span>
 																						</div>
 																					</li>
 																					<li class="elementor-repeater-item-4e4d4c1">
@@ -2184,7 +2184,7 @@ flexibility(document.documentElement);
 																						<div class="elementor-price-table__feature-inner">
 																							<img src="{{asset('fxipro_v2/star.png')}}" aria-hidden="true">
 																							<span>
-																								60% Daily return </span>
+																								#35% Daily return </span>
 																						</div>
 																					</li>
 																					<li class="elementor-repeater-item-4e4d4c1">
@@ -2248,7 +2248,7 @@ flexibility(document.documentElement);
 																						<div class="elementor-price-table__feature-inner">
 																							<img src="{{asset('fxipro_v2/star.png')}}" aria-hidden="true">
 																							<span>
-																								60% Daily return </span>
+																								#35% Daily return </span>
 																						</div>
 																					</li>
 																					<li class="elementor-repeater-item-4e4d4c1">
@@ -2311,7 +2311,7 @@ flexibility(document.documentElement);
 																	<div class="elementor-element elementor-element-729e062 elementor-widget elementor-widget-heading" data-id="729e062" data-element_type="widget" data-widget_type="heading.default">
 																		<div class="elementor-widget-container">
 																			<h3 class="elementor-heading-title elementor-size-default">
-																				<b>15372</b>
+																				<b>15,372</b>
 																			</h3>
 																		</div>
 																	</div>
@@ -2341,64 +2341,6 @@ flexibility(document.documentElement);
 																		<div class="elementor-widget-container">
 																			<h3 class="elementor-heading-title elementor-size-default">
 																				<b>84</b>
-																			</h3>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-1703f14" data-id="1703f14" data-element_type="column">
-															<div class="elementor-column-wrap elementor-element-populated">
-																<div class="elementor-widget-wrap">
-																	<div class="elementor-element elementor-element-ae9e9de elementor-view-default elementor-widget elementor-widget-icon" data-id="ae9e9de" data-element_type="widget" data-widget_type="icon.default">
-																		<div class="elementor-widget-container">
-																			<div class="elementor-icon-wrapper">
-																				<div class="elementor-icon">
-																					<i class="fa fa-clock-o" aria-hidden="true"></i>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="elementor-element elementor-element-89f47a5 elementor-widget elementor-widget-heading" data-id="89f47a5" data-element_type="widget" data-widget_type="heading.default">
-																		<div class="elementor-widget-container">
-																			<h4 class="elementor-heading-title elementor-size-default">
-																				<b>HOURS WORKED</b>
-																			</h4>
-																		</div>
-																	</div>
-																	<div class="elementor-element elementor-element-2ae6acd elementor-widget elementor-widget-heading" data-id="2ae6acd" data-element_type="widget" data-widget_type="heading.default">
-																		<div class="elementor-widget-container">
-																			<h3 class="elementor-heading-title elementor-size-default">
-																				<b>1500</b>
-																			</h3>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-a3398cf" data-id="a3398cf" data-element_type="column">
-															<div class="elementor-column-wrap elementor-element-populated">
-																<div class="elementor-widget-wrap">
-																	<div class="elementor-element elementor-element-cd9bc54 elementor-view-default elementor-widget elementor-widget-icon" data-id="cd9bc54" data-element_type="widget" data-widget_type="icon.default">
-																		<div class="elementor-widget-container">
-																			<div class="elementor-icon-wrapper">
-																				<div class="elementor-icon">
-																					<i class="fa fa-smile-o" aria-hidden="true"></i>
-																				</div>
-																			</div>
-																		</div>
-																	</div>
-																	<div class="elementor-element elementor-element-0772192 elementor-widget elementor-widget-heading" data-id="0772192" data-element_type="widget" data-widget_type="heading.default">
-																		<div class="elementor-widget-container">
-																			<h4 class="elementor-heading-title elementor-size-default">
-																				<b>SATISFIED CLIENTS</b>
-																			</h4>
-																		</div>
-																	</div>
-																	<div class="elementor-element elementor-element-39fb886 elementor-widget elementor-widget-heading" data-id="39fb886" data-element_type="widget" data-widget_type="heading.default">
-																		<div class="elementor-widget-container">
-																			<h3 class="elementor-heading-title elementor-size-default">
-																				<b>11608</b>
 																			</h3>
 																		</div>
 																	</div>
@@ -2955,434 +2897,7 @@ flexibility(document.documentElement);
 	</script>
 	<script src="{{asset('fxipro_v2/frontend_002.js')}}" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span><span id="elementor-device-mode" class="elementor-screen-only"></span>
 
-	<!-- Start profit pop ups -->
-	<div class="mgm" style="display: none; opacity: 1;">
-		<div class="txt" style="color:black;">Someone from <b>Italy</b> just withdrew <strong href="javascript:void(0);" onclick="javascript:void(0);">$1500 </strong></div>
-	</div>
 
-	<style>
-		.mgm {
-			border-radius: 7px;
-			position: fixed;
-			z-index: 90;
-			bottom: 80px;
-			right: 50px;
-			background: #fff;
-			padding: 10px 27px;
-			box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, .3);
-		}
-
-		.mgm a {
-			font-weight: 700;
-			display: block;
-		}
-
-		.mgm a,
-		.mgm a:active {
-			transition: all .2s ease;
-			color: #f2d516;
-		}
-	</style>
-	<script data-cfasync="false" src="{{asset('fxipro_v2/email-decode.min.html')}}"></script>
-	<script type="text/javascript">
-		var listCountries = ['United Kingdom', 'USA', 'Germany', 'France', 'Italy', 'USA', 'Australia', 'Lesotho', 'Canada', 'Argentina', 'Saudi Arabia', 'Mexico', 'Kenya', 'Maldives', 'Venezuela', 'South Africa', 'Sweden', 'India', 'South Africa', 'Italy', 'Pakistan', 'United Kingdom', 'South Africa', 'Greece', 'Cuba', 'South Africa', 'Portugal', 'Austria', 'South Africa', 'Panama', 'USA', 'South Africa', 'Netherlands', 'Switzerland', 'Belgium', 'Israel', 'Cyprus'];
-		var listPlans = ['$500', '$1500', '$1000', '$10,000', '$2000', '$3000', '$4000', '$600', '$700', '$2500'];
-		interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
-		var run = setInterval(request, interval);
-
-		function request() {
-			clearInterval(run);
-			interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
-			var country = listCountries[Math.floor(Math.random() * listCountries.length)];
-			var plan = listPlans[Math.floor(Math.random() * listPlans.length)];
-			var msg = 'Someone from <b>' + country + '</b> just withdrew <strong href="javascript:void(0);" onclick="javascript:void(0);">' + plan + ' </strong>';
-			$(".mgm .txt").html(msg);
-			$(".mgm").stop(true).fadeIn(2);
-			window.setTimeout(function () {
-				$(".mgm").stop(true).fadeOut(100);
-			}, 8000);
-			run = setInterval(request, interval);
-		}
-	</script>
-
-
-	<div class="mgm" style="display: none; opacity: 1;">
-		<div class="txt" style="color:black;">Someone from <b>Italy</b> just withdrew <strong href="javascript:void(0);" onclick="javascript:void(0);">$1500 </strong></div>
-	</div>
-
-	<style>
-		.mgm {
-			border-radius: 7px;
-			position: fixed;
-			z-index: 90;
-			bottom: 80px;
-			right: 50px;
-			background: #fff;
-			padding: 10px 27px;
-			box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, .3);
-		}
-
-		.mgm a {
-			font-weight: 700;
-			display: block;
-			color: #f2d516;
-		}
-
-		.mgm a,
-		.mgm a:active {
-			transition: all .2s ease;
-			color: #f2d516;
-		}
-	</style>
-	<script data-cfasync="false" src="{{asset('fxipro_v2/email-decode.min.html')}}"></script>
-	<script type="text/javascript">
-		var listCountries = ['London', 'Carlifornia', 'Germany', 'France', 'Italy', 'USA', 'Australia', 'Lesotho', 'Canada', 'Argentina', 'Saudi Arabia', 'Mexico', 'Kenya', 'Maldives', 'Venezuela', 'Soweto', 'Sweden', 'India', 'South Africa', 'Italy', 'Pakistan', 'United Kingdom', 'South Africa', 'Greece', 'Cuba', 'South Africa', 'Delhi', 'Austria', 'South Africa', 'Panama', 'USA', 'South Africa', 'Netherlands', 'Switzerland', 'Belgium', 'Israel', 'Cyprus'];
-		var listPlans = ['$2008', '$5002', '$1000', '$2015', '$8123', '$3020', '$402', '$600', '$700', '$2500'];
-		interval = Math.floor(Math.random() * (30000 - 8000 + 1) + 8000);
-		var run = setInterval(request, interval);
-
-		function request() {
-			clearInterval(run);
-			interval = Math.floor(Math.random() * (30000 - 8000 + 1) + 8000);
-			var country = listCountries[Math.floor(Math.random() * listCountries.length)];
-			var plan = listPlans[Math.floor(Math.random() * listPlans.length)];
-			var msg = 'Someone from <b>' + country + '</b> just invested <strong href="javascript:void(0);" onclick="javascript:void(0);">' + plan + ' </strong>';
-			$(".mgm .txt").html(msg);
-			$(".mgm").stop(true).fadeIn(2);
-			window.setTimeout(function () {
-				$(".mgm").stop(true).fadeOut(100);
-			}, 8000);
-			run = setInterval(request, interval);
-		}
-	</script>
-
-	<style>
-		.mgm {
-			border-radius: 7px;
-			position: fixed;
-			z-index: 90;
-			bottom: 80px;
-			right: 50px;
-			background: #fff;
-			padding: 10px 27px;
-			box-shadow: 0px 5px 13px 0px rgba(0, 0, 0, .3);
-		}
-
-		.mgm a {
-			font-weight: 700;
-			display: block;
-			color: #f2d516;
-		}
-
-		.mgm a,
-		.mgm a:active {
-			transition: all .2s ease;
-			color: #f2d516;
-		}
-	</style>
-	<script data-cfasync="false" src="{{asset('fxipro_v2/email-decode.min.html')}}"></script>
-	<script type="text/javascript">
-		var listCountries = ['United Kingdom', 'USA', 'Germany', 'France', 'Italy', 'USA', 'Australia', 'Lesotho', 'Canada', 'Argentina', 'Saudi Arabia', 'Mexico', 'Kenya', 'Maldives', 'Venezuela', 'South Africa', 'Sweden', 'India', 'South Africa', 'Italy', 'Pakistan', 'United Kingdom', 'South Africa', 'Greece', 'Cuba', 'South Africa', 'Portugal', 'Austria', 'South Africa', 'Panama', 'USA', 'South Africa', 'Netherlands', 'Switzerland', 'Belgium', 'Israel', 'Cyprus'];
-		var listPlans = ['$500', '$1500', '$1000', '$10,000', '$2000', '$3000', '$4000', '$600', '$700', '$2500'];
-		interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
-		var run = setInterval(request, interval);
-
-		function request() {
-			clearInterval(run);
-			interval = Math.floor(Math.random() * (40000 - 8000 + 1) + 8000);
-			var country = listCountries[Math.floor(Math.random() * listCountries.length)];
-			var plan = listPlans[Math.floor(Math.random() * listPlans.length)];
-			var msg = 'Someone from <b>' + country + '</b> just withdrew <strong href="javascript:void(0);" onclick="javascript:void(0);">' + plan + ' </strong>';
-			$(".mgm .txt").html(msg);
-			$(".mgm").stop(true).fadeIn(2);
-			window.setTimeout(function () {
-				$(".mgm").stop(true).fadeOut(100);
-			}, 8000);
-			run = setInterval(request, interval);
-		}
-	</script>
-
-	<script id="elementor-frontend-js-after">
-		window.scopes_array = {};
-		window.backend = 0;
-		jQuery(window).on("elementor/frontend/init", function () {
-			elementorFrontend.hooks.addAction("frontend/element_ready/section", function ($scope, $) {
-				if ("undefined" == typeof $scope) {
-					return;
-				}
-				if ($scope.hasClass("premium-parallax-yes")) {
-					var id = $scope.data("id");
-					window.scopes_array[id] = $scope;
-				}
-				if (elementorFrontend.isEditMode()) {
-					var url = papro_addons.parallax_url;
-					jQuery.cachedAssets = function (url, options) {
-						// Allow user to set any option except for dataType, cache, and url.
-						options = jQuery.extend(options || {}, {
-							dataType: "script",
-							cache: true,
-							url: url
-						});
-						// Return the jqXHR object so we can chain callbacks.
-						return jQuery.ajax(options);
-					};
-					jQuery.cachedAssets(url);
-					window.backend = 1;
-				}
-			});
-		});
-		jQuery(document).ready(function () {
-			if (jQuery.find(".premium-parallax-yes").length < 1) {
-				return;
-			}
-
-			var url = papro_addons.parallax_url;
-
-			jQuery.cachedAssets = function (url, options) {
-				// Allow user to set any option except for dataType, cache, and url.
-				options = jQuery.extend(options || {}, {
-					dataType: "script",
-					cache: true,
-					url: url
-				});
-
-				// Return the jqXHR object so we can chain callbacks.
-				return jQuery.ajax(options);
-			};
-			jQuery.cachedAssets(url);
-		});
-		window.scopes_array = {};
-		window.backend = 0;
-		jQuery(window).on("elementor/frontend/init", function () {
-			elementorFrontend.hooks.addAction("frontend/element_ready/section", function ($scope, $) {
-				if ("undefined" == typeof $scope) {
-					return;
-				}
-				if ($scope.hasClass("premium-particles-yes")) {
-					var id = $scope.data("id");
-					window.scopes_array[id] = $scope;
-				}
-				if (elementorFrontend.isEditMode()) {
-					var url = papro_addons.particles_url;
-					jQuery.cachedAssets = function (url, options) {
-						// Allow user to set any option except for dataType, cache, and url.
-						options = jQuery.extend(options || {}, {
-							dataType: "script",
-							cache: true,
-							url: url
-						});
-						// Return the jqXHR object so we can chain callbacks.
-						return jQuery.ajax(options);
-					};
-					jQuery.cachedAssets(url);
-					window.backend = 1;
-				}
-			});
-		});
-		jQuery(document).ready(function () {
-			if (jQuery.find(".premium-particles-yes").length < 1) {
-
-				return;
-			}
-			var url = papro_addons.particles_url;
-
-			jQuery.cachedAssets = function (url, options) {
-				// Allow user to set any option except for dataType, cache, and url.
-				options = jQuery.extend(options || {}, {
-					dataType: "script",
-					cache: true,
-					url: url
-				});
-
-				// Return the jqXHR object so we can chain callbacks.
-				return jQuery.ajax(options);
-			};
-			jQuery.cachedAssets(url);
-		});
-		window.scopes_array = {};
-		window.backend = 0;
-		jQuery(window).on("elementor/frontend/init", function () {
-			elementorFrontend.hooks.addAction("frontend/element_ready/section", function ($scope, $) {
-				if ("undefined" == typeof $scope) {
-					return;
-				}
-				if ($scope.hasClass("premium-gradient-yes")) {
-					var id = $scope.data("id");
-					window.scopes_array[id] = $scope;
-				}
-				if (elementorFrontend.isEditMode()) {
-					var url = papro_addons.gradient_url;
-					jQuery.cachedAssets = function (url, options) {
-						// Allow user to set any option except for dataType, cache, and url.
-						options = jQuery.extend(options || {}, {
-							dataType: "script",
-							cache: true,
-							url: url
-						});
-						// Return the jqXHR object so we can chain callbacks.
-						return jQuery.ajax(options);
-					};
-					jQuery.cachedAssets(url);
-					window.backend = 1;
-				}
-			});
-		});
-		jQuery(document).ready(function () {
-			if (jQuery.find(".premium-gradient-yes").length < 1) {
-				return;
-			}
-
-			var url = papro_addons.gradient_url;
-
-			jQuery.cachedAssets = function (url, options) {
-				// Allow user to set any option except for dataType, cache, and url.
-				options = jQuery.extend(options || {}, {
-					dataType: "script",
-					cache: true,
-					url: url
-				});
-
-				// Return the jqXHR object so we can chain callbacks.
-				return jQuery.ajax(options);
-			};
-			jQuery.cachedAssets(url);
-		});
-		window.scopes_array = {};
-		window.backend = 0;
-		jQuery(window).on("elementor/frontend/init", function () {
-			elementorFrontend.hooks.addAction("frontend/element_ready/section", function ($scope, $) {
-				if ("undefined" == typeof $scope) {
-					return;
-				}
-				if ($scope.hasClass("premium-kenburns-yes")) {
-					var id = $scope.data("id");
-					window.scopes_array[id] = $scope;
-				}
-			});
-		});
-		jQuery(document).ready(function () {
-			if (jQuery.find(".premium-kenburns-yes").length < 1) {
-				return;
-			}
-
-			var url = papro_addons.kenburns_url;
-
-			jQuery.cachedAssets = function (url, options) {
-				// Allow user to set any option except for dataType, cache, and url.
-				options = jQuery.extend(options || {}, {
-					dataType: "script",
-					cache: true,
-					url: url
-				});
-
-				// Return the jqXHR object so we can chain callbacks.
-				return jQuery.ajax(options);
-			};
-			jQuery.cachedAssets(url);
-		});
-		window.scopes_array = {};
-		window.backend = 0;
-		jQuery(window).on("elementor/frontend/init", function () {
-
-			elementorFrontend.hooks.addAction("frontend/element_ready/section", function ($scope, $) {
-				if ("undefined" == typeof $scope) {
-					return;
-				}
-				if ($scope.hasClass("premium-lottie-yes")) {
-					var id = $scope.data("id");
-					window.scopes_array[id] = $scope;
-				}
-				if (elementorFrontend.isEditMode()) {
-
-					var url = papro_addons.lottie_url;
-					jQuery.cachedAssets = function (url, options) {
-						// Allow user to set any option except for dataType, cache, and url.
-						options = jQuery.extend(options || {}, {
-							dataType: "script",
-							cache: true,
-							url: url
-						});
-						// Return the jqXHR object so we can chain callbacks.
-						return jQuery.ajax(options);
-					};
-					jQuery.cachedAssets(url);
-					window.backend = 1;
-				}
-			});
-		});
-		jQuery(document).ready(function () {
-			if (jQuery.find(".premium-lottie-yes").length < 1) {
-				return;
-			}
-			var url = papro_addons.lottie_url;
-
-			jQuery.cachedAssets = function (url, options) {
-				// Allow user to set any option except for dataType, cache, and url.
-				options = jQuery.extend(options || {}, {
-					dataType: "script",
-					cache: true,
-					url: url
-				});
-
-				// Return the jqXHR object so we can chain callbacks.
-				return jQuery.ajax(options);
-			};
-			jQuery.cachedAssets(url);
-		});
-		window.scope_array = [];
-		window.backend = 0;
-		jQuery.cachedScript = function (url, options) {
-			// Allow user to set any option except for dataType, cache, and url.
-			options = jQuery.extend(options || {}, {
-				dataType: "script",
-				cache: true,
-				url: url
-			});
-			// Return the jqXHR object so we can chain callbacks.
-			return jQuery.ajax(options);
-		};
-		jQuery(window).on("elementor/frontend/init", function () {
-			elementorFrontend.hooks.addAction("frontend/element_ready/global", function ($scope, $) {
-				if ("undefined" == typeof $scope) {
-					return;
-				}
-				if ($scope.hasClass("uael-particle-yes")) {
-					window.scope_array.push($scope);
-					$scope.find(".uael-particle-wrapper").addClass("js-is-enabled");
-				} else {
-					return;
-				}
-				if (elementorFrontend.isEditMode() && $scope.find(".uael-particle-wrapper").hasClass("js-is-enabled") && window.backend == 0) {
-					var uael_url = uael_particles_script.uael_particles_url;
-
-					jQuery.cachedScript(uael_url);
-					window.backend = 1;
-				} else if (elementorFrontend.isEditMode()) {
-					var uael_url = uael_particles_script.uael_particles_url;
-					jQuery.cachedScript(uael_url).done(function () {
-						var flag = true;
-					});
-				}
-			});
-		});
-		jQuery(document).ready(function () {
-			if (jQuery.find(".uael-particle-yes").length < 1) {
-				return;
-			}
-			var uael_url = uael_particles_script.uael_particles_url;
-			jQuery.cachedScript = function (url, options) {
-				// Allow user to set any option except for dataType, cache, and url.
-				options = jQuery.extend(options || {}, {
-					dataType: "script",
-					cache: true,
-					url: url
-				});
-				// Return the jqXHR object so we can chain callbacks.
-				return jQuery.ajax(options);
-			};
-			jQuery.cachedScript(uael_url);
-		});
-	</script>
 	<script src="{{asset('fxipro_v2/underscore.js')}}" id="underscore-js"></script>
 	<script id="wp-util-js-extra">
 		var _wpUtilSettings = { "ajax": { "url": "\/wp-admin\/admin-ajax.php" } };
