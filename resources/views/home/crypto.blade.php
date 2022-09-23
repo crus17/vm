@@ -424,7 +424,7 @@ capital. To ensure that they don’t lose all of their investments.</li></ul></d
 			<li class="elementor-icon-list-item">
 							<span class="elementor-icon-list-icon">
 				<img src="{{asset('fxipro_v2/map.png')}}" aria-hidden="true"> 		</span>
-						<span class="elementor-icon-list-text">137 Wheeler Rd, Central Islip, NY 11725, United States</span>
+						<span class="elementor-icon-list-text">1710 13th St, San Diego, CA</span>
 					</li>
 				<li class="elementor-icon-list-item">
 							<span class="elementor-icon-list-icon">
