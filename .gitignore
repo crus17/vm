@@ -1,6 +1,7 @@
 node_modules/
 composer.phar
 /storage
+/vender
 .env.*.php
 .env.php
 .DS_Store
