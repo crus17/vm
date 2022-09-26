@@ -210,12 +210,8 @@ if (Auth::user()->dashboard_style == "light") {
                                         </div>
                                         <div class="col-7 col-stats">
                                             <div class="numbers">
-                                                <p class="card-category">Total Packages</p>
-                                                @if(count($user_plan)>0)
-                                                <h4 class="card-title text-{{$text}}">{{$user_plan->count()}}</h4>
-                                                @else
-                                                <h4 class="card-title text-{{$text}}">0</h4>
-                                                @endif
+                                                <p class="card-category">Status</p>
+                                                <h4 class="card-title text-{{$text}}">{{Auth::user()->account_status}}</h4>
                                             </div>
                                         </div>
                                     </div>
@@ -233,13 +229,8 @@ if (Auth::user()->dashboard_style == "light") {
                                         </div>
                                         <div class="col-7 col-stats">
                                             <div class="numbers">
-                                                <p class="card-category">Active Packages</p>
-                                                
-                                                @if(count($user_plan_active)>0)
-                                                <h4 class="card-title text-{{$text}}">{{$user_plan_active->count()}}</h4>
-                                                @else
-                                                <h4 class="card-title text-{{$text}}">0</h4>
-                                                @endif
+                                                <p class="card-category">Account Level</p>
+                                                <h4 class="card-title text-{{$text}}">{{Auth::user()->account_level}}</h4>
                                             </div>
                                         </div>
                                     </div>

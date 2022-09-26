@@ -2051,7 +2051,7 @@ flexibility(document.documentElement);
 																						<div class="elementor-price-table__feature-inner">
 																							<img src="{{asset('fxipro_v2/star.png')}}" aria-hidden="true">
 																							<span>
-																								#35% Daily return </span>
+																								35% Daily return </span>
 																						</div>
 																					</li>
 																					<li class="elementor-repeater-item-4e4d4c1">
@@ -2116,7 +2116,7 @@ flexibility(document.documentElement);
 																						<div class="elementor-price-table__feature-inner">
 																							<img src="{{asset('fxipro_v2/star.png')}}" aria-hidden="true">
 																							<span>
-																								#35% Daily return </span>
+																								35% Daily return </span>
 																						</div>
 																					</li>
 																					<li class="elementor-repeater-item-4e4d4c1">
@@ -2184,7 +2184,7 @@ flexibility(document.documentElement);
 																						<div class="elementor-price-table__feature-inner">
 																							<img src="{{asset('fxipro_v2/star.png')}}" aria-hidden="true">
 																							<span>
-																								#35% Daily return </span>
+																								35% Daily return </span>
 																						</div>
 																					</li>
 																					<li class="elementor-repeater-item-4e4d4c1">
@@ -2248,7 +2248,7 @@ flexibility(document.documentElement);
 																						<div class="elementor-price-table__feature-inner">
 																							<img src="{{asset('fxipro_v2/star.png')}}" aria-hidden="true">
 																							<span>
-																								#35% Daily return </span>
+																								35% Daily return </span>
 																						</div>
 																					</li>
 																					<li class="elementor-repeater-item-4e4d4c1">
@@ -2417,6 +2417,101 @@ flexibility(document.documentElement);
 																							<h5 class="premium-testimonial-company-name">
 																								<a class="premium-testimonial-company-link" href="\#" target="_blank">
 																									<span>USA</span>
+																								</a>
+																							</h5>
+																						</div>
+																					</div>
+																					<i class="fa fa-quote-right premium-testimonial-lower-quote"></i>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-0b314b8" data-id="0b314b8" data-element_type="column">
+															<div class="elementor-column-wrap elementor-element-populated">
+																<div class="elementor-widget-wrap">
+																	<div class="elementor-element elementor-element-f6e4cad premium-testimonial-separator-row elementor-widget elementor-widget-premium-addon-testimonials" data-id="f6e4cad" data-element_type="widget" data-widget_type="premium-addon-testimonials.default">
+																		<div class="elementor-widget-container">
+
+																			<div class="premium-testimonial-box">
+																				<div class="premium-testimonial-container">
+																					<i class="fa fa-quote-left premium-testimonial-upper-quote"></i>
+																					<div class="premium-testimonial-content-wrapper">
+																						<div class="premium-testimonial-img-wrapper circle">
+																							<img src="{{asset('fxipro_v2/images/Irene_Strong.jpg')}}" alt="Irene Strong" class="premium-testimonial-person-image">
+																						</div>
+
+																						<div class="premium-testimonial-text-wrapper">
+																							<div>
+																								<p>"Pleasantly surprised by the withdrawal of money. 
+																									I didn't even expect them to arrive so quickly. 
+																									Withdrawed to Electronic wallet. Good job guys!""
+																								</p>
+																							</div>
+																						</div>
+
+																						<div class="premium-testimonial-author-info">
+																							<h3 class="premium-testimonial-person-name">
+																								<span>Irene Strong</span>
+																							</h3>
+
+																							<span class="premium-testimonial-separator">-</span>
+
+																							<h5 class="premium-testimonial-company-name">
+																								<a class="premium-testimonial-company-link" href="\#" target="_blank">
+																									<span>USA</span>
+																								</a>
+																							</h5>
+																						</div>
+																					</div>
+																					<i class="fa fa-quote-right premium-testimonial-lower-quote"></i>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-f83b97f" data-id="f83b97f" data-element_type="column">
+															<div class="elementor-column-wrap elementor-element-populated">
+																<div class="elementor-widget-wrap">
+																	<div class="elementor-element elementor-element-b8ee101 premium-testimonial-separator-row elementor-widget elementor-widget-premium-addon-testimonials" data-id="b8ee101" data-element_type="widget" data-widget_type="premium-addon-testimonials.default">
+																		<div class="elementor-widget-container">
+
+																			<div class="premium-testimonial-box">
+																				<div class="premium-testimonial-container">
+																					<i class="fa fa-quote-left premium-testimonial-upper-quote"></i>
+																					<div class="premium-testimonial-content-wrapper">
+																						<div class="premium-testimonial-img-wrapper circle">
+																							<img src="{{asset('fxipro_v2/images/Brooke_Cagle.jpg')}}" alt="Brooke Cagle" class="premium-testimonial-person-image">
+																						</div>
+
+																						<div class="premium-testimonial-text-wrapper">
+																							<div>
+																								<p>"
+																								I will not praise {{$settings->site_name}} and convince someone that 
+																								this is the best broker in the world. Let me just say that 
+																								this is a normal broker with which you can not only trade 
+																								comfortably, but also earn money. In my understanding, 
+																								“normal” is an honest broker with adequate commissions. 
+																								For a couple of years I traded from a silver account, but 
+																								in the fall of 2021 I switched to Gold. Deposits and withdrawals 
+																								via electronic wallets are almost instantaneous if you’re familiar with them"</p>
+																							</div>
+																						</div>
+
+																						<div class="premium-testimonial-author-info">
+																							<h3 class="premium-testimonial-person-name">
+																								<span>Brooke Cagle</span>
+																							</h3>
+
+																							<span class="premium-testimonial-separator">-</span>
+
+																							<h5 class="premium-testimonial-company-name">
+																								<a class="premium-testimonial-company-link" href="\#" target="_blank">
+																									<span>UK</span>
 																								</a>
 																							</h5>
 																						</div>

@@ -50,12 +50,7 @@ html{font-size:87.5%;}a,.page-title{color:#801E87;}a:hover,a:focus{color:#3a3a3a
 <link rel="stylesheet" id="google-fonts-1-css" href="{{asset('fxipro_v2/css.css')}}" media="all">
 <link rel="stylesheet" id="elementor-icons-shared-0-css" href="{{asset('fxipro_v2/fontawesome.css')}}" media="all">
 <link rel="stylesheet" id="elementor-icons-fa-solid-css" href="{{asset('fxipro_v2/solid.css')}}" media="all">
-<!--[if IE]>
-<script src='https://tradefoxe.com/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=2.5.4' id='astra-flexibility-js'></script>
-<script id='astra-flexibility-js-after'>
-flexibility(document.documentElement);
-</script>
-<![endif]-->
+
 
 
 
