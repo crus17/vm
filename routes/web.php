@@ -56,7 +56,7 @@ Route::get('cron', 'Controller@autotopup')->name('cron');
 
 // Everything About Admin Route started here
 Route::prefix('adminlogin')->group(function () {
-	Route::get('login','Admin\Auth\LoginController@showLoginForm')->name('adminloginform');
+	Route::get('login','Admin\Auth\LoginController@showLoginForm')->name('adminloginform'); 
 	Route::post('login','Admin\Auth\LoginController@adminlogin')->name('adminlogin');
 	Route::post('logout','Admin\Auth\LoginController@adminlogout')->name('adminlogout');
 	Route::get('dashboard','Admin\Auth\LoginController@validate_admin')->name('validate_admin');
