@@ -100,7 +100,7 @@ if (Auth('admin')->User()->dashboard_style == "light") {
 													Actions
 													</a>
 												<div class="dropdown-menu bg-{{Auth('admin')->User()->dashboard_style}}" aria-labelledby="dropdownMenuLink">
-													<!-- @if($list->status==NULL || $list->status=='blocked')
+													@if($list->status==NULL || $list->status=='blocked')
 													<a class="btn btn-primary btn-sm m-1" href="{{ url('admin/dashboard/uunblock') }}/{{$list->id}}">Unblock</a> 
 													@else
 													<a class="btn btn-danger btn-sm m-1" href="{{ url('admin/dashboard/uublock') }}/{{$list->id}}">Block</a>
@@ -108,14 +108,11 @@ if (Auth('admin')->User()->dashboard_style == "light") {
 													@if($list->trade_mode=='on')
 													<a class="btn btn-danger btn-sm m-1" href="{{ url('admin/dashboard/usertrademode') }}/{{$list->id}}/off">Turn off trade</a> 
 													@else
-													<a class="btn btn-primary btn-sm m-1" href="{{ url('admin/dashboard/usertrademode') }}/{{$list->id}}/on">Turn on trade</a>
+													<a class="btn btn-success btn-sm m-1" href="{{ url('admin/dashboard/usertrademode') }}/{{$list->id}}/on">Turn on trade</a>
 													@endif
-														<a href="#"  data-toggle="modal" data-target="#topupModal{{$list->id}}" class="btn btn-dark btn-sm m-1">Credit/Debit</a> -->
-														<a href="#"  data-toggle="modal" data-target="#accountStatusModal{{$list->id}}" class="btn btn-dark btn-sm m-1">Status/Level</a>
-														<!-- <a href="#" data-toggle="modal" data-target="#resetpswdModal{{$list->id}}"  class="btn btn-warning btn-sm m-1">Reset Password</a> -->
-														<!-- <a href="#" data-toggle="modal" data-target="#clearacctModal{{$list->id}}" class="btn btn-warning btn-sm m-1">Clear Account</a> -->
-														<a href="#" data-toggle="modal" data-target="#TradingModal{{$list->id}}" class="btn btn-secondary btn-sm m-1">Add Trading History</a>
-														<!-- <a href="#" data-toggle="modal" data-target="#deleteModal{{$list->id}}" class="btn btn-danger btn-sm m-1">Delete</a> -->
+														<a href="#"  data-toggle="modal" data-target="#topupModal{{$list->id}}" class="btn btn-dark btn-sm m-1">Credit/Debit</a>
+														<a href="#" data-toggle="modal" data-target="#resetpswdModal{{$list->id}}"  class="btn btn-warning btn-sm m-1">Reset Password</a>
+														<a href="#" data-toggle="modal" data-target="#deleteModal{{$list->id}}" class="btn btn-danger btn-sm m-1">Delete</a>
 														<a href="#" data-toggle="modal" data-target="#edituser{{$list->id}}" class="btn btn-secondary btn-sm m-1">Edit</a>
 														<a href="#" data-toggle="modal" data-target="#sendmailtooneuserModal{{$list->id}}" class="btn btn-info btn-sm m-1">Send Message</a>
 														<a href="#" data-toggle="modal" data-target="#switchuserModal{{$list->id}}"  class="btn btn-success btn-sm m-2">Get access</a>
@@ -124,86 +121,45 @@ if (Auth('admin')->User()->dashboard_style == "light") {
 											</td> 
 										</tr> 
 		
-										<!-- Deposit for a plan Modal -->
-										<div id="topupModal{{$list->id}}" class="modal fade" role="dialog">
-											<div class="modal-dialog">
-			
-												<!-- Modal content-->
-												<div class="modal-content">
-												<div class="modal-header bg-{{Auth('admin')->User()->dashboard_style}}">
-													
-													<h4 class="modal-title" style="text-align:center;">Credit/Debit user account.</strong></h4>
-													<button type="button" class="close text-{{$text}}" data-dismiss="modal">&times;</button>
-												</div>
-												<div class="modal-body bg-{{Auth('admin')->User()->dashboard_style}}">
-														<form style="padding:3px;" role="form" method="post" action="{{route('topup')}}">
-														<input style="padding:5px;" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" value="{{$list->name}}" type="text" disabled><br/>
-															<input style="padding:5px;" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" placeholder="Enter amount" type="text" name="amount" required><br/>
-															<div class="form-group">
-																<h5 class="text-{{$text}}">Select where to credit/debit</h5>
-																<select class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" name="type" required>
-																<option value="">Select Column</option>
-																<option value="Bonus">Bonus</option>
-																<option value="Profit">Profit</option>
-																<option value="Ref_Bonus">Ref_Bonus</option>
-																</select>
-															</div>
-															<div class="form-group">
-																<h5 class="text-{{$text}}">Select credit to add, debit to subtract.</h5>
-																<select class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" name="t_type" required>
-																<option value="">Select type</option>
-																<option value="Credit">Credit</option>
-																<option value="Debit">Debit</option>
-																</select>
-															</div>
-															<input type="hidden" name="_token" value="{{ csrf_token() }}">
-															<input type="hidden" name="user_id" value="{{$list->id}}">
-														<input type="submit" class="btn btn-{{$text}}" value="Save">
-													</form>
-												</div>
-												</div>
+											<!-- Deposit for a plan Modal -->
+											<div id="topupModal{{$list->id}}" class="modal fade" role="dialog">
+										<div class="modal-dialog">
+		
+											<!-- Modal content-->
+											<div class="modal-content">
+											<div class="modal-header bg-{{Auth('admin')->User()->dashboard_style}}">
+												
+												<h4 class="modal-title" style="text-align:center;">Credit/Debit user account.</strong></h4>
+												<button type="button" class="close text-{{$text}}" data-dismiss="modal">&times;</button>
+											</div>
+											<div class="modal-body bg-{{Auth('admin')->User()->dashboard_style}}">
+													<form style="padding:3px;" role="form" method="post" action="{{route('topup')}}">
+													<input style="padding:5px;" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" value="{{$list->name}}" type="text" disabled><br/>
+														<input style="padding:5px;" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" placeholder="Enter amount" type="text" name="amount" required><br/>
+														<div class="form-group">
+															<h5 class="text-{{$text}}">Select where to credit/debit</h5>
+															<select class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" name="type" required>
+															<option value="">Select Column</option>
+															<option value="Bonus">Bonus</option>
+															<option value="Profit">Profit</option>
+															<option value="Ref_Bonus">Ref_Bonus</option>
+															</select>
+														</div>
+														<div class="form-group">
+															<h5 class="text-{{$text}}">Select credit to add, debit to subtract.</h5>
+															<select class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" name="t_type" required>
+															<option value="">Select type</option>
+															<option value="Credit">Credit</option>
+															<option value="Debit">Debit</option>
+															</select>
+														</div>
+														<input type="hidden" name="_token" value="{{ csrf_token() }}">
+														<input type="hidden" name="user_id" value="{{$list->id}}">
+													<input type="submit" class="btn btn-{{$text}}" value="Save">
+												</form>
+											</div>
 											</div>
 										</div>
-										<!-- /deposit for a plan Modal -->
-
-										<!-- Update Account Modal -->
-										<div id="accountStatusModal{{$list->id}}" class="modal fade" role="dialog">
-											<div class="modal-dialog">
-			
-												<!-- Modal content-->
-												<div class="modal-content">
-												<div class="modal-header bg-{{Auth('admin')->User()->dashboard_style}}">
-													
-													<h4 class="modal-title" style="text-align:center;">Update Account Status</strong></h4>
-													<button type="button" class="close text-{{$text}}" data-dismiss="modal">&times;</button>
-												</div>
-												<div class="modal-body bg-{{Auth('admin')->User()->dashboard_style}}">
-														<form style="padding:3px;" role="form" method="post" action="{{route('status')}}">
-														<input style="padding:5px;" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" value="{{$list->name}}" type="text" disabled><br/>
-															<div class="form-group">
-																<h5 class="text-{{$text}}">Account Status</h5>
-																<select class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" name="acc_status" required>
-																<option value="Active">Active</option>
-																<option value="Paused">Paused</option>
-																<option value="Paused">Paused</option>
-																<option value="Pending withdrawal">Pending withdrawal</option>
-																</select>
-															</div>
-															<div class="form-group">
-																<h5 class="text-{{$text}}">Account Level</h5>
-																<select class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" name="acc_level" required>
-																<option value="1">1</option>
-																<option value="2">2</option>
-																<option value="3">3</option>
-																</select>
-															</div>
-															<input type="hidden" name="_token" value="{{ csrf_token() }}">
-															<input type="hidden" name="user_id" value="{{$list->id}}">
-														<input type="submit" class="btn btn-{{$text}}" value="Save">
-													</form>
-												</div>
-												</div>
-											</div>
 										</div>
 										<!-- /deposit for a plan Modal -->
 		

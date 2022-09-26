@@ -420,19 +420,24 @@ capital. To ensure that they don’t lose all of their investments.</li></ul></d
 </div>
 <div class="elementor-element elementor-element-cb3b07f elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="cb3b07f" data-element_type="widget" data-widget_type="icon-list.default">
 <div class="elementor-widget-container">
-						<ul class="elementor-icon-list-items">
-			<li class="elementor-icon-list-item">
-							<span class="elementor-icon-list-icon">
-				<img src="{{asset('fxipro_v2/map.png')}}" aria-hidden="true"> 		</span>
-						<span class="elementor-icon-list-text">1710 13th St, San Diego, CA</span>
-					</li>
-				<li class="elementor-icon-list-item">
-							<span class="elementor-icon-list-icon">
-			<img src="{{asset('fxipro_v2/mail.png')}}" aria-hidden="true">					</span>
-						<span class="elementor-icon-list-text">{{$settings->contact_email}}</span>
-					</li>
-			
-		</ul>
+<ul class="elementor-icon-list-items">
+	<li class="elementor-icon-list-item">
+		<span class="elementor-icon-list-icon">
+		<i class="fa fa-map-marker" aria-hidden="true"></i>
+		<span class="elementor-icon-list-text">1710 13th St, San Diego, CA</span>
+	</li>
+	<li class="elementor-icon-list-item">
+		<span class="elementor-icon-list-icon">
+		<i class="fa fa-phone-square" aria-hidden="true"></i>
+		<span class="elementor-icon-list-text">{{$settings->contact_number}}</span>
+	</li>
+	<li class="elementor-icon-list-item">
+		<span class="elementor-icon-list-icon">
+		<i class="fa fa-envelope-o" aria-hidden="true"></i>
+		<span class="elementor-icon-list-text">{{$settings->contact_email}}</span>
+	</li>
+
+</ul>
 </div>
 </div>
 		</div>

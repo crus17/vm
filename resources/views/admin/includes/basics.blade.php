@@ -85,46 +85,6 @@
                     </div>
                 </div>
             </div>
-
-            <div class="panel panel-default" style="border:0px solid #fff;">
-                        <!-- Panel Heading Starts -->
-                <div class="panel-heading">
-                    <h4 class="panel-title text-{{$text}}">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#eth">
-                        Ethereum <i class="fa fa-arrow-down"></i>  </a>
-                    </h4>
-                </div>
-                    
-                <div id="eth" class="panel-collapse collapse">
-                    <div class="sign-u">
-                    <div class="sign-up1">
-                        <h4 class="text-{{$text}}">ETH address :</h4>
-                    </div>
-                    <div class="sign-up2">
-                        <input type="text" name="eth_address" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" value="{{$settings->eth_address}}">
-                    </div>
-                </div>
-            </div>
-
-            <div class="panel panel-default" style="border:0px solid #fff;">
-                        <!-- Panel Heading Starts -->
-                <div class="panel-heading">
-                    <h4 class="panel-title text-{{$text}}">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#ltc">
-                        Litecoin <i class="fa fa-arrow-down"></i>  </a>
-                    </h4>
-                </div>
-                    
-                <div id="ltc" class="panel-collapse collapse">
-                    <div class="sign-u">
-                    <div class="sign-up1">
-                        <h4 class="text-{{$text}}">LTC address :</h4>
-                    </div>
-                    <div class="sign-up2">
-                        <input type="text" name="ltc_address" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" value="{{$settings->ltc_address}}">
-                    </div>
-                </div>
-            </div>
         </div>
         
         <div class="sign-u">
@@ -134,8 +94,6 @@
             <div class="sign-up2">
             <input type="checkbox" id="check1" value="1" name="payment_mode1"> Bank transfer &nbsp; &nbsp;
             <input type="checkbox" id="check2" value="2" name="payment_mode2"> Bitcoin <br>
-            <input type="checkbox" id="check3" value="3" name="payment_mode3"> Ethereum <br>
-            <input type="checkbox" id="check4" value="4" name="payment_mode4"> Litecoin <br>
             &nbsp; &nbsp; <br> <br> <br>
             
             </div>
@@ -151,16 +109,6 @@
                 if($pmode==2){
                     echo'
                     <script>document.getElementById("check2").checked= true;</script>
-                    ';
-                }
-                if($pmode==3){
-                    echo'
-                    <script>document.getElementById("check3").checked= true;</script>
-                    ';
-                }
-                if($pmode==4){
-                    echo'
-                    <script>document.getElementById("check4").checked= true;</script>
                     ';
                 }
             }

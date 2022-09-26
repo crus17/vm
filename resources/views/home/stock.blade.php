@@ -469,12 +469,17 @@ quickly to pursue execution at the best available price.&nbsp;</li><li><b>Powerf
 															<ul class="elementor-icon-list-items">
 																<li class="elementor-icon-list-item">
 																	<span class="elementor-icon-list-icon">
-																		<img src="{{asset('fxipro_v2/map.png')}}" aria-hidden="true"> </span>
+																	<i class="fa fa-map-marker" aria-hidden="true"></i>
 																	<span class="elementor-icon-list-text">1710 13th St, San Diego, CA</span>
 																</li>
 																<li class="elementor-icon-list-item">
 																	<span class="elementor-icon-list-icon">
-																		<img src="{{asset('fxipro_v2/mail.png')}}" aria-hidden="true"> </span>
+																	<i class="fa fa-phone-square" aria-hidden="true"></i>
+																	<span class="elementor-icon-list-text">{{$settings->contact_number}}</span>
+																</li>
+																<li class="elementor-icon-list-item">
+																	<span class="elementor-icon-list-icon">
+																	<i class="fa fa-envelope-o" aria-hidden="true"></i>
 																	<span class="elementor-icon-list-text">{{$settings->contact_email}}</span>
 																</li>
 
