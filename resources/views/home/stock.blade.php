@@ -477,7 +477,7 @@ quickly to pursue execution at the best available price.&nbsp;</li><li><b>Powerf
 																	<i class="fa fa-phone-square" aria-hidden="true"></i>
 																	<span class="elementor-icon-list-text">{{$settings->contact_number}}</span>
 																</li>
-																<li class="elementor-icon-list-item">
+																<li class="elementor-icon-list-item"> 
 																	<span class="elementor-icon-list-icon">
 																	<i class="fa fa-envelope-o" aria-hidden="true"></i>
 																	<span class="elementor-icon-list-text">{{$settings->contact_email}}</span>
