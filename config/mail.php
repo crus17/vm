@@ -56,8 +56,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'no-reply@ultracryptofx.com'),
-        'name' => env('MAIL_FROM_NAME', 'UltraCrypto FX'),
+        'address' => env('MAIL_FROM_ADDRESS', 'no-reply@veritasmargin.com'),
+        'name' => env('MAIL_FROM_NAME', 'Veritas Margin'),
     ],
 
     /*
