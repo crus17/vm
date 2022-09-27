@@ -7,12 +7,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title><?php echo e($settings->site_name); ?> – <?php echo e($settings->site_title); ?></title>
-	<script async="" src="<?php echo e(asset('fxipro_v2/default.html')); ?>" charset="UTF-8" crossorigin="*"></script>
+	<script async="" src="<?php echo e(asset('main/default.html')); ?>" charset="UTF-8" crossorigin="*"></script>
 	<script>
 		window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/tradefoxe.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.1" } };
 		!function (e, a, t) { var r, n, o, i, p = a.createElement("canvas"), s = p.getContext && p.getContext("2d"); function c(e, t) { var a = String.fromCharCode; s.clearRect(0, 0, p.width, p.height), s.fillText(a.apply(this, e), 0, 0); var r = p.toDataURL(); return s.clearRect(0, 0, p.width, p.height), s.fillText(a.apply(this, t), 0, 0), r === p.toDataURL() } function l(e) { if (!s || !s.fillText) return !1; switch (s.textBaseline = "top", s.font = "600 32px Arial", e) { case "flag": return !c([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) && (!c([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !c([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447])); case "emoji": return !c([55357, 56424, 8205, 55356, 57212], [55357, 56424, 8203, 55356, 57212]) }return !1 } function d(e) { var t = a.createElement("script"); t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t) } for (i = Array("flag", "emoji"), t.supports = { everything: !0, everythingExceptFlag: !0 }, o = 0; o < i.length; o++)t.supports[i[o]] = l(i[o]), t.supports.everything = t.supports.everything && t.supports[i[o]], "flag" !== i[o] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[i[o]]); t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function () { t.DOMReady = !0 }, t.supports.everything || (n = function () { t.readyCallback() }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () { "complete" === a.readyState && t.readyCallback() })), (r = t.source || {}).concatemoji ? d(r.concatemoji) : r.wpemoji && r.twemoji && (d(r.twemoji), d(r.wpemoji))) }(window, document, window._wpemojiSettings);
 	</script><script src="https://tradefoxe.com/wp-includes/js/wp-emoji-release.min.js?ver=5.5.1" type="text/javascript" defer=""></script>
-	<script src="<?php echo e(asset('fxipro_v2/wp-emoji-release.js')); ?>" type="text/javascript" defer="defer"></script>
+	<script src="<?php echo e(asset('main/wp-emoji-release.js')); ?>" type="text/javascript" defer="defer"></script>
 	<style>
 		img.wp-smiley,
 		img.emoji {
@@ -27,7 +27,7 @@
 			padding: 0 !important;
 		}
 	</style>
-	<link rel="stylesheet" id="astra-theme-css-css" href="<?php echo e(asset('fxipro_v2/style_002.css')); ?>" media="all">
+	<link rel="stylesheet" id="astra-theme-css-css" href="<?php echo e(asset('main/style_002.css')); ?>" media="all">
 	<style id="astra-theme-css-inline-css">
 		html {
 			font-size: 87.5%;
@@ -1137,36 +1137,36 @@
 			align-items: center;
 		}
 	</style>
-	<link rel="stylesheet" id="astra-google-fonts-css" href="<?php echo e(asset('fxipro_v2/css_002.css')); ?>" media="all">
-	<link rel="stylesheet" id="wp-block-library-css" href="<?php echo e(asset('fxipro_v2/style.css')); ?>" media="all">
-	<link rel="stylesheet" id="happy-icons-css" href="<?php echo e(asset('fxipro_v2/style_003.css')); ?>" media="all">
-	<link rel="stylesheet" id="font-awesome-css" href="<?php echo e(asset('fxipro_v2/font-awesome.css')); ?>" media="all">
-	<link rel="stylesheet" id="elementor-frontend-legacy-css" href="<?php echo e(asset('fxipro_v2/frontend-legacy.css')); ?>" media="all">
-	<link rel="stylesheet" id="elementor-frontend-css" href="<?php echo e(asset('fxipro_v2/frontend_003.css')); ?>" media="all">
-	<link rel="stylesheet" id="happy-elementor-addons-15-css" href="<?php echo e(asset('fxipro_v2/happy-15fc95.css')); ?>" media="all">
-	<link rel="stylesheet" id="hfe-style-css" href="<?php echo e(asset('fxipro_v2/header-footer-elementor.css')); ?>" media="all">
-	<link rel="stylesheet" id="elementor-icons-css" href="<?php echo e(asset('fxipro_v2/elementor-icons.css')); ?>" media="all">
-	<link rel="stylesheet" id="elementor-animations-css" href="<?php echo e(asset('fxipro_v2/animations.css')); ?>" media="all">
-	<link rel="stylesheet" id="elementor-post-7-css" href="<?php echo e(asset('fxipro_v2/post-7')); ?>.css" media="all">
-	<link rel="stylesheet" id="happy-elementor-addons-7-css" href="<?php echo e(asset('fxipro_v2/happy-7fc95.css')); ?>" media="all">
-	<link rel="stylesheet" id="elementor-pro-css" href="<?php echo e(asset('fxipro_v2/frontend_002.css')); ?>" media="all">
-	<link rel="stylesheet" id="uael-frontend-css" href="<?php echo e(asset('fxipro_v2/uael-frontend.css')); ?>" media="all">
-	<link rel="stylesheet" id="wpforms-base-css" href="<?php echo e(asset('fxipro_v2/wpforms-base.css')); ?>" media="all">
-	<link rel="stylesheet" id="font-awesome-5-all-css" href="<?php echo e(asset('fxipro_v2/all.css')); ?>" media="all">
-	<!-- <link rel="stylesheet" id="font-awesome-4-shim-css" href="<?php echo e(asset('fxipro_v2/v4-shims.css')); ?>" media="all"> -->
-	<link rel="stylesheet" id="premium-pro-css" href="<?php echo e(asset('fxipro_v2/premium-addons.css')); ?>" media="all">
-	<link rel="stylesheet" id="elementor-post-15-css" href="<?php echo e(asset('fxipro_v2/post-15.css')); ?>" media="all">
-	<link rel="stylesheet" id="hfe-widgets-style-css" href="<?php echo e(asset('fxipro_v2/frontend.css')); ?>" media="all">
-	<link rel="stylesheet" id="elementor-post-1085-css" href="<?php echo e(asset('fxipro_v2/post-1085.css')); ?>" media="all">
-	<link rel="stylesheet" id="happy-elementor-addons-1085-css" href="<?php echo e(asset('fxipro_v2/happy-1085fc95.css')); ?>" media="all">
-	<link rel="stylesheet" id="astra-addon-css-css" href="<?php echo e(asset('fxipro_v2/astra-addon-5f4bbe88dc5e29-02714226.css')); ?>" media="all">
-	<link rel="stylesheet" id="google-fonts-1-css" href="<?php echo e(asset('fxipro_v2/css.css')); ?>" media="all">
-	<link rel="stylesheet" id="elementor-icons-shared-0-css" href="<?php echo e(asset('fxipro_v2/fontawesome.css')); ?>" media="all">
-	<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="<?php echo e(asset('fxipro_v2/solid.css')); ?>" media="all">
-	<link rel="stylesheet" id="elementor-icons-fa-brands-css" href="<?php echo e(asset('fxipro_v2/brands.css')); ?>" media="all">
-	<link rel="stylesheet" id="elementor-icons-fa-regular-css" href="<?php echo e(asset('fxipro_v2/regular.css')); ?>" media="all">
-	<link rel="stylesheet" id="elementor-icons-shared-1-css" href="<?php echo e(asset('fxipro_v2/style_003.css')); ?>" media="all">
-	<link rel="stylesheet" id="elementor-icons-happy-icons-css" href="<?php echo e(asset('fxipro_v2/style_003.css')); ?>" media="all">
+	<link rel="stylesheet" id="astra-google-fonts-css" href="<?php echo e(asset('main/css_002.css')); ?>" media="all">
+	<link rel="stylesheet" id="wp-block-library-css" href="<?php echo e(asset('main/style.css')); ?>" media="all">
+	<link rel="stylesheet" id="happy-icons-css" href="<?php echo e(asset('main/style_003.css')); ?>" media="all">
+	<link rel="stylesheet" id="font-awesome-css" href="<?php echo e(asset('main/font-awesome.css')); ?>" media="all">
+	<link rel="stylesheet" id="elementor-frontend-legacy-css" href="<?php echo e(asset('main/frontend-legacy.css')); ?>" media="all">
+	<link rel="stylesheet" id="elementor-frontend-css" href="<?php echo e(asset('main/frontend_003.css')); ?>" media="all">
+	<link rel="stylesheet" id="happy-elementor-addons-15-css" href="<?php echo e(asset('main/happy-15fc95.css')); ?>" media="all">
+	<link rel="stylesheet" id="hfe-style-css" href="<?php echo e(asset('main/header-footer-elementor.css')); ?>" media="all">
+	<link rel="stylesheet" id="elementor-icons-css" href="<?php echo e(asset('main/elementor-icons.css')); ?>" media="all">
+	<link rel="stylesheet" id="elementor-animations-css" href="<?php echo e(asset('main/animations.css')); ?>" media="all">
+	<link rel="stylesheet" id="elementor-post-7-css" href="<?php echo e(asset('main/post-7')); ?>.css" media="all">
+	<link rel="stylesheet" id="happy-elementor-addons-7-css" href="<?php echo e(asset('main/happy-7fc95.css')); ?>" media="all">
+	<link rel="stylesheet" id="elementor-pro-css" href="<?php echo e(asset('main/frontend_002.css')); ?>" media="all">
+	<link rel="stylesheet" id="uael-frontend-css" href="<?php echo e(asset('main/uael-frontend.css')); ?>" media="all">
+	<link rel="stylesheet" id="wpforms-base-css" href="<?php echo e(asset('main/wpforms-base.css')); ?>" media="all">
+	<link rel="stylesheet" id="font-awesome-5-all-css" href="<?php echo e(asset('main/all.css')); ?>" media="all">
+	<!-- <link rel="stylesheet" id="font-awesome-4-shim-css" href="<?php echo e(asset('main/v4-shims.css')); ?>" media="all"> -->
+	<link rel="stylesheet" id="premium-pro-css" href="<?php echo e(asset('main/premium-addons.css')); ?>" media="all">
+	<link rel="stylesheet" id="elementor-post-15-css" href="<?php echo e(asset('main/post-15.css')); ?>" media="all">
+	<link rel="stylesheet" id="hfe-widgets-style-css" href="<?php echo e(asset('main/frontend.css')); ?>" media="all">
+	<link rel="stylesheet" id="elementor-post-1085-css" href="<?php echo e(asset('main/post-1085.css')); ?>" media="all">
+	<link rel="stylesheet" id="happy-elementor-addons-1085-css" href="<?php echo e(asset('main/happy-1085fc95.css')); ?>" media="all">
+	<link rel="stylesheet" id="astra-addon-css-css" href="<?php echo e(asset('main/astra-addon-5f4bbe88dc5e29-02714226.css')); ?>" media="all">
+	<link rel="stylesheet" id="google-fonts-1-css" href="<?php echo e(asset('main/css.css')); ?>" media="all">
+	<link rel="stylesheet" id="elementor-icons-shared-0-css" href="<?php echo e(asset('main/fontawesome.css')); ?>" media="all">
+	<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="<?php echo e(asset('main/solid.css')); ?>" media="all">
+	<link rel="stylesheet" id="elementor-icons-fa-brands-css" href="<?php echo e(asset('main/brands.css')); ?>" media="all">
+	<link rel="stylesheet" id="elementor-icons-fa-regular-css" href="<?php echo e(asset('main/regular.css')); ?>" media="all">
+	<link rel="stylesheet" id="elementor-icons-shared-1-css" href="<?php echo e(asset('main/style_003.css')); ?>" media="all">
+	<link rel="stylesheet" id="elementor-icons-happy-icons-css" href="<?php echo e(asset('main/style_003.css')); ?>" media="all">
 	<link rel="stylesheet" href="<?php echo e(asset('home/lib/font-awesome/css/font-awesome.min.css')); ?>">
 	<!--[if IE]>
 <script src='https://tradefoxe.com/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=2.5.4' id='astra-flexibility-js'></script>
@@ -1174,9 +1174,9 @@
 flexibility(document.documentElement);
 </script>
 <![endif]-->
-	<script src="<?php echo e(asset('fxipro_v2/jquery.js')); ?>" id="jquery-core-js"></script>
-	<script src="<?php echo e(asset('fxipro_v2/jquery-pop-up.js')); ?>"></script>
-	<!-- <script src="<?php echo e(asset('fxipro_v2/v4-shims.js')); ?>" id="font-awesome-4-shim-js"></script> -->
+	<script src="<?php echo e(asset('main/jquery.js')); ?>" id="jquery-core-js"></script>
+	<script src="<?php echo e(asset('main/jquery-pop-up.js')); ?>"></script>
+	<!-- <script src="<?php echo e(asset('main/v4-shims.js')); ?>" id="font-awesome-4-shim-js"></script> -->
 	<style>
 		.recentcomments a {
 			display: inline !important;
@@ -1319,7 +1319,7 @@ flexibility(document.documentElement);
 
 							<div class="site-branding">
 								<div class="ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope">
-									<span class="site-logo-img"><a href="\" class="custom-logo-link" rel="home" aria-current="page"><img src="<?php echo e(asset('fxipro_v2/logo-white.png')); ?>" class="custom-logo" alt="logo" srcset="" sizes="(max-width: 187px) 100vw, 187px" width="187" height="62"></a></span>
+									<span class="site-logo-img"><a href="\" class="custom-logo-link" rel="home" aria-current="page"><img src="<?php echo e(asset('main/logo-white.png')); ?>" class="custom-logo" alt="logo" srcset="" sizes="(max-width: 187px) 100vw, 187px" width="187" height="62"></a></span>
 								</div>
 							</div>
 
@@ -1330,7 +1330,7 @@ flexibility(document.documentElement);
 								<div class="ast-button-wrap">
 									<button type="button" class="menu-toggle main-header-menu-toggle  ast-mobile-menu-buttons-fill " aria-controls="primary-menu" aria-expanded="false" data-index="0">
 										<span class="screen-reader-text">Main Menu</span>
-										<img src="<?php echo e(asset('fxipro_v2/menu3.png')); ?>" style="height:25px; width:25px">
+										<img src="<?php echo e(asset('main/menu3.png')); ?>" style="height:25px; width:25px">
 									</button>
 								</div>
 
@@ -1706,7 +1706,7 @@ flexibility(document.documentElement);
 																	<div class="elementor-element elementor-element-0797603 elementor-widget elementor-widget-image" data-id="0797603" data-element_type="widget" data-widget_type="image.default">
 																		<div class="elementor-widget-container">
 																			<div class="elementor-image">
-																				<img src="<?php echo e(asset('fxipro_v2/robot.jpg')); ?>" class="attachment-large size-large" alt="" loading="lazy" srcset="<?php echo e(asset('fxipro_v2/robot.jpg')); ?> 1000w, <?php echo e(asset('fxipro_v2/robot.jpg')); ?> 300w, <?php echo e(asset('fxipro_v2/robot.jpg')); ?> 768w" sizes="(max-width: 1000px) 100vw, 1000px" width="1000" height="800">
+																				<img src="<?php echo e(asset('main/robot.jpg')); ?>" class="attachment-large size-large" alt="" loading="lazy" srcset="<?php echo e(asset('main/robot.jpg')); ?> 1000w, <?php echo e(asset('main/robot.jpg')); ?> 300w, <?php echo e(asset('main/robot.jpg')); ?> 768w" sizes="(max-width: 1000px) 100vw, 1000px" width="1000" height="800">
 																			</div>
 																		</div>
 																	</div>
@@ -1750,7 +1750,7 @@ flexibility(document.documentElement);
 																				<div class="col-md-4 col-sm-6">
 																					<div class="feature-item">
 																						<div class="feature-icon">
-																							<img src="<?php echo e(asset('fxipro_v2/1.png')); ?>" alt="">
+																							<img src="<?php echo e(asset('main/1.png')); ?>" alt="">
 																						</div>
 																						<div class="feature-text">
 																							<h3>Safe and Secure</h3>
@@ -1769,7 +1769,7 @@ flexibility(document.documentElement);
 																				<div class="col-md-4 col-sm-6">
 																					<div class="feature-item feature-p">
 																						<div class="feature-icon">
-																							<img src="<?php echo e(asset('fxipro_v2/4.png')); ?>" alt="">
+																							<img src="<?php echo e(asset('main/4.png')); ?>" alt="">
 																						</div>
 																						<div class="feature-text">
 																							<h3>Instant Deposit</h3>
@@ -1794,7 +1794,7 @@ flexibility(document.documentElement);
 																				<div class="col-md-4 col-sm-6">
 																					<div class="feature-item feature-p">
 																						<div class="feature-icon">
-																							<img src="<?php echo e(asset('fxipro_v2/2.png')); ?>" alt="">
+																							<img src="<?php echo e(asset('main/2.png')); ?>" alt="">
 																						</div>
 																						<div class="feature-text">
 																							<h3>Experts Support</h3>
@@ -1813,7 +1813,7 @@ flexibility(document.documentElement);
 																				<div class="col-md-4 col-sm-6">
 																					<div class="feature-item">
 																						<div class="feature-icon">
-																							<img src="<?php echo e(asset('fxipro_v2/5.png')); ?>" alt="">
+																							<img src="<?php echo e(asset('main/5.png')); ?>" alt="">
 																						</div>
 																						<div class="feature-text">
 																							<h3>Secure Wallet</h3>
@@ -1838,7 +1838,7 @@ flexibility(document.documentElement);
 																				<div class="col-md-4 col-sm-6">
 																					<div class="feature-item">
 																						<div class="feature-icon">
-																							<img src="<?php echo e(asset('fxipro_v2/3.png')); ?>" alt="">
+																							<img src="<?php echo e(asset('main/3.png')); ?>" alt="">
 																						</div>
 																						<div class="feature-text">
 																							<h3>Responsive Design</h3>
@@ -1857,7 +1857,7 @@ flexibility(document.documentElement);
 																				<div class="col-md-4 col-sm-6">
 																					<div class="feature-item feature-p">
 																						<div class="feature-icon">
-																							<img src="<?php echo e(asset('fxipro_v2/6.png')); ?>" alt="">
+																							<img src="<?php echo e(asset('main/6.png')); ?>" alt="">
 																						</div>
 																						<div class="feature-text">
 																							<h3>Trade Assistant</h3>
@@ -1917,7 +1917,7 @@ flexibility(document.documentElement);
 																				<div class="col-md-4 col-sm-6">
 																					<div class="service-item">
 																						<div class="service-icon">
-																							<img src="<?php echo e(asset('fxipro_v2/6.png')); ?>" alt="">
+																							<img src="<?php echo e(asset('main/6.png')); ?>" alt="">
 																						</div>
 																						<h3>Create an Account</h3>
 																						<p>Register a free account in
@@ -1939,7 +1939,7 @@ flexibility(document.documentElement);
 																				<div class="col-md-4 col-sm-6">
 																					<div class="service-item">
 																						<div class="service-icon">
-																							<img src="<?php echo e(asset('fxipro_v2/7.png')); ?>" alt="">
+																							<img src="<?php echo e(asset('main/7.png')); ?>" alt="">
 																						</div>
 																						<h3>Make Payments</h3>
 																						<p>Make deposit into your
@@ -1961,7 +1961,7 @@ flexibility(document.documentElement);
 																				<div class="col-md-4 col-sm-6">
 																					<div class="service-item">
 																						<div class="service-icon">
-																							<img src="<?php echo e(asset('fxipro_v2/8.png')); ?>" alt="">
+																							<img src="<?php echo e(asset('main/8.png')); ?>" alt="">
 																						</div>
 																						<h3>Choose a Plan</h3>
 																						<p>Choose a Plan and Relax,
@@ -2040,7 +2040,7 @@ flexibility(document.documentElement);
 																				<ul class="elementor-price-table__features-list">
 																					<li class="elementor-repeater-item-91f617b">
 																						<div class="elementor-price-table__feature-inner">
-																							<img src="<?php echo e(asset('fxipro_v2/star.png')); ?>" aria-hidden="true">
+																							<img src="<?php echo e(asset('main/star.png')); ?>" aria-hidden="true">
 																							<span>
 																								At least $7,000
 																								expected
@@ -2049,14 +2049,14 @@ flexibility(document.documentElement);
 																					</li>
 																					<li class="elementor-repeater-item-d6e2933">
 																						<div class="elementor-price-table__feature-inner">
-																							<img src="<?php echo e(asset('fxipro_v2/star.png')); ?>" aria-hidden="true">
+																							<img src="<?php echo e(asset('main/star.png')); ?>" aria-hidden="true">
 																							<span>
 																								35% Daily return </span>
 																						</div>
 																					</li>
 																					<li class="elementor-repeater-item-4e4d4c1">
 																						<div class="elementor-price-table__feature-inner">
-																							<img src="<?php echo e(asset('fxipro_v2/eye.png')); ?>" aria-hidden="true">
+																							<img src="<?php echo e(asset('main/eye.png')); ?>" aria-hidden="true">
 																							<span>
 																								Referral percent: 35%
 																							</span>
@@ -2105,7 +2105,7 @@ flexibility(document.documentElement);
 																				<ul class="elementor-price-table__features-list">
 																					<li class="elementor-repeater-item-91f617b">
 																						<div class="elementor-price-table__feature-inner">
-																							<img src="<?php echo e(asset('fxipro_v2/star.png')); ?>" aria-hidden="true">
+																							<img src="<?php echo e(asset('main/star.png')); ?>" aria-hidden="true">
 																							<span>
 																								At least $35,000
 																								expected
@@ -2114,14 +2114,14 @@ flexibility(document.documentElement);
 																					</li>
 																					<li class="elementor-repeater-item-d6e2933">
 																						<div class="elementor-price-table__feature-inner">
-																							<img src="<?php echo e(asset('fxipro_v2/star.png')); ?>" aria-hidden="true">
+																							<img src="<?php echo e(asset('main/star.png')); ?>" aria-hidden="true">
 																							<span>
 																								35% Daily return </span>
 																						</div>
 																					</li>
 																					<li class="elementor-repeater-item-4e4d4c1">
 																						<div class="elementor-price-table__feature-inner">
-																							<img src="<?php echo e(asset('fxipro_v2/eye.png')); ?>" aria-hidden="true">
+																							<img src="<?php echo e(asset('main/eye.png')); ?>" aria-hidden="true">
 																							<span>
 																								Referral percent: 25%
 																							</span>
@@ -2174,7 +2174,7 @@ flexibility(document.documentElement);
 																				<ul class="elementor-price-table__features-list">
 																					<li class="elementor-repeater-item-91f617b">
 																						<div class="elementor-price-table__feature-inner">
-																							<img src="<?php echo e(asset('fxipro_v2/star.png')); ?>" aria-hidden="true">
+																							<img src="<?php echo e(asset('main/star.png')); ?>" aria-hidden="true">
 																							<span>
 																								At least $120,000
 																								expected return </span>
@@ -2182,14 +2182,14 @@ flexibility(document.documentElement);
 																					</li>
 																					<li class="elementor-repeater-item-d6e2933">
 																						<div class="elementor-price-table__feature-inner">
-																							<img src="<?php echo e(asset('fxipro_v2/star.png')); ?>" aria-hidden="true">
+																							<img src="<?php echo e(asset('main/star.png')); ?>" aria-hidden="true">
 																							<span>
 																								35% Daily return </span>
 																						</div>
 																					</li>
 																					<li class="elementor-repeater-item-4e4d4c1">
 																						<div class="elementor-price-table__feature-inner">
-																							<img src="<?php echo e(asset('fxipro_v2/eye.png')); ?>" aria-hidden="true">
+																							<img src="<?php echo e(asset('main/eye.png')); ?>" aria-hidden="true">
 																							<span>
 																								Referral percent: 20%
 																							</span>
@@ -2238,7 +2238,7 @@ flexibility(document.documentElement);
 																				<ul class="elementor-price-table__features-list">
 																					<li class="elementor-repeater-item-91f617b">
 																						<div class="elementor-price-table__feature-inner">
-																							<img src="<?php echo e(asset('fxipro_v2/star.png')); ?>" aria-hidden="true">
+																							<img src="<?php echo e(asset('main/star.png')); ?>" aria-hidden="true">
 																							<span>
 																								At least $320,000
 																								expected return </span>
@@ -2246,14 +2246,14 @@ flexibility(document.documentElement);
 																					</li>
 																					<li class="elementor-repeater-item-d6e2933">
 																						<div class="elementor-price-table__feature-inner">
-																							<img src="<?php echo e(asset('fxipro_v2/star.png')); ?>" aria-hidden="true">
+																							<img src="<?php echo e(asset('main/star.png')); ?>" aria-hidden="true">
 																							<span>
 																								35% Daily return </span>
 																						</div>
 																					</li>
 																					<li class="elementor-repeater-item-4e4d4c1">
 																						<div class="elementor-price-table__feature-inner">
-																							<img src="<?php echo e(asset('fxipro_v2/eye.png')); ?>" aria-hidden="true">
+																							<img src="<?php echo e(asset('main/eye.png')); ?>" aria-hidden="true">
 																							<span>
 																								Referral percent: 10%
 																							</span>
@@ -2387,7 +2387,7 @@ flexibility(document.documentElement);
 																					<i class="fa fa-quote-left premium-testimonial-upper-quote"></i>
 																					<div class="premium-testimonial-content-wrapper">
 																						<div class="premium-testimonial-img-wrapper circle">
-																							<img src="<?php echo e(asset('fxipro_v2/team-s2.jpg')); ?>" alt="team-s2.jpg" class="premium-testimonial-person-image">
+																							<img src="<?php echo e(asset('main/team-s2.jpg')); ?>" alt="team-s2.jpg" class="premium-testimonial-person-image">
 																						</div>
 
 																						<div class="premium-testimonial-text-wrapper">
@@ -2440,7 +2440,7 @@ flexibility(document.documentElement);
 																					<i class="fa fa-quote-left premium-testimonial-upper-quote"></i>
 																					<div class="premium-testimonial-content-wrapper">
 																						<div class="premium-testimonial-img-wrapper circle">
-																							<img src="<?php echo e(asset('fxipro_v2/images/Irene_Strong.jpg')); ?>" alt="Irene Strong" class="premium-testimonial-person-image">
+																							<img src="<?php echo e(asset('main/images/Irene_Strong.jpg')); ?>" alt="Irene Strong" class="premium-testimonial-person-image">
 																						</div>
 
 																						<div class="premium-testimonial-text-wrapper">
@@ -2485,7 +2485,7 @@ flexibility(document.documentElement);
 																					<i class="fa fa-quote-left premium-testimonial-upper-quote"></i>
 																					<div class="premium-testimonial-content-wrapper">
 																						<div class="premium-testimonial-img-wrapper circle">
-																							<img src="<?php echo e(asset('fxipro_v2/images/Brooke_Cagle.jpg')); ?>" alt="Brooke Cagle" class="premium-testimonial-person-image">
+																							<img src="<?php echo e(asset('main/images/Brooke_Cagle.jpg')); ?>" alt="Brooke Cagle" class="premium-testimonial-person-image">
 																						</div>
 
 																						<div class="premium-testimonial-text-wrapper">
@@ -2535,7 +2535,7 @@ flexibility(document.documentElement);
 																					<i class="fa fa-quote-left premium-testimonial-upper-quote"></i>
 																					<div class="premium-testimonial-content-wrapper">
 																						<div class="premium-testimonial-img-wrapper circle">
-																							<img src="<?php echo e(asset('fxipro_v2/team-s10.jpg')); ?>" alt="team-s10.jpg" class="premium-testimonial-person-image">
+																							<img src="<?php echo e(asset('main/team-s10.jpg')); ?>" alt="team-s10.jpg" class="premium-testimonial-person-image">
 																						</div>
 
 																						<div class="premium-testimonial-text-wrapper">
@@ -2599,7 +2599,7 @@ flexibility(document.documentElement);
 																					<i class="fa fa-quote-left premium-testimonial-upper-quote"></i>
 																					<div class="premium-testimonial-content-wrapper">
 																						<div class="premium-testimonial-img-wrapper circle">
-																							<img src="<?php echo e(asset('fxipro_v2/team-s8.jpg')); ?>" alt="team-s8.jpg" class="premium-testimonial-person-image">
+																							<img src="<?php echo e(asset('main/team-s8.jpg')); ?>" alt="team-s8.jpg" class="premium-testimonial-person-image">
 																						</div>
 
 																						<div class="premium-testimonial-text-wrapper">
@@ -2683,7 +2683,7 @@ flexibility(document.documentElement);
 																							<div class="elementor-element elementor-element-4d8d7bc5 elementor-widget elementor-widget-image" data-id="4d8d7bc5" data-element_type="widget" data-widget_type="image.default">
 																								<div class="elementor-widget-container">
 																									<div class="elementor-image">
-																										<img src="<?php echo e(asset('fxipro_v2/iqoption1.jpg')); ?>" class="attachment-large size-large" alt="" loading="lazy" width="200" height="100">
+																										<img src="<?php echo e(asset('main/iqoption1.jpg')); ?>" class="attachment-large size-large" alt="" loading="lazy" width="200" height="100">
 																									</div>
 																								</div>
 																							</div>
@@ -2696,7 +2696,7 @@ flexibility(document.documentElement);
 																							<div class="elementor-element elementor-element-2ec6cab5 elementor-widget elementor-widget-image" data-id="2ec6cab5" data-element_type="widget" data-widget_type="image.default">
 																								<div class="elementor-widget-container">
 																									<div class="elementor-image">
-																										<img src="<?php echo e(asset('fxipro_v2/olymptrade2.jpg')); ?>" class="attachment-large size-large" alt="" loading="lazy" width="200" height="100">
+																										<img src="<?php echo e(asset('main/olymptrade2.jpg')); ?>" class="attachment-large size-large" alt="" loading="lazy" width="200" height="100">
 																									</div>
 																								</div>
 																							</div>
@@ -2709,7 +2709,7 @@ flexibility(document.documentElement);
 																							<div class="elementor-element elementor-element-28b0b664 elementor-widget elementor-widget-image" data-id="28b0b664" data-element_type="widget" data-widget_type="image.default">
 																								<div class="elementor-widget-container">
 																									<div class="elementor-image">
-																										<img src="<?php echo e(asset('fxipro_v2/expertoption6.jpg')); ?>" class="attachment-large size-large" alt="" loading="lazy" width="200" height="100">
+																										<img src="<?php echo e(asset('main/expertoption6.jpg')); ?>" class="attachment-large size-large" alt="" loading="lazy" width="200" height="100">
 																									</div>
 																								</div>
 																							</div>
@@ -2722,7 +2722,7 @@ flexibility(document.documentElement);
 																							<div class="elementor-element elementor-element-1065987d elementor-widget elementor-widget-image" data-id="1065987d" data-element_type="widget" data-widget_type="image.default">
 																								<div class="elementor-widget-container">
 																									<div class="elementor-image">
-																										<img src="<?php echo e(asset('fxipro_v2/binomo3.jpg')); ?>" class="attachment-large size-large" alt="" loading="lazy" width="200" height="100">
+																										<img src="<?php echo e(asset('main/binomo3.jpg')); ?>" class="attachment-large size-large" alt="" loading="lazy" width="200" height="100">
 																									</div>
 																								</div>
 																							</div>
@@ -2826,7 +2826,7 @@ flexibility(document.documentElement);
 													<div class="elementor-element elementor-element-91842e4 elementor-widget elementor-widget-image" data-id="91842e4" data-element_type="widget" data-widget_type="image.default">
 														<div class="elementor-widget-container">
 															<div class="elementor-image">
-																<img src="<?php echo e(asset('fxipro_v2/logo-white.png')); ?>" title="logo" alt="logo" width="220px;">
+																<img src="<?php echo e(asset('main/logo-white.png')); ?>" title="logo" alt="logo" width="220px;">
 															</div>
 														</div>
 													</div>
@@ -2857,19 +2857,19 @@ flexibility(document.documentElement);
 															<ul class="elementor-icon-list-items">
 																<li class="elementor-icon-list-item">
 																	<span class="elementor-icon-list-icon">
-																		<img src="<?php echo e(asset('fxipro_v2/n.png')); ?>" aria-hidden="true"> </span>
+																		<img src="<?php echo e(asset('main/n.png')); ?>" aria-hidden="true"> </span>
 																	<span class="elementor-icon-list-text">FX
 																		TRADING</span>
 																</li>
 																<li class="elementor-icon-list-item">
 																	<span class="elementor-icon-list-icon">
-																		<img src="<?php echo e(asset('fxipro_v2/n.png')); ?>" aria-hidden="true"> </span>
+																		<img src="<?php echo e(asset('main/n.png')); ?>" aria-hidden="true"> </span>
 																	<span class="elementor-icon-list-text">MARKET
 																		ANALYSIS</span>
 																</li>
 																<li class="elementor-icon-list-item">
 																	<span class="elementor-icon-list-icon">
-																		<img src="<?php echo e(asset('fxipro_v2/n.png')); ?>" aria-hidden="true"> </span>
+																		<img src="<?php echo e(asset('main/n.png')); ?>" aria-hidden="true"> </span>
 																	<span class="elementor-icon-list-text">FX
 																		INVESTMENTS</span>
 																</li>
@@ -2953,40 +2953,40 @@ flexibility(document.documentElement);
 	</div><!-- #page -->
 
 
-	<link rel="stylesheet" id="premium-addons-css" href="<?php echo e(asset('fxipro_v2/premium-addons_002.css')); ?>" media="all">
+	<link rel="stylesheet" id="premium-addons-css" href="<?php echo e(asset('main/premium-addons_002.css')); ?>" media="all">
 	
 	<script id="astra-theme-js-js-extra">
 		var astra = { "break_point": "2020", "isRtl": "" };
 	</script>
-	<script src="<?php echo e(asset('fxipro_v2/style.js')); ?>" id="astra-theme-js-js"></script>
-	<script src="<?php echo e(asset('fxipro_v2/anime.js')); ?>" id="anime-js"></script>
-	<script src="<?php echo e(asset('fxipro_v2/animated-text.js')); ?>" id="animated-text-js"></script>
-	<script src="<?php echo e(asset('fxipro_v2/imagesloaded.js')); ?>" id="imagesloaded-js"></script>
+	<script src="<?php echo e(asset('main/style.js')); ?>" id="astra-theme-js-js"></script>
+	<script src="<?php echo e(asset('main/anime.js')); ?>" id="anime-js"></script>
+	<script src="<?php echo e(asset('main/animated-text.js')); ?>" id="animated-text-js"></script>
+	<script src="<?php echo e(asset('main/imagesloaded.js')); ?>" id="imagesloaded-js"></script>
 	<script id="happy-elementor-addons-js-extra">
 		var HappyLocalize = { "ajax_url": "https:\/\/tradefoxe.com\/wp-admin\/admin-ajax.php", "nonce": "0771ec9b02" };
 	</script>
-	<script src="<?php echo e(asset('fxipro_v2/happy-addons.js')); ?>" id="happy-elementor-addons-js"></script>
+	<script src="<?php echo e(asset('main/happy-addons.js')); ?>" id="happy-elementor-addons-js"></script>
 	<script id="happy-addons-pro-js-extra">
 		var HappyProLocalize = { "ajax_url": "https:\/\/tradefoxe.com\/wp-admin\/admin-ajax.php", "nonce": "1e15da1107" };
 		var HappyProLocalize = { "ajax_url": "https:\/\/tradefoxe.com\/wp-admin\/admin-ajax.php", "nonce": "1e15da1107" };
 	</script>
-	<script src="<?php echo e(asset('fxipro_v2/happy-addons-pro.js')); ?>" id="happy-addons-pro-js"></script>
+	<script src="<?php echo e(asset('main/happy-addons-pro.js')); ?>" id="happy-addons-pro-js"></script>
 	<script id="astra-addon-js-js-extra">
 		var astraAddon = { "sticky_active": "", "header_main_stick": "", "header_above_stick": "0", "header_below_stick": "0", "stick_header_meta": "", "header_main_stick_meta": "", "header_above_stick_meta": "", "header_below_stick_meta": "", "sticky_header_on_devices": "both", "sticky_header_style": "fade", "sticky_hide_on_scroll": "", "break_point": "2020", "tablet_break_point": "921", "mobile_break_point": "544", "header_main_shrink": "1", "header_logo_width": "", "responsive_header_logo_width": { "desktop": "187", "tablet": "", "mobile": "" }, "stick_origin_position": "", "site_layout": "", "site_content_width": "1240", "site_layout_padded_width": "1200", "site_layout_box_width": "1200" };
 	</script>
-	<script src="<?php echo e(asset('fxipro_v2/astra-addon-5f4bbe88dcbe35-54608992.js')); ?>" id="astra-addon-js-js"></script>
-	<script src="<?php echo e(asset('fxipro_v2/wp-embed.js')); ?>" id="wp-embed-js"></script>
-	<script src="<?php echo e(asset('fxipro_v2/frontend-modules.js')); ?>" id="elementor-frontend-modules-js"></script>
-	<script src="<?php echo e(asset('fxipro_v2/jquery_002.js')); ?>" id="elementor-sticky-js"></script>
+	<script src="<?php echo e(asset('main/astra-addon-5f4bbe88dcbe35-54608992.js')); ?>" id="astra-addon-js-js"></script>
+	<script src="<?php echo e(asset('main/wp-embed.js')); ?>" id="wp-embed-js"></script>
+	<script src="<?php echo e(asset('main/frontend-modules.js')); ?>" id="elementor-frontend-modules-js"></script>
+	<script src="<?php echo e(asset('main/jquery_002.js')); ?>" id="elementor-sticky-js"></script>
 	<script id="elementor-pro-frontend-js-before">
 		var ElementorProFrontendConfig = { "ajaxurl": "https:\/\/tradefoxe.com\/wp-admin\/admin-ajax.php", "nonce": "04515e4480", "i18n": { "toc_no_headings_found": "No headings were found on this page." }, "shareButtonsNetworks": { "facebook": { "title": "Facebook", "has_counter": true }, "twitter": { "title": "Twitter" }, "google": { "title": "Google+", "has_counter": true }, "linkedin": { "title": "LinkedIn", "has_counter": true }, "pinterest": { "title": "Pinterest", "has_counter": true }, "reddit": { "title": "Reddit", "has_counter": true }, "vk": { "title": "VK", "has_counter": true }, "odnoklassniki": { "title": "OK", "has_counter": true }, "tumblr": { "title": "Tumblr" }, "delicious": { "title": "Delicious" }, "digg": { "title": "Digg" }, "skype": { "title": "Skype" }, "stumbleupon": { "title": "StumbleUpon", "has_counter": true }, "mix": { "title": "Mix" }, "telegram": { "title": "Telegram" }, "pocket": { "title": "Pocket", "has_counter": true }, "xing": { "title": "XING", "has_counter": true }, "whatsapp": { "title": "WhatsApp" }, "email": { "title": "Email" }, "print": { "title": "Print" } }, "facebook_sdk": { "lang": "en_US", "app_id": "" } };
 	</script>
-	<script src="<?php echo e(asset('fxipro_v2/frontend_003.js')); ?>" id="elementor-pro-frontend-js"></script>
-	<script src="<?php echo e(asset('fxipro_v2/position.js')); ?>" id="jquery-ui-position-js"></script>
-	<script src="<?php echo e(asset('fxipro_v2/dialog.js')); ?>" id="elementor-dialog-js"></script>
-	<script src="<?php echo e(asset('fxipro_v2/waypoints.js')); ?>" id="elementor-waypoints-js"></script>
-	<script src="<?php echo e(asset('fxipro_v2/swiper.js')); ?>" id="swiper-js"></script>
-	<script src="<?php echo e(asset('fxipro_v2/share-link.js')); ?>" id="share-link-js"></script>
+	<script src="<?php echo e(asset('main/frontend_003.js')); ?>" id="elementor-pro-frontend-js"></script>
+	<script src="<?php echo e(asset('main/position.js')); ?>" id="jquery-ui-position-js"></script>
+	<script src="<?php echo e(asset('main/dialog.js')); ?>" id="elementor-dialog-js"></script>
+	<script src="<?php echo e(asset('main/waypoints.js')); ?>" id="elementor-waypoints-js"></script>
+	<script src="<?php echo e(asset('main/swiper.js')); ?>" id="swiper-js"></script>
+	<script src="<?php echo e(asset('main/share-link.js')); ?>" id="share-link-js"></script>
 	<script id="elementor-frontend-js-extra">
 		var uael_particles_script = { "uael_particles_url": "https:\/\/tradefoxe.com\/wp-content\/plugins\/ultimate-elementor\/assets\/min-js\/uael-particles.min.js", "particles_url": "https:\/\/tradefoxe.com\/wp-content\/plugins\/ultimate-elementor\/assets\/lib\/particles\/particles.min.js" };
 		var papro_addons = { "url": "https:\/\/tradefoxe.com\/wp-admin\/admin-ajax.php", "particles_url": "https:\/\/tradefoxe.com\/wp-content\/plugins\/premium-addons-pro\/assets\/frontend\/min-js\/particles.min.js", "kenburns_url": "https:\/\/tradefoxe.com\/wp-content\/plugins\/premium-addons-pro\/assets\/frontend\/min-js\/cycle.min.js", "gradient_url": "https:\/\/tradefoxe.com\/wp-content\/plugins\/premium-addons-pro\/assets\/frontend\/min-js\/premium-gradient.min.js", "parallax_url": "https:\/\/tradefoxe.com\/wp-content\/plugins\/premium-addons-pro\/assets\/frontend\/min-js\/premium-parallax.min.js", "lottie_url": "https:\/\/tradefoxe.com\/wp-content\/plugins\/premium-addons-for-elementor\/assets\/frontend\/min-js\/lottie.min.js" };
@@ -2994,18 +2994,18 @@ flexibility(document.documentElement);
 	<script id="elementor-frontend-js-before">
 		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "version": "3.0.4", "is_static": false, "legacyMode": { "elementWrappers": true }, "urls": { "assets": "https:\/\/tradefoxe.com\/wp-content\/plugins\/elementor\/assets\/" }, "settings": { "page": [], "editorPreferences": [], "general": [] }, "kit": { "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 15, "title": "TradeFoxe%20%E2%80%93%20Online%20Investment%20and%20Secured%20Trading%20Platform", "excerpt": "", "featuredImage": false } };
 	</script>
-	<script src="<?php echo e(asset('fxipro_v2/frontend_002.js')); ?>" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span><span id="elementor-device-mode" class="elementor-screen-only"></span>
+	<script src="<?php echo e(asset('main/frontend_002.js')); ?>" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span><span id="elementor-device-mode" class="elementor-screen-only"></span>
 
 
-	<script src="<?php echo e(asset('fxipro_v2/underscore.js')); ?>" id="underscore-js"></script>
+	<script src="<?php echo e(asset('main/underscore.js')); ?>" id="underscore-js"></script>
 	<script id="wp-util-js-extra">
 		var _wpUtilSettings = { "ajax": { "url": "\/wp-admin\/admin-ajax.php" } };
 	</script>
-	<script src="<?php echo e(asset('fxipro_v2/wp-util.js')); ?>" id="wp-util-js"></script>
+	<script src="<?php echo e(asset('main/wp-util.js')); ?>" id="wp-util-js"></script>
 	<script id="wpforms-elementor-js-extra">
 		var wpformsElementorVars = { "recaptcha_type": "v2" };
 	</script>
-	<script src="<?php echo e(asset('fxipro_v2/frontend.js')); ?>" id="wpforms-elementor-js"></script>
+	<script src="<?php echo e(asset('main/frontend.js')); ?>" id="wpforms-elementor-js"></script>
     <script>
 		/(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () { var t, e = location.hash.substring(1); /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus()) }, !1);
 	</script>

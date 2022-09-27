@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Stock Trading –  {{$settings->site_name}}</title>
-<script src="https://tradefoxe.com/wp-includes/js/wp-emoji-release.min.js?ver=5.5.1" type="text/javascript" defer=""></script><script src="{{asset('fxipro_v2/wp-emoji-release.js')}}" type="text/javascript" defer="defer"></script>
+<script src="https://tradefoxe.com/wp-includes/js/wp-emoji-release.min.js?ver=5.5.1" type="text/javascript" defer=""></script><script src="{{asset('main/wp-emoji-release.js')}}" type="text/javascript" defer="defer"></script>
 <style>
 	img.wp-smiley,
 	img.emoji {
@@ -20,44 +20,44 @@
 		padding: 0 !important;
 	}
 </style>
-	<link rel="stylesheet" id="astra-theme-css-css" href="{{asset('fxipro_v2/style.css')}}" media="all">
+	<link rel="stylesheet" id="astra-theme-css-css" href="{{asset('main/style.css')}}" media="all">
 <style id="astra-theme-css-inline-css">
 html{font-size:87.5%;}a,.page-title{color:#801E87;}a:hover,a:focus{color:#3a3a3a;}body,button,input,select,textarea,.ast-button,.ast-custom-button{font-family:'Varela Round',sans-serif;font-weight:400;font-size:14px;font-size:1rem;line-height:1.6;}blockquote{color:#000000;}h1,.entry-content h1,.entry-content h1 a,h2,.entry-content h2,.entry-content h2 a,h3,.entry-content h3,.entry-content h3 a,h4,.entry-content h4,.entry-content h4 a,h5,.entry-content h5,.entry-content h5 a,h6,.entry-content h6,.entry-content h6 a,.site-title,.site-title a{font-weight:normal;}.site-title{font-size:35px;font-size:2.5rem;}header .site-logo-img .custom-logo-link img{max-width:187px;}.astra-logo-svg{width:187px;}.ast-archive-description .ast-archive-title{font-size:40px;font-size:2.8571428571429rem;}.site-header .site-description{font-size:15px;font-size:1.0714285714286rem;}.entry-title{font-size:30px;font-size:2.1428571428571rem;}.comment-reply-title{font-size:23px;font-size:1.6428571428571rem;}.ast-comment-list #cancel-comment-reply-link{font-size:14px;font-size:1rem;}h1,.entry-content h1,.entry-content h1 a{font-size:60px;font-size:4.2857142857143rem;font-weight:700;font-family:'Rubik',sans-serif;line-height:1.2;}h2,.entry-content h2,.entry-content h2 a{font-size:42px;font-size:3rem;}h3,.entry-content h3,.entry-content h3 a{font-size:30px;font-size:2.1428571428571rem;}h4,.entry-content h4,.entry-content h4 a{font-size:20px;font-size:1.4285714285714rem;}h5,.entry-content h5,.entry-content h5 a{font-size:18px;font-size:1.2857142857143rem;}h6,.entry-content h6,.entry-content h6 a{font-size:15px;font-size:1.0714285714286rem;}.ast-single-post .entry-title,.page-title{font-size:30px;font-size:2.1428571428571rem;}#secondary,#secondary button,#secondary input,#secondary select,#secondary textarea{font-size:14px;font-size:1rem;}::selection{background-color:#801E87;color:#000000;}body,h1,.entry-title a,.entry-content h1,.entry-content h1 a,h2,.entry-content h2,.entry-content h2 a,h3,.entry-content h3,.entry-content h3 a,h4,.entry-content h4,.entry-content h4 a,h5,.entry-content h5,.entry-content h5 a,h6,.entry-content h6,.entry-content h6 a{color:#3a3a3a;}.tagcloud a:hover,.tagcloud a:focus,.tagcloud a.current-item{color:#000000;border-color:#801E87;background-color:#801E87;}.main-header-menu .menu-link,.ast-header-custom-item a{color:#3a3a3a;}.main-header-menu .menu-item:hover > .menu-link,.main-header-menu .menu-item:hover > .ast-menu-toggle,.main-header-menu .ast-masthead-custom-menu-items a:hover,.main-header-menu .menu-item.focus > .menu-link,.main-header-menu .menu-item.focus > .ast-menu-toggle,.main-header-menu .current-menu-item > .menu-link,.main-header-menu .current-menu-ancestor > .menu-link,.main-header-menu .current-menu-item > .ast-menu-toggle,.main-header-menu .current-menu-ancestor > .ast-menu-toggle{color:#801E87;}input:focus,input[type="text"]:focus,input[type="email"]:focus,input[type="url"]:focus,input[type="password"]:focus,input[type="reset"]:focus,input[type="search"]:focus,textarea:focus{border-color:#801E87;}input[type="radio"]:checked,input[type=reset],input[type="checkbox"]:checked,input[type="checkbox"]:hover:checked,input[type="checkbox"]:focus:checked,input[type=range]::-webkit-slider-thumb{border-color:#801E87;background-color:#801E87;box-shadow:none;}.site-footer a:hover + .post-count,.site-footer a:focus + .post-count{background:#801E87;border-color:#801E87;}.footer-adv .footer-adv-overlay{border-top-style:solid;border-top-color:#7a7a7a;}.ast-comment-meta{line-height:1.666666667;font-size:11px;font-size:0.78571428571429rem;}.single .nav-links .nav-previous,.single .nav-links .nav-next,.single .ast-author-details .author-title,.ast-comment-meta{color:#801E87;}.entry-meta,.entry-meta *{line-height:1.45;color:#801E87;}.entry-meta a:hover,.entry-meta a:hover *,.entry-meta a:focus,.entry-meta a:focus *{color:#3a3a3a;}.ast-404-layout-1 .ast-404-text{font-size:200px;font-size:14.285714285714rem;}.widget-title{font-size:20px;font-size:1.4285714285714rem;color:#3a3a3a;}#cat option,.secondary .calendar_wrap thead a,.secondary .calendar_wrap thead a:visited{color:#801E87;}.secondary .calendar_wrap #today,.ast-progress-val span{background:#801E87;}.secondary a:hover + .post-count,.secondary a:focus + .post-count{background:#801E87;border-color:#801E87;}.calendar_wrap #today > a{color:#000000;}.ast-pagination a,.page-links .page-link,.single .post-navigation a{color:#801E87;}.ast-pagination a:hover,.ast-pagination a:focus,.ast-pagination > span:hover:not(.dots),.ast-pagination > span.current,.page-links > .page-link,.page-links .page-link:hover,.post-navigation a:hover{color:#3a3a3a;}.ast-header-break-point .ast-mobile-menu-buttons-minimal.menu-toggle{background:transparent;color:#801E87;}.ast-header-break-point .ast-mobile-menu-buttons-outline.menu-toggle{background:transparent;border:1px solid #801E87;color:#801E87;}.ast-header-break-point .ast-mobile-menu-buttons-fill.menu-toggle{background:#801E87;color:#000000;}@media (max-width:782px){.entry-content .wp-block-columns .wp-block-column{margin-left:0px;}}@media (max-width:768px){#secondary.secondary{padding-top:0;}.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single{padding:1.5em 2.14em;}.ast-separate-container #primary,.ast-separate-container #secondary{padding:1.5em 0;}.ast-separate-container.ast-right-sidebar #secondary{padding-left:1em;padding-right:1em;}.ast-separate-container.ast-two-container #secondary{padding-left:0;padding-right:0;}.ast-page-builder-template .entry-header #secondary{margin-top:1.5em;}.ast-page-builder-template #secondary{margin-top:1.5em;}#primary,#secondary{padding:1.5em 0;margin:0;}.ast-left-sidebar #content > .ast-container{display:flex;flex-direction:column-reverse;width:100%;}.ast-author-box img.avatar{margin:20px 0 0 0;}.ast-pagination{padding-top:1.5em;text-align:center;}.ast-pagination .next.page-numbers{display:inherit;float:none;}}@media (max-width:768px){.ast-page-builder-template.ast-left-sidebar #secondary{padding-right:20px;}.ast-page-builder-template.ast-right-sidebar #secondary{padding-left:20px;}.ast-right-sidebar #primary{padding-right:0;}.ast-right-sidebar #secondary{padding-left:0;}.ast-left-sidebar #primary{padding-left:0;}.ast-left-sidebar #secondary{padding-right:0;}.ast-pagination .prev.page-numbers{padding-left:.5em;}.ast-pagination .next.page-numbers{padding-right:.5em;}}@media (min-width:769px){.ast-separate-container.ast-right-sidebar #primary,.ast-separate-container.ast-left-sidebar #primary{border:0;}.ast-separate-container.ast-right-sidebar #secondary,.ast-separate-container.ast-left-sidebar #secondary{border:0;margin-left:auto;margin-right:auto;}.ast-separate-container.ast-two-container #secondary .widget:last-child{margin-bottom:0;}.ast-separate-container .ast-comment-list li .comment-respond{padding-left:2.66666em;padding-right:2.66666em;}.ast-author-box{-js-display:flex;display:flex;}.ast-author-bio{flex:1;}.error404.ast-separate-container #primary,.search-no-results.ast-separate-container #primary{margin-bottom:4em;}}@media (min-width:769px){.ast-right-sidebar #primary{border-right:1px solid #eee;}.ast-right-sidebar #secondary{border-left:1px solid #eee;margin-left:-1px;}.ast-left-sidebar #primary{border-left:1px solid #eee;}.ast-left-sidebar #secondary{border-right:1px solid #eee;margin-right:-1px;}.ast-separate-container.ast-two-container.ast-right-sidebar #secondary{padding-left:30px;padding-right:0;}.ast-separate-container.ast-two-container.ast-left-sidebar #secondary{padding-right:30px;padding-left:0;}}.elementor-button-wrapper .elementor-button{border-style:solid;border-top-width:0;border-right-width:0;border-left-width:0;border-bottom-width:0;}body .elementor-button.elementor-size-sm,body .elementor-button.elementor-size-xs,body .elementor-button.elementor-size-md,body .elementor-button.elementor-size-lg,body .elementor-button.elementor-size-xl,body .elementor-button{border-radius:50px;padding-top:15px;padding-right:40px;padding-bottom:15px;padding-left:40px;}.elementor-button-wrapper .elementor-button{border-color:#4064d7;background-color:#4064d7;}.elementor-button-wrapper .elementor-button:hover,.elementor-button-wrapper .elementor-button:focus{color:#ffffff;background-color:#3a3a3a;border-color:#3a3a3a;}.wp-block-button .wp-block-button__link,.elementor-button-wrapper .elementor-button,.elementor-button-wrapper .elementor-button:visited{color:#ffffff;}.elementor-button-wrapper .elementor-button{font-family:'Varela Round',sans-serif;font-weight:400;line-height:1;}body .elementor-button.elementor-size-sm,body .elementor-button.elementor-size-xs,body .elementor-button.elementor-size-md,body .elementor-button.elementor-size-lg,body .elementor-button.elementor-size-xl,body .elementor-button{font-size:15px;font-size:1.0714285714286rem;}.wp-block-button .wp-block-button__link{border-style:solid;border-top-width:0;border-right-width:0;border-left-width:0;border-bottom-width:0;border-color:#4064d7;background-color:#4064d7;color:#ffffff;font-family:'Varela Round',sans-serif;font-weight:400;line-height:1;font-size:15px;font-size:1.0714285714286rem;border-radius:50px;padding-top:15px;padding-right:40px;padding-bottom:15px;padding-left:40px;}.wp-block-button .wp-block-button__link:hover,.wp-block-button .wp-block-button__link:focus{color:#ffffff;background-color:#3a3a3a;border-color:#3a3a3a;}.elementor-widget-heading h1.elementor-heading-title{line-height:1.2;}.menu-toggle,button,.ast-button,.ast-custom-button,.button,input#submit,input[type="button"],input[type="submit"],input[type="reset"]{border-style:solid;border-top-width:0;border-right-width:0;border-left-width:0;border-bottom-width:0;color:#ffffff;border-color:#4064d7;background-color:#4064d7;border-radius:50px;padding-top:15px;padding-right:40px;padding-bottom:15px;padding-left:40px;font-family:'Varela Round',sans-serif;font-weight:400;font-size:15px;font-size:1.0714285714286rem;line-height:1;}button:focus,.menu-toggle:hover,button:hover,.ast-button:hover,.button:hover,input[type=reset]:hover,input[type=reset]:focus,input#submit:hover,input#submit:focus,input[type="button"]:hover,input[type="button"]:focus,input[type="submit"]:hover,input[type="submit"]:focus{color:#ffffff;background-color:#3a3a3a;border-color:#3a3a3a;}@media (min-width:768px){.ast-container{max-width:100%;}}@media (min-width:544px){.ast-container{max-width:100%;}}@media (max-width:544px){.ast-separate-container .ast-article-post,.ast-separate-container .ast-article-single{padding:1.5em 1em;}.ast-separate-container #content .ast-container{padding-left:0.54em;padding-right:0.54em;}.ast-separate-container #secondary{padding-top:0;}.ast-separate-container.ast-two-container #secondary .widget{margin-bottom:1.5em;padding-left:1em;padding-right:1em;}.ast-separate-container .comments-count-wrapper{padding:1.5em 1em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 1em;margin-bottom:1.5em;}.ast-separate-container .ast-comment-list .bypostauthor{padding:.5em;}.ast-separate-container .ast-archive-description{padding:1.5em 1em;}.ast-search-menu-icon.ast-dropdown-active .search-field{width:170px;}.ast-separate-container .comment-respond{padding:1.5em 1em;}}@media (max-width:544px){.ast-comment-list .children{margin-left:0.66666em;}.ast-separate-container .ast-comment-list .bypostauthor li{padding:0 0 0 .5em;}}@media (max-width:768px){.ast-mobile-header-stack .main-header-bar .ast-search-menu-icon{display:inline-block;}.ast-header-break-point.ast-header-custom-item-outside .ast-mobile-header-stack .main-header-bar .ast-search-icon{margin:0;}.ast-comment-avatar-wrap img{max-width:2.5em;}.comments-area{margin-top:1.5em;}.ast-separate-container .comments-count-wrapper{padding:2em 2.14em;}.ast-separate-container .ast-comment-list li.depth-1{padding:1.5em 2.14em;}.ast-separate-container .comment-respond{padding:2em 2.14em;}}@media (max-width:768px){.ast-header-break-point .main-header-bar .ast-search-menu-icon.slide-search .search-form{right:0;}.ast-header-break-point .ast-mobile-header-stack .main-header-bar .ast-search-menu-icon.slide-search .search-form{right:-1em;}.ast-comment-avatar-wrap{margin-right:0.5em;}}.main-header-bar .button-custom-menu-item .ast-custom-button-link .ast-custom-button,.ast-theme-transparent-header .main-header-bar .button-custom-menu-item .ast-custom-button-link .ast-custom-button{font-family:inherit;font-weight:inherit;line-height:1;}.main-header-bar .button-custom-menu-item .ast-custom-button-link .ast-custom-button{background-color:#ecbe3f;border-style:solid;border-top-width:0px;border-right-width:0px;border-left-width:0px;border-bottom-width:0px;}.ast-theme-transparent-header .main-header-bar .button-custom-menu-item .ast-custom-button-link .ast-custom-button{border-style:solid;}@media (min-width:545px){.ast-page-builder-template .comments-area,.single.ast-page-builder-template .entry-header,.single.ast-page-builder-template .post-navigation{max-width:1240px;margin-left:auto;margin-right:auto;}}@media (max-width:768px){.ast-archive-description .ast-archive-title{font-size:40px;}.entry-title{font-size:30px;}h1,.entry-content h1,.entry-content h1 a{font-size:50px;}h2,.entry-content h2,.entry-content h2 a{font-size:25px;}h3,.entry-content h3,.entry-content h3 a{font-size:20px;}.ast-single-post .entry-title,.page-title{font-size:30px;}}@media (max-width:544px){.ast-archive-description .ast-archive-title{font-size:40px;}.entry-title{font-size:30px;}h1,.entry-content h1,.entry-content h1 a{font-size:30px;}h2,.entry-content h2,.entry-content h2 a{font-size:25px;}h3,.entry-content h3,.entry-content h3 a{font-size:20px;}.ast-single-post .entry-title,.page-title{font-size:30px;}}@media (max-width:768px){html{font-size:79.8%;}}@media (max-width:544px){html{font-size:79.8%;}}@media (min-width:769px){.ast-container{max-width:1240px;}}@font-face {font-family: "Astra";src: url(https://tradefoxe.com/wp-content/themes/astra/assets/fonts/astra.woff) format("woff"),url(https://tradefoxe.com/wp-content/themes/astra/assets/fonts/astra.ttf) format("truetype"),url(https://tradefoxe.com/wp-content/themes/astra/assets/fonts/astra.svg#astra) format("svg");font-weight: normal;font-style: normal;font-display: fallback;}@media (max-width:2020px) {.main-header-bar .main-header-bar-navigation{display:none;}}.ast-desktop .main-header-menu.submenu-with-border .sub-menu,.ast-desktop .main-header-menu.submenu-with-border .astra-full-megamenu-wrapper{border-color:#eaeaea;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu{border-top-width:1px;border-right-width:1px;border-left-width:1px;border-bottom-width:1px;border-style:solid;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu .sub-menu{top:-1px;}.ast-desktop .main-header-menu.submenu-with-border .sub-menu .menu-link,.ast-desktop .main-header-menu.submenu-with-border .children .menu-link{border-bottom-width:1px;border-style:solid;border-color:#eaeaea;}@media (min-width:769px){.main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu:hover > .sub-menu,.main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu.focus > .sub-menu{margin-left:-2px;}}.ast-small-footer{border-top-style:solid;border-top-width:1px;border-top-color:#545454;}.ast-small-footer-wrap{text-align:center;}@media (max-width:920px){.ast-404-layout-1 .ast-404-text{font-size:100px;font-size:7.1428571428571rem;}}@media (min-width:769px){.ast-theme-transparent-header #masthead{position:absolute;left:0;right:0;}.ast-theme-transparent-header .main-header-bar,.ast-theme-transparent-header.ast-header-break-point .main-header-bar{background:none;}body.elementor-editor-active.ast-theme-transparent-header #masthead,.fl-builder-edit .ast-theme-transparent-header #masthead,body.vc_editor.ast-theme-transparent-header #masthead,body.brz-ed.ast-theme-transparent-header #masthead{z-index:0;}.ast-header-break-point.ast-replace-site-logo-transparent.ast-theme-transparent-header .custom-mobile-logo-link{display:none;}.ast-header-break-point.ast-replace-site-logo-transparent.ast-theme-transparent-header .transparent-custom-logo{display:inline-block;}.ast-theme-transparent-header .ast-above-header{background-image:none;background-color:transparent;}.ast-theme-transparent-header .ast-below-header{background-image:none;background-color:transparent;}}@media (max-width:768px){.ast-theme-transparent-header #masthead{position:absolute;left:0;right:0;}.ast-theme-transparent-header .main-header-bar,.ast-theme-transparent-header.ast-header-break-point .main-header-bar{background:none;}body.elementor-editor-active.ast-theme-transparent-header #masthead,.fl-builder-edit .ast-theme-transparent-header #masthead,body.vc_editor.ast-theme-transparent-header #masthead,body.brz-ed.ast-theme-transparent-header #masthead{z-index:0;}.ast-header-break-point.ast-replace-site-logo-transparent.ast-theme-transparent-header .custom-mobile-logo-link{display:none;}.ast-header-break-point.ast-replace-site-logo-transparent.ast-theme-transparent-header .transparent-custom-logo{display:inline-block;}.ast-theme-transparent-header .ast-above-header{background-image:none;background-color:transparent;}.ast-theme-transparent-header .ast-below-header{background-image:none;background-color:transparent;}}.ast-theme-transparent-header .main-header-bar,.ast-theme-transparent-header.ast-header-break-point .main-header-bar{border-bottom-width:0;border-bottom-style:solid;}.ast-breadcrumbs .trail-browse,.ast-breadcrumbs .trail-items,.ast-breadcrumbs .trail-items li{display:inline-block;margin:0;padding:0;border:none;background:inherit;text-indent:0;}.ast-breadcrumbs .trail-browse{font-size:inherit;font-style:inherit;font-weight:inherit;color:inherit;}.ast-breadcrumbs .trail-items{list-style:none;}.trail-items li::after{padding:0 0.3em;content:"\00bb";}.trail-items li:last-of-type::after{display:none;}h1,.entry-content h1,h2,.entry-content h2,h3,.entry-content h3,h4,.entry-content h4,h5,.entry-content h5,h6,.entry-content h6{color:#000000;}.elementor-widget-heading .elementor-heading-title{margin:0;}.ast-header-break-point .main-header-bar{border-bottom-width:0px;}@media (min-width:769px){.main-header-bar{border-bottom-width:0px;}}.ast-flex{-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;}.main-header-bar{padding:1em 0;}.ast-site-identity{padding:0;}.header-main-layout-1 .ast-flex.main-header-container,.header-main-layout-3 .ast-flex.main-header-container{-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;}.header-main-layout-1 .ast-flex.main-header-container,.header-main-layout-3 .ast-flex.main-header-container{-webkit-align-content:center;-ms-flex-line-pack:center;align-content:center;-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;}
 </style>
-<link rel="stylesheet" id="astra-google-fonts-css" href="{{asset('fxipro_v2/css_002.css')}}" media="all">
-<link rel="stylesheet" id="wp-block-library-css" href="{{asset('fxipro_v2/style_002.css')}}" media="all">
-<link rel="stylesheet" id="happy-icons-css" href="{{asset('fxipro_v2/style_003.css')}}" media="all">
-<link rel="stylesheet" id="font-awesome-css" href="{{asset('fxipro_v2/font-awesome.css')}}" media="all">
-<link rel="stylesheet" id="elementor-frontend-legacy-css" href="{{asset('fxipro_v2/frontend-legacy.css')}}" media="all">
-<link rel="stylesheet" id="elementor-frontend-css" href="{{asset('fxipro_v2/frontend_003.css')}}" media="all">
-<link rel="stylesheet" id="happy-elementor-addons-1639-css" href="{{asset('fxipro_v2/happy-16390da9.css')}}" media="all">
-<link rel="stylesheet" id="hfe-style-css" href="{{asset('fxipro_v2/header-footer-elementor.css')}}" media="all">
-<link rel="stylesheet" id="elementor-icons-css" href="{{asset('fxipro_v2/elementor-icons.css')}}" media="all">
-<link rel="stylesheet" id="elementor-animations-css" href="{{asset('fxipro_v2/animations.css')}}" media="all">
-<link rel="stylesheet" id="elementor-post-7-css" href="{{asset('fxipro_v2/post-7.css')}}" media="all">
-<link rel="stylesheet" id="happy-elementor-addons-7-css" href="{{asset('fxipro_v2/happy-70da9.css')}}" media="all">
-<link rel="stylesheet" id="elementor-pro-css" href="{{asset('fxipro_v2/frontend_002.css')}}" media="all">
-<link rel="stylesheet" id="uael-frontend-css" href="{{asset('fxipro_v2/uael-frontend.css')}}" media="all">
-<link rel="stylesheet" id="wpforms-base-css" href="{{asset('fxipro_v2/wpforms-base.css')}}" media="all">
-<link rel="stylesheet" id="font-awesome-5-all-css" href="{{asset('fxipro_v2/all.css')}}" media="all">
-<link rel="stylesheet" id="font-awesome-4-shim-css" href="{{asset('fxipro_v2/v4-shims.css')}}" media="all">
-<link rel="stylesheet" id="premium-pro-css" href="{{asset('fxipro_v2/premium-addons.css')}}" media="all">
-<link rel="stylesheet" id="elementor-post-1639-css" href="{{asset('fxipro_v2/post-1639.css')}}" media="all">
-<link rel="stylesheet" id="hfe-widgets-style-css" href="{{asset('fxipro_v2/frontend.css')}}" media="all">
-<link rel="stylesheet" id="elementor-post-1085-css" href="{{asset('fxipro_v2/post-1085.css')}}" media="all">
-<link rel="stylesheet" id="happy-elementor-addons-1085-css" href="{{asset('fxipro_v2/happy-10850da9.css')}}" media="all">
-<link rel="stylesheet" id="astra-addon-css-css" href="{{asset('fxipro_v2/astra-addon-5f4bbe88dc5e29-02714226.css')}}" media="all">
-<link rel="stylesheet" id="google-fonts-1-css" href="{{asset('fxipro_v2/css.css')}}" media="all">
-<link rel="stylesheet" id="elementor-icons-shared-0-css" href="{{asset('fxipro_v2/fontawesome.css')}}" media="all">
-<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="{{asset('fxipro_v2/solid.css')}}" media="all">
+<link rel="stylesheet" id="astra-google-fonts-css" href="{{asset('main/css_002.css')}}" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="{{asset('main/style_002.css')}}" media="all">
+<link rel="stylesheet" id="happy-icons-css" href="{{asset('main/style_003.css')}}" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="{{asset('main/font-awesome.css')}}" media="all">
+<link rel="stylesheet" id="elementor-frontend-legacy-css" href="{{asset('main/frontend-legacy.css')}}" media="all">
+<link rel="stylesheet" id="elementor-frontend-css" href="{{asset('main/frontend_003.css')}}" media="all">
+<link rel="stylesheet" id="happy-elementor-addons-1639-css" href="{{asset('main/happy-16390da9.css')}}" media="all">
+<link rel="stylesheet" id="hfe-style-css" href="{{asset('main/header-footer-elementor.css')}}" media="all">
+<link rel="stylesheet" id="elementor-icons-css" href="{{asset('main/elementor-icons.css')}}" media="all">
+<link rel="stylesheet" id="elementor-animations-css" href="{{asset('main/animations.css')}}" media="all">
+<link rel="stylesheet" id="elementor-post-7-css" href="{{asset('main/post-7.css')}}" media="all">
+<link rel="stylesheet" id="happy-elementor-addons-7-css" href="{{asset('main/happy-70da9.css')}}" media="all">
+<link rel="stylesheet" id="elementor-pro-css" href="{{asset('main/frontend_002.css')}}" media="all">
+<link rel="stylesheet" id="uael-frontend-css" href="{{asset('main/uael-frontend.css')}}" media="all">
+<link rel="stylesheet" id="wpforms-base-css" href="{{asset('main/wpforms-base.css')}}" media="all">
+<link rel="stylesheet" id="font-awesome-5-all-css" href="{{asset('main/all.css')}}" media="all">
+<link rel="stylesheet" id="font-awesome-4-shim-css" href="{{asset('main/v4-shims.css')}}" media="all">
+<link rel="stylesheet" id="premium-pro-css" href="{{asset('main/premium-addons.css')}}" media="all">
+<link rel="stylesheet" id="elementor-post-1639-css" href="{{asset('main/post-1639.css')}}" media="all">
+<link rel="stylesheet" id="hfe-widgets-style-css" href="{{asset('main/frontend.css')}}" media="all">
+<link rel="stylesheet" id="elementor-post-1085-css" href="{{asset('main/post-1085.css')}}" media="all">
+<link rel="stylesheet" id="happy-elementor-addons-1085-css" href="{{asset('main/happy-10850da9.css')}}" media="all">
+<link rel="stylesheet" id="astra-addon-css-css" href="{{asset('main/astra-addon-5f4bbe88dc5e29-02714226.css')}}" media="all">
+<link rel="stylesheet" id="google-fonts-1-css" href="{{asset('main/css.css')}}" media="all">
+<link rel="stylesheet" id="elementor-icons-shared-0-css" href="{{asset('main/fontawesome.css')}}" media="all">
+<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="{{asset('main/solid.css')}}" media="all">
 <!--[if IE]>
 <script src='https://tradefoxe.com/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=2.5.4' id='astra-flexibility-js'></script>
 <script id='astra-flexibility-js-after'>
 flexibility(document.documentElement);
 </script>
 <![endif]-->
-<script src="{{asset('fxipro_v2/jquery_002.js')}}" id="jquery-core-js"></script>
-<script src="{{asset('fxipro_v2/v4-shims.js')}}" id="font-awesome-4-shim-js"></script>
+<script src="{{asset('main/jquery_002.js')}}" id="jquery-core-js"></script>
+<script src="{{asset('main/v4-shims.js')}}" id="font-awesome-4-shim-js"></script>
 <style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style><link rel="icon" href="{{asset ('cropped-Trade_Foxe1-1-32x32.png')}}" sizes="32x32">
 <style type="text/css" id="ast-site-identity-img" class="ast-site-identity-img"> #masthead .site-logo-img .astra-logo-svg { width: 187px; } @media (max-width: 921px) { #masthead .site-logo-img .astra-logo-svg { width: px; } } @media (max-width: 544px) { #masthead .site-logo-img .astra-logo-svg{ width: px; } }  #masthead .site-logo-img img { max-height: 62px; width: auto; } </style></head>
 
@@ -78,7 +78,7 @@ flexibility(document.documentElement);
 				
 		<div class="site-branding">
 			<div class="ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope">
-				<span class="site-logo-img"><a href="\" class="custom-logo-link" rel="home"><img src="{{asset('fxipro_v2/logo-white.png')}}" class="custom-logo" alt="logo" srcset="" sizes="(max-width: 187px) 100vw, 187px" width="187" height="62"></a></span>			</div>
+				<span class="site-logo-img"><a href="\" class="custom-logo-link" rel="home"><img src="{{asset('main/logo-white.png')}}" class="custom-logo" alt="logo" srcset="" sizes="(max-width: 187px) 100vw, 187px" width="187" height="62"></a></span>			</div>
 		</div>
 
 
@@ -89,7 +89,7 @@ flexibility(document.documentElement);
 					<div class="ast-button-wrap">
 			<button type="button" class="menu-toggle main-header-menu-toggle ast-mobile-menu-buttons-fill" aria-controls="primary-menu" aria-expanded="false" data-index="0">
 				<span class="screen-reader-text">Main Menu</span>
-				<img src="{{asset('fxipro_v2/menu3.png')}}" style="height:25px; width:25px">
+				<img src="{{asset('main/menu3.png')}}" style="height:25px; width:25px">
 							</button>
 		</div>
 			
@@ -227,7 +227,7 @@ Such as Bitcoin, Ethereum, Litecoin, Ripple and many more.</p></div>
 						<div class="elementor-element elementor-element-6beccc75 elementor-widget elementor-widget-image" data-id="6beccc75" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-image">
-										<img src="{{asset('fxipro_v2/trading-tools-platforms-1024x768-1.png')}}" class="attachment-full size-full" alt="" loading="lazy" srcset="{{asset('fxipro_v2/trading-tools-platforms-1024x768-1.png')}} 1024w, {{asset('fxipro_v2/trading-tools-platforms-1024x768-1.png')}} 300w, {{asset('fxipro_v2/trading-tools-platforms-1024x768-1.png')}} 768w" sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="768">											</div>
+										<img src="{{asset('main/trading-tools-platforms-1024x768-1.png')}}" class="attachment-full size-full" alt="" loading="lazy" srcset="{{asset('main/trading-tools-platforms-1024x768-1.png')}} 1024w, {{asset('main/trading-tools-platforms-1024x768-1.png')}} 300w, {{asset('main/trading-tools-platforms-1024x768-1.png')}} 768w" sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="768">											</div>
 				</div>
 				</div>
 						</div>
@@ -262,7 +262,7 @@ Such as Bitcoin, Ethereum, Litecoin, Ripple and many more.</p></div>
 						<div class="elementor-element elementor-element-18f6d362 elementor-widget elementor-widget-image" data-id="18f6d362" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-image">
-										<img src="{{asset('fxipro_v2/slider2.jpg')}}" class="attachment-full size-full" alt="" loading="lazy" srcset="{{asset('fxipro_v2/slider2.jpg')}} 500w, {{asset('fxipro_v2/slider2.jpg')}} 300w" sizes="(max-width: 500px) 100vw, 500px" width="500" height="333"></div>
+										<img src="{{asset('main/slider2.jpg')}}" class="attachment-full size-full" alt="" loading="lazy" srcset="{{asset('main/slider2.jpg')}} 500w, {{asset('main/slider2.jpg')}} 300w" sizes="(max-width: 500px) 100vw, 500px" width="500" height="333"></div>
 				</div>
 				</div>
 						</div>
@@ -402,7 +402,7 @@ quickly to pursue execution at the best available price.&nbsp;</li><li><b>Powerf
 													<div class="elementor-element elementor-element-91842e4 elementor-widget elementor-widget-image" data-id="91842e4" data-element_type="widget" data-widget_type="image.default">
 														<div class="elementor-widget-container">
 															<div class="elementor-image">
-																<img src="{{asset('fxipro_v2/logo-white.png')}}" title="logo" alt="logo" width="220px;">
+																<img src="{{asset('main/logo-white.png')}}" title="logo" alt="logo" width="220px;">
 															</div>
 														</div>
 													</div>
@@ -433,19 +433,19 @@ quickly to pursue execution at the best available price.&nbsp;</li><li><b>Powerf
 															<ul class="elementor-icon-list-items">
 																<li class="elementor-icon-list-item">
 																	<span class="elementor-icon-list-icon">
-																		<img src="{{asset('fxipro_v2/n.png')}}" aria-hidden="true"> </span>
+																		<img src="{{asset('main/n.png')}}" aria-hidden="true"> </span>
 																	<span class="elementor-icon-list-text">FX
 																		TRADING</span>
 																</li>
 																<li class="elementor-icon-list-item">
 																	<span class="elementor-icon-list-icon">
-																		<img src="{{asset('fxipro_v2/n.png')}}" aria-hidden="true"> </span>
+																		<img src="{{asset('main/n.png')}}" aria-hidden="true"> </span>
 																	<span class="elementor-icon-list-text">MARKET
 																		ANALYSIS</span>
 																</li>
 																<li class="elementor-icon-list-item">
 																	<span class="elementor-icon-list-icon">
-																		<img src="{{asset('fxipro_v2/n.png')}}" aria-hidden="true"> </span>
+																		<img src="{{asset('main/n.png')}}" aria-hidden="true"> </span>
 																	<span class="elementor-icon-list-text">FX
 																		INVESTMENTS</span>
 																</li>
@@ -530,34 +530,34 @@ quickly to pursue execution at the best available price.&nbsp;</li><li><b>Powerf
 	<script id="astra-theme-js-js-extra">
 var astra = {"break_point":"2020","isRtl":""};
 </script>
-<script src="{{asset('fxipro_v2/style.js')}}" id="astra-theme-js-js"></script>
-<script src="{{asset('fxipro_v2/anime.js')}}" id="anime-js"></script>
-<script src="{{asset('fxipro_v2/imagesloaded.js')}}" id="imagesloaded-js"></script>
+<script src="{{asset('main/style.js')}}" id="astra-theme-js-js"></script>
+<script src="{{asset('main/anime.js')}}" id="anime-js"></script>
+<script src="{{asset('main/imagesloaded.js')}}" id="imagesloaded-js"></script>
 <script id="happy-elementor-addons-js-extra">
 var HappyLocalize = {"ajax_url":"https:\/\/tradefoxe.com\/wp-admin\/admin-ajax.php","nonce":"cd68d08b44"};
 </script>
-<script src="{{asset('fxipro_v2/happy-addons.js')}}" id="happy-elementor-addons-js"></script>
+<script src="{{asset('main/happy-addons.js')}}" id="happy-elementor-addons-js"></script>
 <script id="happy-addons-pro-js-extra">
 var HappyProLocalize = {"ajax_url":"https:\/\/tradefoxe.com\/wp-admin\/admin-ajax.php","nonce":"2578c68a85"};
 var HappyProLocalize = {"ajax_url":"https:\/\/tradefoxe.com\/wp-admin\/admin-ajax.php","nonce":"2578c68a85"};
 </script>
-<script src="{{asset('fxipro_v2/happy-addons-pro.js')}}" id="happy-addons-pro-js"></script>
+<script src="{{asset('main/happy-addons-pro.js')}}" id="happy-addons-pro-js"></script>
 <script id="astra-addon-js-js-extra">
 var astraAddon = {"sticky_active":"","header_main_stick":"","header_above_stick":"0","header_below_stick":"0","stick_header_meta":"","header_main_stick_meta":"","header_above_stick_meta":"","header_below_stick_meta":"","sticky_header_on_devices":"both","sticky_header_style":"fade","sticky_hide_on_scroll":"","break_point":"2020","tablet_break_point":"921","mobile_break_point":"544","header_main_shrink":"1","header_logo_width":"","responsive_header_logo_width":{"desktop":"187","tablet":"","mobile":""},"stick_origin_position":"","site_layout":"","site_content_width":"1240","site_layout_padded_width":"1200","site_layout_box_width":"1200"};
 </script>
-<script src="{{asset('fxipro_v2/astra-addon-5f4bbe88dcbe35-54608992.js')}}" id="astra-addon-js-js"></script>
-<script src="{{asset('fxipro_v2/wp-embed.js')}}" id="wp-embed-js"></script>
-<script src="{{asset('fxipro_v2/frontend-modules.js')}}" id="elementor-frontend-modules-js"></script>
-<script src="{{asset('fxipro_v2/jquery.js')}}" id="elementor-sticky-js"></script>
+<script src="{{asset('main/astra-addon-5f4bbe88dcbe35-54608992.js')}}" id="astra-addon-js-js"></script>
+<script src="{{asset('main/wp-embed.js')}}" id="wp-embed-js"></script>
+<script src="{{asset('main/frontend-modules.js')}}" id="elementor-frontend-modules-js"></script>
+<script src="{{asset('main/jquery.js')}}" id="elementor-sticky-js"></script>
 <script id="elementor-pro-frontend-js-before">
 var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/tradefoxe.com\/wp-admin\/admin-ajax.php","nonce":"9f7279bb3b","i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"delicious":{"title":"Delicious"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""}};
 </script>
-<script src="{{asset('fxipro_v2/frontend_003.js')}}" id="elementor-pro-frontend-js"></script>
-<script src="{{asset('fxipro_v2/position.js')}}" id="jquery-ui-position-js"></script>
-<script src="{{asset('fxipro_v2/dialog.js')}}" id="elementor-dialog-js"></script>
-<script src="{{asset('fxipro_v2/waypoints.js')}}" id="elementor-waypoints-js"></script>
-<script src="{{asset('fxipro_v2/swiper.js')}}" id="swiper-js"></script>
-<script src="{{asset('fxipro_v2/share-link.js')}}" id="share-link-js"></script>
+<script src="{{asset('main/frontend_003.js')}}" id="elementor-pro-frontend-js"></script>
+<script src="{{asset('main/position.js')}}" id="jquery-ui-position-js"></script>
+<script src="{{asset('main/dialog.js')}}" id="elementor-dialog-js"></script>
+<script src="{{asset('main/waypoints.js')}}" id="elementor-waypoints-js"></script>
+<script src="{{asset('main/swiper.js')}}" id="swiper-js"></script>
+<script src="{{asset('main/share-link.js')}}" id="share-link-js"></script>
 <script id="elementor-frontend-js-extra">
 var uael_particles_script = {"uael_particles_url":"https:\/\/tradefoxe.com\/wp-content\/plugins\/ultimate-elementor\/assets\/min-js\/uael-particles.min.js","particles_url":"https:\/\/tradefoxe.com\/wp-content\/plugins\/ultimate-elementor\/assets\/lib\/particles\/particles.min.js"};
 var papro_addons = {"url":"https:\/\/tradefoxe.com\/wp-admin\/admin-ajax.php","particles_url":"https:\/\/tradefoxe.com\/wp-content\/plugins\/premium-addons-pro\/assets\/frontend\/min-js\/particles.min.js","kenburns_url":"https:\/\/tradefoxe.com\/wp-content\/plugins\/premium-addons-pro\/assets\/frontend\/min-js\/cycle.min.js","gradient_url":"https:\/\/tradefoxe.com\/wp-content\/plugins\/premium-addons-pro\/assets\/frontend\/min-js\/premium-gradient.min.js","parallax_url":"https:\/\/tradefoxe.com\/wp-content\/plugins\/premium-addons-pro\/assets\/frontend\/min-js\/premium-parallax.min.js","lottie_url":"https:\/\/tradefoxe.com\/wp-content\/plugins\/premium-addons-for-elementor\/assets\/frontend\/min-js\/lottie.min.js"};
@@ -565,7 +565,7 @@ var papro_addons = {"url":"https:\/\/tradefoxe.com\/wp-admin\/admin-ajax.php","p
 <script id="elementor-frontend-js-before">
 var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.0.4","is_static":false,"legacyMode":{"elementWrappers":true},"urls":{"assets":"https:\/\/tradefoxe.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[],"general":[]},"kit":{"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":1639,"title":"Stock%20Trading%20%E2%80%93%20TradeFoxe","excerpt":"","featuredImage":false}};
 </script>
-<script src="{{asset('fxipro_v2/frontend.js')}}" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span><span id="elementor-device-mode" class="elementor-screen-only"></span>
+<script src="{{asset('main/frontend.js')}}" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span><span id="elementor-device-mode" class="elementor-screen-only"></span>
 <script id="elementor-frontend-js-after">
 window.scopes_array = {};
                 window.backend = 0;
@@ -847,15 +847,15 @@ window.scope_array = [];
 									jQuery.cachedScript( uael_url );
 								});	
 </script>
-<script src="{{asset('fxipro_v2/underscore.js')}}" id="underscore-js"></script>
+<script src="{{asset('main/underscore.js')}}" id="underscore-js"></script>
 <script id="wp-util-js-extra">
 var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
 </script>
-<script src="{{asset('fxipro_v2/wp-util.js')}}" id="wp-util-js"></script>
+<script src="{{asset('main/wp-util.js')}}" id="wp-util-js"></script>
 <script id="wpforms-elementor-js-extra">
 var wpformsElementorVars = {"recaptcha_type":"v2"};
 </script>
-<script src="{{asset('fxipro_v2/frontend_002.js')}}" id="wpforms-elementor-js"></script>
+<script src="{{asset('main/frontend_002.js')}}" id="wpforms-elementor-js"></script>
 			<script>
 			/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())},!1);
 			</script>

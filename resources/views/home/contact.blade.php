@@ -20,7 +20,7 @@
 			padding: 0 !important;
 		}
 	</style>
-	<link rel="stylesheet" id="astra-theme-css-css" href="{{asset('fxipro_v2/style_002.css')}}" media="all">
+	<link rel="stylesheet" id="astra-theme-css-css" href="{{asset('main/style_002.css')}}" media="all">
 	<style id="astra-theme-css-inline-css">
 		html {
 			font-size: 87.5%;
@@ -1130,40 +1130,40 @@
 			align-items: center;
 		}
 	</style>
-	<link rel="stylesheet" id="astra-google-fonts-css" href="{{asset('fxipro_v2/css_002.css')}}" media="all">
-	<link rel="stylesheet" id="wp-block-library-css" href="{{asset('fxipro_v2/style.css')}}" media="all">
-	<link rel="stylesheet" id="happy-icons-css" href="{{asset('fxipro_v2/style_003.css')}}" media="all">
-	<link rel="stylesheet" id="font-awesome-css" href="{{asset('fxipro_v2/font-awesome.css')}}" media="all">
-	<link rel="stylesheet" id="elementor-frontend-legacy-css" href="{{asset('fxipro_v2/frontend-legacy.css')}}" media="all">
-	<link rel="stylesheet" id="elementor-frontend-css" href="{{asset('fxipro_v2/frontend_003.css')}}" media="all">
-	<link rel="stylesheet" id="happy-elementor-addons-1482-css" href="{{asset('fxipro_v2/happy-14829793.css')}}" media="all">
-	<link rel="stylesheet" id="hfe-style-css" href="{{asset('fxipro_v2/header-footer-elementor.css')}}" media="all">
-	<link rel="stylesheet" id="elementor-icons-css" href="{{asset('fxipro_v2/elementor-icons.css')}}" media="all">
-	<link rel="stylesheet" id="elementor-animations-css" href="{{asset('fxipro_v2/animations.css')}}" media="all">
-	<link rel="stylesheet" id="elementor-post-7-css" href="{{asset('fxipro_v2/post-7.css')}}" media="all">
-	<link rel="stylesheet" id="happy-elementor-addons-7-css" href="{{asset('fxipro_v2/happy-79793.css')}}" media="all">
-	<link rel="stylesheet" id="elementor-pro-css" href="{{asset('fxipro_v2/frontend_002.css')}}" media="all">
-	<link rel="stylesheet" id="uael-frontend-css" href="{{asset('fxipro_v2/uael-frontend.css')}}" media="all">
-	<link rel="stylesheet" id="wpforms-base-css" href="{{asset('fxipro_v2/wpforms-base.css')}}" media="all">
-	<link rel="stylesheet" id="font-awesome-5-all-css" href="{{asset('fxipro_v2/all.css')}}" media="all">
-	<link rel="stylesheet" id="font-awesome-4-shim-css" href="{{asset('fxipro_v2/v4-shims.css')}}" media="all">
-	<link rel="stylesheet" id="premium-pro-css" href="{{asset('fxipro_v2/premium-addons.css')}}" media="all">
-	<link rel="stylesheet" id="elementor-post-1482-css" href="{{asset('fxipro_v2/post-1482.css')}}" media="all">
-	<link rel="stylesheet" id="hfe-widgets-style-css" href="{{asset('fxipro_v2/frontend.css')}}" media="all">
-	<link rel="stylesheet" id="elementor-post-1085-css" href="{{asset('fxipro_v2/post-1085.css')}}" media="all">
-	<link rel="stylesheet" id="happy-elementor-addons-1085-css" href="{{asset('fxipro_v2/happy-10859793.css')}}" media="all">
-	<link rel="stylesheet" id="astra-addon-css-css" href="{{asset('fxipro_v2/astra-addon-5f4bbe88dc5e29-02714226.css')}}" media="all">
-	<link rel="stylesheet" id="google-fonts-1-css" href="{{asset('fxipro_v2/css.css')}}" media="all">
-	<link rel="stylesheet" id="elementor-icons-shared-0-css" href="{{asset('fxipro_v2/fontawesome.css')}}" media="all">
-	<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="{{asset('fxipro_v2/solid.css')}}" media="all">
+	<link rel="stylesheet" id="astra-google-fonts-css" href="{{asset('main/css_002.css')}}" media="all">
+	<link rel="stylesheet" id="wp-block-library-css" href="{{asset('main/style.css')}}" media="all">
+	<link rel="stylesheet" id="happy-icons-css" href="{{asset('main/style_003.css')}}" media="all">
+	<link rel="stylesheet" id="font-awesome-css" href="{{asset('main/font-awesome.css')}}" media="all">
+	<link rel="stylesheet" id="elementor-frontend-legacy-css" href="{{asset('main/frontend-legacy.css')}}" media="all">
+	<link rel="stylesheet" id="elementor-frontend-css" href="{{asset('main/frontend_003.css')}}" media="all">
+	<link rel="stylesheet" id="happy-elementor-addons-1482-css" href="{{asset('main/happy-14829793.css')}}" media="all">
+	<link rel="stylesheet" id="hfe-style-css" href="{{asset('main/header-footer-elementor.css')}}" media="all">
+	<link rel="stylesheet" id="elementor-icons-css" href="{{asset('main/elementor-icons.css')}}" media="all">
+	<link rel="stylesheet" id="elementor-animations-css" href="{{asset('main/animations.css')}}" media="all">
+	<link rel="stylesheet" id="elementor-post-7-css" href="{{asset('main/post-7.css')}}" media="all">
+	<link rel="stylesheet" id="happy-elementor-addons-7-css" href="{{asset('main/happy-79793.css')}}" media="all">
+	<link rel="stylesheet" id="elementor-pro-css" href="{{asset('main/frontend_002.css')}}" media="all">
+	<link rel="stylesheet" id="uael-frontend-css" href="{{asset('main/uael-frontend.css')}}" media="all">
+	<link rel="stylesheet" id="wpforms-base-css" href="{{asset('main/wpforms-base.css')}}" media="all">
+	<link rel="stylesheet" id="font-awesome-5-all-css" href="{{asset('main/all.css')}}" media="all">
+	<link rel="stylesheet" id="font-awesome-4-shim-css" href="{{asset('main/v4-shims.css')}}" media="all">
+	<link rel="stylesheet" id="premium-pro-css" href="{{asset('main/premium-addons.css')}}" media="all">
+	<link rel="stylesheet" id="elementor-post-1482-css" href="{{asset('main/post-1482.css')}}" media="all">
+	<link rel="stylesheet" id="hfe-widgets-style-css" href="{{asset('main/frontend.css')}}" media="all">
+	<link rel="stylesheet" id="elementor-post-1085-css" href="{{asset('main/post-1085.css')}}" media="all">
+	<link rel="stylesheet" id="happy-elementor-addons-1085-css" href="{{asset('main/happy-10859793.css')}}" media="all">
+	<link rel="stylesheet" id="astra-addon-css-css" href="{{asset('main/astra-addon-5f4bbe88dc5e29-02714226.css')}}" media="all">
+	<link rel="stylesheet" id="google-fonts-1-css" href="{{asset('main/css.css')}}" media="all">
+	<link rel="stylesheet" id="elementor-icons-shared-0-css" href="{{asset('main/fontawesome.css')}}" media="all">
+	<link rel="stylesheet" id="elementor-icons-fa-solid-css" href="{{asset('main/solid.css')}}" media="all">
 	<!--[if IE]>
 <script src='https://tradefoxe.com/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=2.5.4' id='astra-flexibility-js'></script>
 <script id='astra-flexibility-js-after'>
 flexibility(document.documentElement);
 </script>
 <![endif]-->
-	<script src="{{asset('fxipro_v2/jquery_002.js')}}" id="jquery-core-js"></script>
-	<script src="{{asset('fxipro_v2/v4-shims.js')}}" id="font-awesome-4-shim-js"></script>
+	<script src="{{asset('main/jquery_002.js')}}" id="jquery-core-js"></script>
+	<script src="{{asset('main/v4-shims.js')}}" id="font-awesome-4-shim-js"></script>
 	<style>
 		.recentcomments a {
 			display: inline !important;
@@ -1305,7 +1305,7 @@ flexibility(document.documentElement);
 
 							<div class="site-branding">
 								<div class="ast-site-identity" itemtype="https://schema.org/Organization" itemscope="itemscope">
-									<span class="site-logo-img"><a href="\" class="custom-logo-link" rel="home"><img src="{{asset('fxipro_v2/logo-white.png')}}" class="custom-logo" alt="TradeFoxe" srcset="" sizes="(max-width: 187px) 100vw, 187px" width="187" height="62"></a></span>
+									<span class="site-logo-img"><a href="\" class="custom-logo-link" rel="home"><img src="{{asset('main/logo-white.png')}}" class="custom-logo" alt="TradeFoxe" srcset="" sizes="(max-width: 187px) 100vw, 187px" width="187" height="62"></a></span>
 								</div>
 							</div>
 							<!-- .site-branding -->
@@ -1315,7 +1315,7 @@ flexibility(document.documentElement);
 								<div class="ast-button-wrap">
 									<button type="button" class="menu-toggle main-header-menu-toggle  ast-mobile-menu-buttons-fill " aria-controls="primary-menu" aria-expanded="false" data-index="0">
 										<span class="screen-reader-text">Main Menu</span>
-										<img src="{{asset('fxipro_v2/menu3.png')}}" style="height:25px; width:25px">
+										<img src="{{asset('main/menu3.png')}}" style="height:25px; width:25px">
 									</button>
 								</div>
 
@@ -1503,7 +1503,7 @@ flexibility(document.documentElement);
 																<div class="elementor-widget-wrap">
 																	<div class="elementor-element elementor-element-da4cc95 elementor-widget elementor-widget-google_maps" data-id="da4cc95" data-element_type="widget" data-widget_type="google_maps.default">
 																		<div class="elementor-widget-container">
-																			<div class="elementor-custom-embed"><iframe src="{{asset('fxipro_v2/embed.html')}}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+																			<div class="elementor-custom-embed"><iframe src="{{asset('main/embed.html')}}" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
 																		</div>
 																	</div>
 																</div>
@@ -1556,7 +1556,7 @@ flexibility(document.documentElement);
 													<div class="elementor-element elementor-element-91842e4 elementor-widget elementor-widget-image" data-id="91842e4" data-element_type="widget" data-widget_type="image.default">
 														<div class="elementor-widget-container">
 															<div class="elementor-image">
-																<img src="{{asset('fxipro_v2/logo-white.png')}}" title="logo" alt="logo" width="220px;">
+																<img src="{{asset('main/logo-white.png')}}" title="logo" alt="logo" width="220px;">
 															</div>
 														</div>
 													</div>
@@ -1587,19 +1587,19 @@ flexibility(document.documentElement);
 															<ul class="elementor-icon-list-items">
 																<li class="elementor-icon-list-item">
 																	<span class="elementor-icon-list-icon">
-																		<img src="{{asset('fxipro_v2/n.png')}}" aria-hidden="true"> </span>
+																		<img src="{{asset('main/n.png')}}" aria-hidden="true"> </span>
 																	<span class="elementor-icon-list-text">FX
 																		TRADING</span>
 																</li>
 																<li class="elementor-icon-list-item">
 																	<span class="elementor-icon-list-icon">
-																		<img src="{{asset('fxipro_v2/n.png')}}" aria-hidden="true"> </span>
+																		<img src="{{asset('main/n.png')}}" aria-hidden="true"> </span>
 																	<span class="elementor-icon-list-text">MARKET
 																		ANALYSIS</span>
 																</li>
 																<li class="elementor-icon-list-item">
 																	<span class="elementor-icon-list-icon">
-																		<img src="{{asset('fxipro_v2/n.png')}}" aria-hidden="true"> </span>
+																		<img src="{{asset('main/n.png')}}" aria-hidden="true"> </span>
 																	<span class="elementor-icon-list-text">FX
 																		INVESTMENTS</span>
 																</li>
@@ -1684,34 +1684,34 @@ flexibility(document.documentElement);
 	<script id="astra-theme-js-js-extra">
 		var astra = { "break_point": "2020", "isRtl": "" };
 	</script>
-	<script src="{{asset('fxipro_v2/style.js')}}" id="astra-theme-js-js"></script>
-	<script src="{{asset('fxipro_v2/anime.js')}}" id="anime-js"></script>
-	<script src="{{asset('fxipro_v2/imagesloaded.js')}}" id="imagesloaded-js"></script>
+	<script src="{{asset('main/style.js')}}" id="astra-theme-js-js"></script>
+	<script src="{{asset('main/anime.js')}}" id="anime-js"></script>
+	<script src="{{asset('main/imagesloaded.js')}}" id="imagesloaded-js"></script>
 	<script id="happy-elementor-addons-js-extra">
 		var HappyLocalize = { "ajax_url": "https:\/\/tradefoxe.com\/wp-admin\/admin-ajax.php", "nonce": "cd68d08b44" };
 	</script>
-	<script src="{{asset('fxipro_v2/happy-addons.js')}}" id="happy-elementor-addons-js"></script>
+	<script src="{{asset('main/happy-addons.js')}}" id="happy-elementor-addons-js"></script>
 	<script id="happy-addons-pro-js-extra">
 		var HappyProLocalize = { "ajax_url": "https:\/\/tradefoxe.com\/wp-admin\/admin-ajax.php", "nonce": "2578c68a85" };
 		var HappyProLocalize = { "ajax_url": "https:\/\/tradefoxe.com\/wp-admin\/admin-ajax.php", "nonce": "2578c68a85" };
 	</script>
-	<script src="{{asset('fxipro_v2/happy-addons-pro.js')}}" id="happy-addons-pro-js"></script>
+	<script src="{{asset('main/happy-addons-pro.js')}}" id="happy-addons-pro-js"></script>
 	<script id="astra-addon-js-js-extra">
 		var astraAddon = { "sticky_active": "", "header_main_stick": "", "header_above_stick": "0", "header_below_stick": "0", "stick_header_meta": "", "header_main_stick_meta": "", "header_above_stick_meta": "", "header_below_stick_meta": "", "sticky_header_on_devices": "both", "sticky_header_style": "fade", "sticky_hide_on_scroll": "", "break_point": "2020", "tablet_break_point": "921", "mobile_break_point": "544", "header_main_shrink": "1", "header_logo_width": "", "responsive_header_logo_width": { "desktop": "187", "tablet": "", "mobile": "" }, "stick_origin_position": "", "site_layout": "", "site_content_width": "1240", "site_layout_padded_width": "1200", "site_layout_box_width": "1200" };
 	</script>
-	<script src="{{asset('fxipro_v2/astra-addon-5f4bbe88dcbe35-54608992.js')}}" id="astra-addon-js-js"></script>
-	<script src="{{asset('fxipro_v2/wp-embed.js')}}" id="wp-embed-js"></script>
-	<script src="{{asset('fxipro_v2/frontend-modules.js')}}" id="elementor-frontend-modules-js"></script>
-	<script src="{{asset('fxipro_v2/jquery_003.js')}}" id="elementor-sticky-js"></script>
+	<script src="{{asset('main/astra-addon-5f4bbe88dcbe35-54608992.js')}}" id="astra-addon-js-js"></script>
+	<script src="{{asset('main/wp-embed.js')}}" id="wp-embed-js"></script>
+	<script src="{{asset('main/frontend-modules.js')}}" id="elementor-frontend-modules-js"></script>
+	<script src="{{asset('main/jquery_003.js')}}" id="elementor-sticky-js"></script>
 	<script id="elementor-pro-frontend-js-before">
 		var ElementorProFrontendConfig = { "ajaxurl": "https:\/\/tradefoxe.com\/wp-admin\/admin-ajax.php", "nonce": "9f7279bb3b", "i18n": { "toc_no_headings_found": "No headings were found on this page." }, "shareButtonsNetworks": { "facebook": { "title": "Facebook", "has_counter": true }, "twitter": { "title": "Twitter" }, "google": { "title": "Google+", "has_counter": true }, "linkedin": { "title": "LinkedIn", "has_counter": true }, "pinterest": { "title": "Pinterest", "has_counter": true }, "reddit": { "title": "Reddit", "has_counter": true }, "vk": { "title": "VK", "has_counter": true }, "odnoklassniki": { "title": "OK", "has_counter": true }, "tumblr": { "title": "Tumblr" }, "delicious": { "title": "Delicious" }, "digg": { "title": "Digg" }, "skype": { "title": "Skype" }, "stumbleupon": { "title": "StumbleUpon", "has_counter": true }, "mix": { "title": "Mix" }, "telegram": { "title": "Telegram" }, "pocket": { "title": "Pocket", "has_counter": true }, "xing": { "title": "XING", "has_counter": true }, "whatsapp": { "title": "WhatsApp" }, "email": { "title": "Email" }, "print": { "title": "Print" } }, "facebook_sdk": { "lang": "en_US", "app_id": "" } };
 	</script>
-	<script src="{{asset('fxipro_v2/frontend_002.js')}}" id="elementor-pro-frontend-js"></script>
-	<script src="{{asset('fxipro_v2/position.js')}}" id="jquery-ui-position-js"></script>
-	<script src="{{asset('fxipro_v2/dialog.js')}}" id="elementor-dialog-js"></script>
-	<script src="{{asset('fxipro_v2/waypoints.js')}}" id="elementor-waypoints-js"></script>
-	<script src="{{asset('fxipro_v2/swiper.js')}}" id="swiper-js"></script>
-	<script src="{{asset('fxipro_v2/share-link.js')}}" id="share-link-js"></script>
+	<script src="{{asset('main/frontend_002.js')}}" id="elementor-pro-frontend-js"></script>
+	<script src="{{asset('main/position.js')}}" id="jquery-ui-position-js"></script>
+	<script src="{{asset('main/dialog.js')}}" id="elementor-dialog-js"></script>
+	<script src="{{asset('main/waypoints.js')}}" id="elementor-waypoints-js"></script>
+	<script src="{{asset('main/swiper.js')}}" id="swiper-js"></script>
+	<script src="{{asset('main/share-link.js')}}" id="share-link-js"></script>
 	<script id="elementor-frontend-js-extra">
 		var uael_particles_script = { "uael_particles_url": "https:\/\/tradefoxe.com\/wp-content\/plugins\/ultimate-elementor\/assets\/min-js\/uael-particles.min.js", "particles_url": "https:\/\/tradefoxe.com\/wp-content\/plugins\/ultimate-elementor\/assets\/lib\/particles\/particles.min.js" };
 		var papro_addons = { "url": "https:\/\/tradefoxe.com\/wp-admin\/admin-ajax.php", "particles_url": "https:\/\/tradefoxe.com\/wp-content\/plugins\/premium-addons-pro\/assets\/frontend\/min-js\/particles.min.js", "kenburns_url": "https:\/\/tradefoxe.com\/wp-content\/plugins\/premium-addons-pro\/assets\/frontend\/min-js\/cycle.min.js", "gradient_url": "https:\/\/tradefoxe.com\/wp-content\/plugins\/premium-addons-pro\/assets\/frontend\/min-js\/premium-gradient.min.js", "parallax_url": "https:\/\/tradefoxe.com\/wp-content\/plugins\/premium-addons-pro\/assets\/frontend\/min-js\/premium-parallax.min.js", "lottie_url": "https:\/\/tradefoxe.com\/wp-content\/plugins\/premium-addons-for-elementor\/assets\/frontend\/min-js\/lottie.min.js" };
@@ -1719,7 +1719,7 @@ flexibility(document.documentElement);
 	<script id="elementor-frontend-js-before">
 		var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "version": "3.0.4", "is_static": false, "legacyMode": { "elementWrappers": true }, "urls": { "assets": "https:\/\/tradefoxe.com\/wp-content\/plugins\/elementor\/assets\/" }, "settings": { "page": [], "editorPreferences": [], "general": [] }, "kit": { "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 1482, "title": "Contact%20%E2%80%93%20TradeFoxe", "excerpt": "", "featuredImage": false } };
 	</script>
-	<script src="{{asset('fxipro_v2/frontend.js')}}" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span><span id="elementor-device-mode" class="elementor-screen-only"></span>
+	<script src="{{asset('main/frontend.js')}}" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span><span id="elementor-device-mode" class="elementor-screen-only"></span>
 	<script id="elementor-frontend-js-after">
 		window.scopes_array = {};
 		window.backend = 0;
@@ -2001,18 +2001,18 @@ flexibility(document.documentElement);
 			jQuery.cachedScript(uael_url);
 		});
 	</script>
-	<script src="{{asset('fxipro_v2/underscore.js')}}" id="underscore-js"></script>
+	<script src="{{asset('main/underscore.js')}}" id="underscore-js"></script>
 	<script id="wp-util-js-extra">
 		var _wpUtilSettings = { "ajax": { "url": "\/wp-admin\/admin-ajax.php" } };
 	</script>
-	<script src="{{asset('fxipro_v2/wp-util.js')}}" id="wp-util-js"></script>
+	<script src="{{asset('main/wp-util.js')}}" id="wp-util-js"></script>
 	<script id="wpforms-elementor-js-extra">
 		var wpformsElementorVars = { "recaptcha_type": "v2" };
 	</script>
-	<script src="{{asset('fxipro_v2/frontend_003.js')}}" id="wpforms-elementor-js"></script>
-	<script src="{{asset('fxipro_v2/jquery.js')}}" id="wpforms-validation-js"></script>
-	<script src="{{asset('fxipro_v2/mailcheck.js')}}" id="wpforms-mailcheck-js"></script>
-	<script src="{{asset('fxipro_v2/wpforms.js')}}" id="wpforms-js"></script>
+	<script src="{{asset('main/frontend_003.js')}}" id="wpforms-elementor-js"></script>
+	<script src="{{asset('main/jquery.js')}}" id="wpforms-validation-js"></script>
+	<script src="{{asset('main/mailcheck.js')}}" id="wpforms-mailcheck-js"></script>
+	<script src="{{asset('main/wpforms.js')}}" id="wpforms-js"></script>
 	<script>
 		/(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () { var t, e = location.hash.substring(1); /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus()) }, !1);
 	</script>
