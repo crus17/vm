@@ -82,6 +82,27 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a data-toggle="collapse" href="#mpack">
+                        <i class="fa fa-briefcase"></i>
+                        <p>Packages</p>
+                        <span class="caret"></span>
+                    </a>
+                    <div class="collapse" id="mpack">
+                        <ul class="nav nav-collapse">
+                            <li>
+                                <a href="<?php echo e(url('dashboard/mplans')); ?>">
+                                    <span class="sub-item">Investment Plans</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo e(url('dashboard/myplans')); ?>">
+                                    <span class="sub-item">My Packages</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
                     <a href="<?php echo e(url('dashboard/referuser')); ?>">
                         <i class="fa fa-recycle " aria-hidden="true"></i>
                         <p>Refer Users</p>

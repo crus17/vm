@@ -213,6 +213,53 @@ if (Auth::user()->dashboard_style == "light") {
                                         </div>
                                         <div class="col-7 col-stats">
                                             <div class="numbers">
+                                                <p class="card-category">Total Packages</p>
+                                                <?php if(count($user_plan)>0): ?>
+                                                <h4 class="card-title text-<?php echo e($text); ?>"><?php echo e($user_plan->count()); ?></h4>
+                                                <?php else: ?>
+                                                <h4 class="card-title text-<?php echo e($text); ?>">0</h4>
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <div class="card card-stats card-round bg-<?php echo e($bg); ?>">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <div class="icon-big text-center">
+                                                <i class="fa fa-hourglass-start text-primary"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-7 col-stats">
+                                            <div class="numbers">
+                                                <p class="card-category">Active Packages</p>
+                                                
+                                                <?php if(count($user_plan_active)>0): ?>
+                                                <h4 class="card-title text-<?php echo e($text); ?>"><?php echo e($user_plan_active->count()); ?></h4>
+                                                <?php else: ?>
+                                                <h4 class="card-title text-<?php echo e($text); ?>">0</h4>
+                                                <?php endif; ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-sm-6 col-md-3">
+                            <div class="card card-stats card-round bg-<?php echo e($bg); ?>">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <div class="icon-big text-center">
+                                                <i class="fa fa-briefcase text-danger"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-7 col-stats">
+                                            <div class="numbers">
                                                 <p class="card-category">Status</p>
                                                 <h4 class="card-title text-<?php echo e($text); ?>"><?php echo e(Auth::user()->account_status); ?></h4>
                                             </div>
@@ -239,7 +286,7 @@ if (Auth::user()->dashboard_style == "light") {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 <!-- Beginning of chart -->
                 <div class="row">

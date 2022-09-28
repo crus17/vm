@@ -27,6 +27,7 @@
 			padding: 0 !important;
 		}
 	</style>
+	<script type="text/javascript">{{!! $settings->tawk_to !!}} </script>
 	<link rel="stylesheet" id="astra-theme-css-css" href="{{asset('main/style_002.css')}}" media="all">
 	<style id="astra-theme-css-inline-css">
 		html {
@@ -2656,86 +2657,64 @@ flexibility(document.documentElement);
 												</div>
 											</section>
 											<section class="elementor-section elementor-top-section elementor-element elementor-element-4c1fec6e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4c1fec6e" data-element_type="section">
-												<div class="elementor-container elementor-column-gap-default">
-													<div class="elementor-row">
-														<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-58fa9fdc" data-id="58fa9fdc" data-element_type="column">
-															<div class="elementor-column-wrap elementor-element-populated">
-																<div class="elementor-widget-wrap">
-																	<div class="elementor-element elementor-element-e424f86 elementor-widget elementor-widget-heading" data-id="e424f86" data-element_type="widget" data-widget_type="heading.default">
-																		<div class="elementor-widget-container">
-																			<h4 class="elementor-heading-title elementor-size-default">
-																				Qualified In :</h4>
+												<section class="elementor-section elementor-inner-section elementor-element elementor-element-263b31b8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="263b31b8" data-element_type="section">
+													<div class="elementor-container elementor-column-gap-default">
+														<div class="elementor-row">
+															<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-7c84488b" data-id="7c84488b" data-element_type="column">
+																<div class="elementor-column-wrap elementor-element-populated">
+																	<div class="elementor-widget-wrap">
+																		<div class="elementor-element elementor-element-4d8d7bc5 elementor-widget elementor-widget-image" data-id="4d8d7bc5" data-element_type="widget" data-widget_type="image.default">
+																			<div class="elementor-widget-container">
+																				<div class="elementor-image">
+																					<img src="{{ asset ('home/images/binance.png')}}" class="attachment-large size-large" alt="Binance" loading="lazy" width="200" height="100">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-7c84488b" data-id="7c84488b" data-element_type="column">
+																<div class="elementor-column-wrap elementor-element-populated">
+																	<div class="elementor-widget-wrap">
+																		<div class="elementor-element elementor-element-4d8d7bc5 elementor-widget elementor-widget-image" data-id="4d8d7bc5" data-element_type="widget" data-widget_type="image.default">
+																			<div class="elementor-widget-container">
+																				<div class="elementor-image">
+																					<img src="{{ asset ('home/images/coinbase.png')}}" class="attachment-large size-large" alt="coinbase" loading="lazy" width="200" height="100">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-14dbac3b" data-id="14dbac3b" data-element_type="column">
+																<div class="elementor-column-wrap elementor-element-populated">
+																	<div class="elementor-widget-wrap">
+																		<div class="elementor-element elementor-element-28b0b664 elementor-widget elementor-widget-image" data-id="28b0b664" data-element_type="widget" data-widget_type="image.default">
+																			<div class="elementor-widget-container">
+																				<div class="elementor-image">
+																					<img src="{{ asset ('home/images/blockchain.png')}}" class="attachment-large size-large" alt="Coin Mama" loading="lazy" width="200" height="100">
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-45b0540b" data-id="45b0540b" data-element_type="column">
+																<div class="elementor-column-wrap elementor-element-populated">
+																	<div class="elementor-widget-wrap">
+																		<div class="elementor-element elementor-element-1065987d elementor-widget elementor-widget-image" data-id="1065987d" data-element_type="widget" data-widget_type="image.default">
+																			<div class="elementor-widget-container">
+																				<div class="elementor-image">
+																					<img src="{{ asset ('home/images/crypto.png')}}" class="attachment-large size-large" alt="crypto" loading="lazy" width="200" height="100">
+																				</div>
+																			</div>
 																		</div>
 																	</div>
 																</div>
 															</div>
 														</div>
-														<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-50d480b" data-id="50d480b" data-element_type="column">
-															<div class="elementor-column-wrap elementor-element-populated">
-																<div class="elementor-widget-wrap">
-																	<section class="elementor-section elementor-inner-section elementor-element elementor-element-263b31b8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="263b31b8" data-element_type="section">
-																		<div class="elementor-container elementor-column-gap-default">
-																			<div class="elementor-row">
-																				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-7c84488b" data-id="7c84488b" data-element_type="column">
-																					<div class="elementor-column-wrap elementor-element-populated">
-																						<div class="elementor-widget-wrap">
-																							<div class="elementor-element elementor-element-4d8d7bc5 elementor-widget elementor-widget-image" data-id="4d8d7bc5" data-element_type="widget" data-widget_type="image.default">
-																								<div class="elementor-widget-container">
-																									<div class="elementor-image">
-																										<img src="{{asset('main/iqoption1.jpg')}}" class="attachment-large size-large" alt="" loading="lazy" width="200" height="100">
-																									</div>
-																								</div>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-7d6d2a47" data-id="7d6d2a47" data-element_type="column">
-																					<div class="elementor-column-wrap elementor-element-populated">
-																						<div class="elementor-widget-wrap">
-																							<div class="elementor-element elementor-element-2ec6cab5 elementor-widget elementor-widget-image" data-id="2ec6cab5" data-element_type="widget" data-widget_type="image.default">
-																								<div class="elementor-widget-container">
-																									<div class="elementor-image">
-																										<img src="{{asset('main/olymptrade2.jpg')}}" class="attachment-large size-large" alt="" loading="lazy" width="200" height="100">
-																									</div>
-																								</div>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-14dbac3b" data-id="14dbac3b" data-element_type="column">
-																					<div class="elementor-column-wrap elementor-element-populated">
-																						<div class="elementor-widget-wrap">
-																							<div class="elementor-element elementor-element-28b0b664 elementor-widget elementor-widget-image" data-id="28b0b664" data-element_type="widget" data-widget_type="image.default">
-																								<div class="elementor-widget-container">
-																									<div class="elementor-image">
-																										<img src="{{asset('main/expertoption6.jpg')}}" class="attachment-large size-large" alt="" loading="lazy" width="200" height="100">
-																									</div>
-																								</div>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-45b0540b" data-id="45b0540b" data-element_type="column">
-																					<div class="elementor-column-wrap elementor-element-populated">
-																						<div class="elementor-widget-wrap">
-																							<div class="elementor-element elementor-element-1065987d elementor-widget elementor-widget-image" data-id="1065987d" data-element_type="widget" data-widget_type="image.default">
-																								<div class="elementor-widget-container">
-																									<div class="elementor-image">
-																										<img src="{{asset('main/binomo3.jpg')}}" class="attachment-large size-large" alt="" loading="lazy" width="200" height="100">
-																									</div>
-																								</div>
-																							</div>
-																						</div>
-																					</div>
-																				</div>
-																			</div>
-																		</div>
-																	</section>
-																</div>
-															</div>
-														</div>
 													</div>
-												</div>
+												</section>
 											</section>
 										</div>
 									</div>
