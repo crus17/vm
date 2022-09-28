@@ -4,23 +4,23 @@
 
     <div class="panel panel-default" style="border:0px solid #fff;">
 
-        <!-- WhatsApp Number -->
+        <!-- Phone Number -->
         <div class="panel panel-default" style="border:0px solid #fff;">
                         <!-- Panel Heading Starts -->
                 <div class="panel-heading">
                     <h4 class="panel-title text-{{$text}}">
-                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#whatsapp">
-                        WhatsApp <i class="fa fa-arrow-down"></i>  </a>
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#contact_number">
+                        Phone Number <i class="fa fa-arrow-down"></i>  </a>
                     </h4>
                 </div>
                     
-                <div id="whatsapp" class="panel-collapse collapse">
+                <div id="contact_number" class="panel-collapse collapse">
                     <div class="sign-u">
                     <div class="sign-up1">
-                        <h4 class="text-{{$text}}">WhatsApp Number :</h4>
+                        <h4 class="text-{{$text}}">Phone Number :</h4>
                     </div>
                     <div class="sign-up2">
-                        <input type="text" name="whatsapp" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" value="{{$settings->whatsapp}}">
+                        <input type="text" name="contact_number" class="form-control bg-{{Auth('admin')->User()->dashboard_style}} text-{{$text}}" value="{{$settings->contact_number}}">
                     </div>
                 </div>
             </div>
