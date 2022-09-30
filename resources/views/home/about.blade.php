@@ -479,7 +479,9 @@ var papro_addons = {"url":"https:\/\/tradefoxe.com\/wp-admin\/admin-ajax.php","p
 <script id="elementor-frontend-js-before">
 var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"version":"3.0.4","is_static":false,"legacyMode":{"elementWrappers":true},"urls":{"assets":"https:\/\/tradefoxe.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[],"general":[]},"kit":{"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":156,"title":"About%20%E2%80%93%20TradeFoxe","excerpt":"","featuredImage":false}};
 </script>
-<script type="text/javascript">{{!! $settings->tawk_to !!}} </script>
+<!--Tidio Script-->
+<script src="//code.tidio.co/bvxgzpmm3ysvyaygjgb4bktslxqqjmqa.js" async></script>
+        
 <script src="{{asset('main/frontend_002.js')}}" id="elementor-frontend-js"></script><span id="elementor-device-mode" class="elementor-screen-only"></span><span id="elementor-device-mode" class="elementor-screen-only"></span>
 <script id="elementor-frontend-js-after">
 window.scopes_array = {};

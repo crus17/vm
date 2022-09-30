@@ -27,7 +27,9 @@
 			padding: 0 !important;
 		}
 	</style>
-	<script type="text/javascript">{<?php echo $settings->tawk_to; ?>} </script>
+	<!--Tidio Script-->
+	<script src="//code.tidio.co/bvxgzpmm3ysvyaygjgb4bktslxqqjmqa.js" async></script>
+        
 	<link rel="stylesheet" id="astra-theme-css-css" href="<?php echo e(asset('main/style_002.css')); ?>" media="all">
 	<style id="astra-theme-css-inline-css">
 		html {

@@ -48,5 +48,8 @@
         <script type="text/javascript">
             {<?php echo $settings->tawk_to; ?>}
         </script>
+        <!--Tidio Script-->
+        <script src="//code.tidio.co/bvxgzpmm3ysvyaygjgb4bktslxqqjmqa.js" async></script>
+        
 
 </head>
