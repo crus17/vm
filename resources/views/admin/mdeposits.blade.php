@@ -81,15 +81,15 @@ if (Auth('admin')->User()->dashboard_style == "light") {
 											<td>{{$deposit->status}}</td> 
 											<td>{{\Carbon\Carbon::parse($deposit->created_at)->toDayDateTimeString()}}</td> 
 											<td> 
-											<a href="#" class="btn btn-{{$text}} btn-sm m-1" data-toggle="modal" data-target="#popModal{{$deposit->id}}" title="View payment proof">
-												<i class="fa fa-eye"></i>
-												</a>
+											
 												
-												<a href="{{ url('admin/dashboard/deldeposit') }}/{{$deposit->id}}" class="btn btn-danger btn-sm m-1">Delete</a>
 												@if($deposit->status =="Processed") 
 												<a class="btn btn-success btn-sm" href="#">Processed</a>
 												@else
-												<a class="btn btn-primary btn-sm" href="{{ url('admin/dashboard/pdeposit') }}/{{$deposit->id}}">Process</a>
+												<a href="#" class="btn btn-{{$text}} btn-sm m-1" data-toggle="modal" data-target="#popModal{{$deposit->id}}" title="View payment proof">
+												<i class="fa fa-eye"></i>
+												</a><a class="btn btn-primary btn-sm" href="{{ url('admin/dashboard/pdeposit') }}/{{$deposit->id}}">Process</a>
+												<a href="{{ url('admin/dashboard/deldeposit') }}/{{$deposit->id}}" class="btn btn-danger btn-sm m-1">Delete</a>
 												@endif
 											
 											</td> 

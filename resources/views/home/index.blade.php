@@ -2013,268 +2013,82 @@ flexibility(document.documentElement);
 												</div>
 												<div class="elementor-container elementor-column-gap-default">
 													<div class="elementor-row">
-														<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-542d586c" data-id="542d586c" data-element_type="column">
-															<div class="elementor-column-wrap elementor-element-populated">
-																<div class="elementor-widget-wrap">
-																	<div class="elementor-element elementor-element-2b97b97c elementor-widget elementor-widget-price-table animated bounceIn" data-id="2b97b97c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;bounceIn&quot;}" data-widget_type="price-table.default">
-																		<div class="elementor-widget-container">
+														@foreach($plans as $plan)
+															<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-21594d42" data-id="21594d42" data-element_type="column">
+																<div class="elementor-column-wrap elementor-element-populated">
+																	<div class="elementor-widget-wrap">
+																		<div class="elementor-element elementor-element-7637ab38 elementor-widget elementor-widget-price-table animated bounceIn" data-id="7637ab38" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;bounceIn&quot;}" data-widget_type="price-table.default">
+																			<div class="elementor-widget-container">
 
-																			<div class="elementor-price-table">
-																				<div class="elementor-price-table__header">
-																					<h3 class="elementor-price-table__heading">
-																						BRONZE</h3>
+																				<div class="elementor-price-table">
+																					<div class="elementor-price-table__header">
+																						<h3 class="elementor-price-table__heading">
+																							{{$plan->name}}</h3>
 
-																					<span class="elementor-price-table__subheading">Min.
-																						Possible deposit: $1,000
-																						<br>Max.
-																						Possible deposit: $4,999</span>
+																						<span class="elementor-price-table__subheading">
+																							Min. Possible deposit: {{$settings->currency}}{{number_format($plan->min_price, 0, '.', ',')}}
+																							<br>Max. Possible deposit: {{$settings->currency}}{{number_format($plan->max_price, 0, '.', ',')}}
+																						</span>
+																					</div>
+
+																					<div class="elementor-price-table__price">
+																						<span class="elementor-price-table__currency elementor-currency--before">{{$settings->currency}}</span>
+																						<span class="elementor-price-table__integer-part" style="font-size:48px;">{{number_format($plan->min_price, 0, '.', ',')}}+</span>
+
+																						<span class="elementor-price-table__period elementor-typo-excluded">
+																							Returns in {{$plan->expiration}}
+																						</span>
+																					</div>
+
+																					<ul class="elementor-price-table__features-list">
+																						<li class="elementor-repeater-item-91f617b">
+																							<div class="elementor-price-table__feature-inner">
+																								<img src="{{asset('main/star.png')}}" aria-hidden="true">
+																								<span>
+																									At least 
+																									{{$settings->currency}}{{number_format($plan->minr, 0, '.', ',')}}
+																									expected return 
+																								</span>
+																							</div>
+																						</li>
+																						<li class="elementor-repeater-item-d6e2933">
+																							<div class="elementor-price-table__feature-inner">
+																								<img src="{{asset('main/star.png')}}" aria-hidden="true">
+																								@if($plan->increment_type === "Percentage")
+																								<span>{{number_format($plan->increment_amount, 0, '.', ',')}}% {{$plan->increment_interval}} return</span>
+																								@else
+																								<span>{{$settings->currency}}{{number_format($plan->increment_amount, 0, '.', ',')}} {{$plan->increment_interval}} return</span>
+																								@endif
+																							</div>
+																						</li>
+																						<li class="elementor-repeater-item-4e4d4c1">
+																							<div class="elementor-price-table__feature-inner">
+																								<img src="{{asset('main/eye.png')}}" aria-hidden="true">
+																								<span>
+																									Bonus: {{$settings->currency}}{{number_format($plan->gift, 0, '.', ',')}}
+																								</span>
+																							</div>
+																						</li>
+																					</ul>
+
+																					<div class="elementor-price-table__footer">
+																						<a class="elementor-price-table__button elementor-button elementor-size-md elementor-animation-pulse-grow" href="register">Join Plan</a>
+
+																					</div>
 																				</div>
 
-																				<div class="elementor-price-table__price">
-																					<span class="elementor-price-table__currency elementor-currency--before">$</span>
-																					<span class="elementor-price-table__integer-part" style="font-size:48px;">1000+</span>
-
-
-
-																					<span class="elementor-price-table__period elementor-typo-excluded">Returns
-																						in 1 week</span>
+																				@if(strtolower($plan->name) === "silver")
+																				<div class="elementor-price-table__ribbon">
+																					<div class="elementor-price-table__ribbon-inner">
+																						Popular</div>
 																				</div>
-
-																				<ul class="elementor-price-table__features-list">
-																					<li class="elementor-repeater-item-91f617b">
-																						<div class="elementor-price-table__feature-inner">
-																							<img src="{{asset('main/star.png')}}" aria-hidden="true">
-																							<span>
-																								At least $7,000
-																								expected
-																								return </span>
-																						</div>
-																					</li>
-																					<li class="elementor-repeater-item-d6e2933">
-																						<div class="elementor-price-table__feature-inner">
-																							<img src="{{asset('main/star.png')}}" aria-hidden="true">
-																							<span>
-																								35% Daily return </span>
-																						</div>
-																					</li>
-																					<li class="elementor-repeater-item-4e4d4c1">
-																						<div class="elementor-price-table__feature-inner">
-																							<img src="{{asset('main/eye.png')}}" aria-hidden="true">
-																							<span>
-																								Referral percent: 35%
-																							</span>
-																						</div>
-																					</li>
-																				</ul>
-
-																				<div class="elementor-price-table__footer">
-																					<a class="elementor-price-table__button elementor-button elementor-size-md elementor-animation-pulse-grow" href="register">Join Plan</a>
-
-																				</div>
-																			</div>
-
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-21594d42" data-id="21594d42" data-element_type="column">
-															<div class="elementor-column-wrap elementor-element-populated">
-																<div class="elementor-widget-wrap">
-																	<div class="elementor-element elementor-element-7637ab38 elementor-widget elementor-widget-price-table animated bounceIn" data-id="7637ab38" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;bounceIn&quot;}" data-widget_type="price-table.default">
-																		<div class="elementor-widget-container">
-
-																			<div class="elementor-price-table">
-																				<div class="elementor-price-table__header">
-																					<h3 class="elementor-price-table__heading">
-																						SILVER</h3>
-
-																					<span class="elementor-price-table__subheading">Min.
-																						Possible deposit: $5,000
-																						<br>Max. Possible deposit:
-																						$24,999</span>
-																				</div>
-
-																				<div class="elementor-price-table__price">
-																					<span class="elementor-price-table__currency elementor-currency--before">$</span>
-																					<span class="elementor-price-table__integer-part" style="font-size:48px;">5,000+</span>
-
-
-
-																					<span class="elementor-price-table__period elementor-typo-excluded">Returns
-																						in 1 week</span>
-																				</div>
-
-																				<ul class="elementor-price-table__features-list">
-																					<li class="elementor-repeater-item-91f617b">
-																						<div class="elementor-price-table__feature-inner">
-																							<img src="{{asset('main/star.png')}}" aria-hidden="true">
-																							<span>
-																								At least $35,000
-																								expected
-																								return </span>
-																						</div>
-																					</li>
-																					<li class="elementor-repeater-item-d6e2933">
-																						<div class="elementor-price-table__feature-inner">
-																							<img src="{{asset('main/star.png')}}" aria-hidden="true">
-																							<span>
-																								35% Daily return </span>
-																						</div>
-																					</li>
-																					<li class="elementor-repeater-item-4e4d4c1">
-																						<div class="elementor-price-table__feature-inner">
-																							<img src="{{asset('main/eye.png')}}" aria-hidden="true">
-																							<span>
-																								Referral percent: 25%
-																							</span>
-																						</div>
-																					</li>
-																				</ul>
-
-																				<div class="elementor-price-table__footer">
-																					<a class="elementor-price-table__button elementor-button elementor-size-md elementor-animation-pulse-grow" href="register">Join Plan</a>
-
-																				</div>
-																			</div>
-
-																			<div class="elementor-price-table__ribbon">
-																				<div class="elementor-price-table__ribbon-inner">
-																					Popular</div>
+																				@endif
 																			</div>
 																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-														<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-63e48" data-id="63e48" data-element_type="column">
-															<div class="elementor-column-wrap elementor-element-populated">
-																<div class="elementor-widget-wrap">
-																	<div class="elementor-element elementor-element-39090155 elementor-widget elementor-widget-price-table animated bounceIn" data-id="39090155" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;bounceIn&quot;}" data-widget_type="price-table.default">
-																		<div class="elementor-widget-container">
-
-																			<div class="elementor-price-table">
-																				<div class="elementor-price-table__header">
-																					<h3 class="elementor-price-table__heading">
-																						GOLD</h3>
-
-																					<span class="elementor-price-table__subheading">Min.
-																						Possible deposit: $25,000
-																						<br>Max. Possible deposit:
-																						$49,999</span>
-																				</div>
-
-																				<div class="elementor-price-table__price">
-																					<span class="elementor-price-table__currency elementor-currency--before">$</span>
-																					<span class="elementor-price-table__integer-part" style="font-size:48px;">25,000+</span>
-
-
-
-																					<span class="elementor-price-table__period elementor-typo-excluded">Returns
-																						in 1 week</span>
-																				</div>
-
-																				<ul class="elementor-price-table__features-list">
-																					<li class="elementor-repeater-item-91f617b">
-																						<div class="elementor-price-table__feature-inner">
-																							<img src="{{asset('main/star.png')}}" aria-hidden="true">
-																							<span>
-																								At least $120,000
-																								expected return </span>
-																						</div>
-																					</li>
-																					<li class="elementor-repeater-item-d6e2933">
-																						<div class="elementor-price-table__feature-inner">
-																							<img src="{{asset('main/star.png')}}" aria-hidden="true">
-																							<span>
-																								35% Daily return </span>
-																						</div>
-																					</li>
-																					<li class="elementor-repeater-item-4e4d4c1">
-																						<div class="elementor-price-table__feature-inner">
-																							<img src="{{asset('main/eye.png')}}" aria-hidden="true">
-																							<span>
-																								Referral percent: 20%
-																							</span>
-																						</div>
-																					</li>
-																				</ul>
-
-																				<div class="elementor-price-table__footer">
-																					<a class="elementor-price-table__button elementor-button elementor-size-md elementor-animation-pulse-grow" href="register">Join Plan</a>
-
-																				</div>
-																			</div>
-
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-1d5316d3" data-id="1d5316d3" data-element_type="column">
-															<div class="elementor-column-wrap elementor-element-populated">
-																<div class="elementor-widget-wrap">
-																	<div class="elementor-element elementor-element-4a6808f2 elementor-widget elementor-widget-price-table animated bounceIn" data-id="4a6808f2" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;bounceIn&quot;}" data-widget_type="price-table.default">
-																		<div class="elementor-widget-container">
-
-																			<div class="elementor-price-table">
-																				<div class="elementor-price-table__header">
-																					<h3 class="elementor-price-table__heading">
-																						DIAMOND</h3>
-
-																					<span class="elementor-price-table__subheading">Min.
-																						Possible deposit: $50,000
-																						<br>Max. Possible deposit:
-																						$250,000</span>
-																				</div>
-
-																				<div class="elementor-price-table__price">
-																					<span class="elementor-price-table__currency elementor-currency--before">$</span>
-																					<span class="elementor-price-table__integer-part" style="font-size:48px;">50,000+</span>
-
-
-
-																					<span class="elementor-price-table__period elementor-typo-excluded">Returns
-																						in 1 week</span>
-																				</div>
-
-																				<ul class="elementor-price-table__features-list">
-																					<li class="elementor-repeater-item-91f617b">
-																						<div class="elementor-price-table__feature-inner">
-																							<img src="{{asset('main/star.png')}}" aria-hidden="true">
-																							<span>
-																								At least $320,000
-																								expected return </span>
-																						</div>
-																					</li>
-																					<li class="elementor-repeater-item-d6e2933">
-																						<div class="elementor-price-table__feature-inner">
-																							<img src="{{asset('main/star.png')}}" aria-hidden="true">
-																							<span>
-																								35% Daily return </span>
-																						</div>
-																					</li>
-																					<li class="elementor-repeater-item-4e4d4c1">
-																						<div class="elementor-price-table__feature-inner">
-																							<img src="{{asset('main/eye.png')}}" aria-hidden="true">
-																							<span>
-																								Referral percent: 10%
-																							</span>
-																						</div>
-																					</li>
-																				</ul>
-
-																				<div class="elementor-price-table__footer">
-																					<a class="elementor-price-table__button elementor-button elementor-size-md elementor-animation-pulse-grow" href="register">Join Plan</a>
-
-																				</div>
-																			</div>
-
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
+														@endforeach
 													</div>
 												</div>
 											</section>

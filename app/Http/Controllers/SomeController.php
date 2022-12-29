@@ -377,7 +377,9 @@ public function delnotif($id){
        
     $dp=new deposits();
 
-    $dp->amount= $request['amount'];
+    // $dp->amount= $request['amount'];
+    // $dp->amount= filter_var($request['amount'], FILTER_VALIDATE_FLOAT, FILTER_FLAG_ALLOW_THOUSAND);
+    $dp->amount= str_replace(',', '', $request['amount']);
     $dp->payment_mode= $request['payment_mode'];
     $dp->status= 'Pending';
     $dp->proof= $image;
