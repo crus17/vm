@@ -2082,7 +2082,7 @@ flexibility(document.documentElement);
 																					</div>
 																				</div>
 
-																				<?php if(strtolower($plan->name) === "pro"): ?>
+																				<?php if(strtolower($plan->name) === "silver"): ?>
 																				<div class="elementor-price-table__ribbon">
 																					<div class="elementor-price-table__ribbon-inner">
 																						Popular</div>
